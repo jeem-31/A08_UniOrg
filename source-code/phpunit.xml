@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>app</directory>
+        </include>
+    </source>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="TURNSTILE_ENABLED" value="false" force="true"/>
+        <!-- Test-only key. Never reuse a deployment key here. -->
+        <env name="APP_KEY" value="base64:jL2RoeI2sjtIu9cB2laE1GXxfhl+xiB+V+FtEtFbjmU="/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <!-- Tests run against an isolated in-memory SQLite database. Never point
+             the suite at a deployment database. -->
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="DB_FOREIGN_KEYS" value="true"/>
+        <env name="DATABASE_URL" value=""/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="BROADCAST_CONNECTION" value="null"/>
+    </php>
+</phpunit>

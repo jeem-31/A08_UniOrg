@@ -1,0 +1,108 @@
+/* Tailwind CSS is loaded via CDN in app.blade.php */
+/* Add custom styles here if needed */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Theme-aware utility classes using CSS custom properties */
+
+/* Primary button styling with theme color */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Navigation link styling */
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    padding-top: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Active navigation link - no border, you already have an underline indicator */
+.nav-link.active {
+    /* Border removed - using existing tab indicator instead */
+}
+
+/* For student navigation (white background) - active tab should have primary color text */
+nav.bg-white .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* For student navigation (white background) - inactive tabs gray */
+nav.bg-white .nav-link:not(.active) {
+    color: #4b5563 !important; /* gray-700 */
+}
+
+/* For student navigation (white background) - hover */
+nav.bg-white .nav-link:not(.active):hover {
+    color: var(--primary-color) !important;
+}
+
+nav.bg-white .nav-link > .ph {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+    line-height: 1;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+nav.bg-white .nav-link:hover > .ph {
+    transform: translateY(-0.5px);
+}
+
+nav.bg-white .student-dropdown-menu .ph {
+    display: inline-flex;
+    width: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    line-height: 1;
+    vertical-align: -0.15em;
+}
+
+nav.bg-white .student-dropdown-nav-item > .nav-link > .ph-caret-down {
+    width: auto;
+    font-size: 1.1rem;
+}
+
+/* For admin navigation (purple background) - all links white by default */
+nav:not(.bg-white) .nav-link {
+    color: white !important;
+}
+
+/* For admin navigation (purple background) - active tab keeps white text */
+nav:not(.bg-white) .nav-link.active {
+    color: white !important;
+}
+
+/* Gold/complementary color icon styling */
+.gold-icon {
+    color: var(--complementary-color);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.gold-icon:hover {
+    opacity: 0.8;
+}

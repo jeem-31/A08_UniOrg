@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-05",
+  "desktop_initial_render": "observed at 1536x960 Chrome window",
+  "observed_issue": "Research subtitle inherited the global muted paragraph color on the dark hero background.",
+  "fix": "Set research-title color to var(--paper); preserve black text for print.",
+  "other_fix": "Replace accidental question-mark arrow glyphs in source/download links with HTML entities.",
+  "post_fix_visual_review": "pending: Computer Use stopped before the refresh could be reviewed",
+  "mobile_and_interaction_review": "pending",
+  "browser_stop": "Could not determine current browser URL with sufficient confidence for policy enforcement.",
+  "palette_update": {
+    "request": "Match UniOrg color palette",
+    "basis": "Shared login and OSAS theme in confirmed source",
+    "primary": "#26488C",
+    "secondary": "#1A3461",
+    "accent": "#C4973B",
+    "background": "#F9FBFF",
+    "scope": "CSS, metadata, SVG mark and shared documentation pages",
+    "contrast_checks": "all six checked combinations passed; see PALETTE_CHECKS.json",
+    "post_change_browser_review": "not completed"
+  }
+}

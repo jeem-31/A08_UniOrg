@@ -1,0 +1,1658 @@
+{
+  "originals_modified": false,
+  "date": "2026-11-05",
+  "files": [
+    {
+      "path": "(NEW format) UNIORG_MANUSCRIPT_FINAL_RC.pdf",
+      "bytes": 3624122
+    },
+    {
+      "path": "01-Capstone-Project-Student-Reference-Guide (1).docx",
+      "bytes": 22022145
+    },
+    {
+      "path": "APPENDICES  (TE).pdf",
+      "bytes": 163541956
+    },
+    {
+      "path": "Appendices-Blank.docx",
+      "bytes": 27208
+    },
+    {
+      "path": "APPENDICES_DRAFT.pdf",
+      "bytes": 50264308
+    },
+    {
+      "path": "BLACK_BOX_TESTING_SHEET_UNIORG (1).pdf",
+      "bytes": 322100
+    },
+    {
+      "path": "Chapter4-5_UniOrg.docx",
+      "bytes": 2958326
+    },
+    {
+      "path": "Chapter4-5_UniOrg_v2.docx",
+      "bytes": 2816685
+    },
+    {
+      "path": "Chapter4_RRL_Inserts_COPY_PASTE.docx",
+      "bytes": 38730
+    },
+    {
+      "path": "CS04-Arriola Robles-manuscript.pdf",
+      "bytes": 17862913
+    },
+    {
+      "path": "Data_Insert_428.xlsx",
+      "bytes": 51835
+    },
+    {
+      "path": "IT3C04- CHAPTER 1-5 .docx",
+      "bytes": 14951272
+    },
+    {
+      "path": "IT3C04- CHAPTER 1-5_CH4-TABLES-FORMATTED.docx",
+      "bytes": 14831839
+    },
+    {
+      "path": "UniOrg Questionnaire (Maam Rivano).docx",
+      "bytes": 37800
+    },
+    {
+      "path": "USERMANUAL FINAL.pdf",
+      "bytes": 3988946
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg.docx",
+      "bytes": 42086
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v2.docx",
+      "bytes": 2506168
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v3.docx",
+      "bytes": 2504604
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v4.docx",
+      "bytes": 2596095
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v5.docx",
+      "bytes": 2814266
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v6.docx",
+      "bytes": 7114786
+    },
+    {
+      "path": "chapter4/Chapter4_UniOrg_v7.docx",
+      "bytes": 7114405
+    },
+    {
+      "path": "input_sorted/01_Auth_Login_WelcomeBack.png",
+      "bytes": 880006
+    },
+    {
+      "path": "input_sorted/02_Auth_Register_UploadCOR.png",
+      "bytes": 1078980
+    },
+    {
+      "path": "input_sorted/03_Auth_Register_CompleteInfo.png",
+      "bytes": 1060946
+    },
+    {
+      "path": "input_sorted/04_Student_Profile_EditModal.png",
+      "bytes": 133658
+    },
+    {
+      "path": "input_sorted/05_Student_Events_RegisterModal.png",
+      "bytes": 97206
+    },
+    {
+      "path": "input_sorted/06_Student_Payments_GCash_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "input_sorted/07_Student_Payments_QRCode_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "input_sorted/08_Student_Elections_CastVote_Modal.png",
+      "bytes": 153376
+    },
+    {
+      "path": "input_sorted/09_Student_Complaints_NewSubmission_Modal.png",
+      "bytes": 126053
+    },
+    {
+      "path": "input_sorted/10_Admin_Profile_EditModal.png",
+      "bytes": 78993
+    },
+    {
+      "path": "input_sorted/11_Admin_Accreditation_Renew_Info_Requester.png",
+      "bytes": 134170
+    },
+    {
+      "path": "input_sorted/12_Admin_Accreditation_Renew_Docs_Part1.png",
+      "bytes": 126514
+    },
+    {
+      "path": "input_sorted/13_Admin_Accreditation_Renew_Docs_Part2.png",
+      "bytes": 132642
+    },
+    {
+      "path": "input_sorted/14_Admin_Accreditation_Renew_Members_Upload.png",
+      "bytes": 142305
+    },
+    {
+      "path": "input_sorted/15_Admin_Accreditation_Renew_Dean_Form.png",
+      "bytes": 131078
+    },
+    {
+      "path": "input_sorted/16_Admin_Accreditation_Renew_Officers_Step6.png",
+      "bytes": 141409
+    },
+    {
+      "path": "input_sorted/17_Admin_Announcements_Create_Modal.png",
+      "bytes": 280671
+    },
+    {
+      "path": "input_sorted/18_Admin_Payments_Announcements_Create.png",
+      "bytes": 105538
+    },
+    {
+      "path": "input_sorted/19_Admin_Payments_Announcements_Edit.png",
+      "bytes": 105278
+    },
+    {
+      "path": "input_sorted/20_Admin_Payments_Manual_Create.png",
+      "bytes": 107907
+    },
+    {
+      "path": "input_sorted/21_Admin_Payments_Create_Modal.png",
+      "bytes": 172686
+    },
+    {
+      "path": "input_sorted/22_Admin_Payments_Select_Modal.png",
+      "bytes": 181207
+    },
+    {
+      "path": "input_sorted/23_Admin_Library_AddResource_Modal.png",
+      "bytes": 162364
+    },
+    {
+      "path": "input_sorted/24_Admin_EduShare_CreateFolder_Modal.png",
+      "bytes": 165031
+    },
+    {
+      "path": "input_sorted/25_Admin_EduShare_UploadFile_Modal.png",
+      "bytes": 164222
+    },
+    {
+      "path": "input_sorted/26_Admin_Chatbot_NewFAQ_Modal.png",
+      "bytes": 127020
+    },
+    {
+      "path": "input_sorted/27_Admin_Chatbot_FAQ_Create_Modal.png",
+      "bytes": 206393
+    },
+    {
+      "path": "input_sorted/28_Admin_Complaints_Details_Respond_Modal.png",
+      "bytes": 199346
+    },
+    {
+      "path": "input_sorted/29_Dean_Profile_EditModal.png",
+      "bytes": 143866
+    },
+    {
+      "path": "input_sorted/30_OSAS_Settings_CreateOSASAdmin_Modal.png",
+      "bytes": 266313
+    },
+    {
+      "path": "input_sorted/31_OSAS_Settings_CreateDean_Modal.png",
+      "bytes": 288140
+    },
+    {
+      "path": "input_sorted/32_OSAS_Settings_AccredExpiration_Period.png",
+      "bytes": 204335
+    },
+    {
+      "path": "input_sorted/33_OSAS_Announcements_Create_Modal.png",
+      "bytes": 221672
+    },
+    {
+      "path": "input_sorted/34_OSAS_Announcements_Create_Form.png",
+      "bytes": 237813
+    },
+    {
+      "path": "input_sorted/35_OSAS_Settings_Profile_Password.png",
+      "bytes": 276336
+    },
+    {
+      "path": "input_sorted/Appendix_Input_Figures.docx",
+      "bytes": 7946312
+    },
+    {
+      "path": "input_sorted/Appendix_Input_Figures_3perPage.docx",
+      "bytes": 7946416
+    },
+    {
+      "path": "input_sorted/Appendix_Input_Figures_InFront.docx",
+      "bytes": 7946511
+    },
+    {
+      "path": "input_sorted/Appendix_Input_Figures_InFront_4perPage.docx",
+      "bytes": 7946742
+    },
+    {
+      "path": "input_sorted/captions.docx",
+      "bytes": 37132
+    },
+    {
+      "path": "input_ss/IN01_Auth_Login_WelcomeBack.png",
+      "bytes": 880006
+    },
+    {
+      "path": "input_ss/IN02_Auth_Register_UploadCOR.png",
+      "bytes": 1078980
+    },
+    {
+      "path": "input_ss/IN03_Auth_Register_CompleteInfo.png",
+      "bytes": 1060946
+    },
+    {
+      "path": "input_ss/IN04_Admin_Profile_EditModal.png",
+      "bytes": 78993
+    },
+    {
+      "path": "input_ss/IN05_Admin_Payments_Announcements_Create.png",
+      "bytes": 105538
+    },
+    {
+      "path": "input_ss/IN06_Admin_Payments_Announcements_Edit.png",
+      "bytes": 105278
+    },
+    {
+      "path": "input_ss/IN07_Admin_Payments_Manual_Create.png",
+      "bytes": 107907
+    },
+    {
+      "path": "input_ss/IN08_Admin_Chatbot_NewFAQ_Modal.png",
+      "bytes": 127020
+    },
+    {
+      "path": "input_ss/IN09_Admin_Accreditation_Renew_Info_Requester.png",
+      "bytes": 134170
+    },
+    {
+      "path": "input_ss/IN10_Admin_Accreditation_Renew_Docs_Part1.png",
+      "bytes": 126514
+    },
+    {
+      "path": "input_ss/IN11_Admin_Accreditation_Renew_Docs_Part2.png",
+      "bytes": 132642
+    },
+    {
+      "path": "input_ss/IN12_Admin_Accreditation_Renew_Members_Upload.png",
+      "bytes": 142305
+    },
+    {
+      "path": "input_ss/IN13_Admin_Accreditation_Renew_Dean_Form.png",
+      "bytes": 131078
+    },
+    {
+      "path": "input_ss/IN14_Admin_Accreditation_Renew_Officers_Step6.png",
+      "bytes": 141409
+    },
+    {
+      "path": "input_ss/IN15_Admin_Announcements_Create_Modal.png",
+      "bytes": 280671
+    },
+    {
+      "path": "input_ss/IN16_Admin_Payments_Create_Modal.png",
+      "bytes": 172686
+    },
+    {
+      "path": "input_ss/IN17_Admin_Payments_Select_Modal.png",
+      "bytes": 181207
+    },
+    {
+      "path": "input_ss/IN18_Admin_Library_AddResource_Modal.png",
+      "bytes": 162364
+    },
+    {
+      "path": "input_ss/IN19_Admin_EduShare_CreateFolder_Modal.png",
+      "bytes": 165031
+    },
+    {
+      "path": "input_ss/IN20_Admin_EduShare_UploadFile_Modal.png",
+      "bytes": 164222
+    },
+    {
+      "path": "input_ss/IN21_Admin_Chatbot_FAQ_Create_Modal.png",
+      "bytes": 206393
+    },
+    {
+      "path": "input_ss/IN22_Admin_Complaints_Details_Respond_Modal.png",
+      "bytes": 199346
+    },
+    {
+      "path": "input_ss/IN23_Dean_Profile_EditModal.png",
+      "bytes": 143866
+    },
+    {
+      "path": "input_ss/IN24_OSAS_Announcements_Create_Modal.png",
+      "bytes": 221672
+    },
+    {
+      "path": "input_ss/IN25_OSAS_Announcements_Create_Form.png",
+      "bytes": 237813
+    },
+    {
+      "path": "input_ss/IN26_OSAS_Settings_CreateOSASAdmin_Modal.png",
+      "bytes": 266313
+    },
+    {
+      "path": "input_ss/IN27_OSAS_Settings_CreateDean_Modal.png",
+      "bytes": 288140
+    },
+    {
+      "path": "input_ss/IN28_OSAS_Settings_AccredExpiration_Period.png",
+      "bytes": 204335
+    },
+    {
+      "path": "input_ss/IN29_OSAS_Settings_Profile_Password.png",
+      "bytes": 276336
+    },
+    {
+      "path": "input_ss/IN30_Student_Profile_EditModal.png",
+      "bytes": 133658
+    },
+    {
+      "path": "input_ss/IN31_Student_Events_RegisterModal.png",
+      "bytes": 97206
+    },
+    {
+      "path": "input_ss/IN32_Student_Payments_GCash_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "input_ss/IN33_Student_Payments_QRCode_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "input_ss/IN34_Student_Elections_CastVote_Modal.png",
+      "bytes": 153376
+    },
+    {
+      "path": "input_ss/IN35_Student_Complaints_NewSubmission_Modal.png",
+      "bytes": 126053
+    },
+    {
+      "path": "output_final/01_Student_Dashboard.png",
+      "bytes": 174416
+    },
+    {
+      "path": "output_final/02_Student_Profile.png",
+      "bytes": 169941
+    },
+    {
+      "path": "output_final/03_Student_Announcements_List.png",
+      "bytes": 352723
+    },
+    {
+      "path": "output_final/04_Student_Events_List.png",
+      "bytes": 89285
+    },
+    {
+      "path": "output_final/05_Student_Payments_List.png",
+      "bytes": 117306
+    },
+    {
+      "path": "output_final/06_Student_Elections_List.png",
+      "bytes": 112903
+    },
+    {
+      "path": "output_final/07_Student_Documents_MyDocs.png",
+      "bytes": 92109
+    },
+    {
+      "path": "output_final/08_Student_Library_List.png",
+      "bytes": 130780
+    },
+    {
+      "path": "output_final/09_Student_EduShare_List.png",
+      "bytes": 83021
+    },
+    {
+      "path": "output_final/10_Student_Complaints_List.png",
+      "bytes": 101411
+    },
+    {
+      "path": "output_final/11_Student_Chatbot.png",
+      "bytes": 90929
+    },
+    {
+      "path": "output_final/12_OSAS_Accreditation_Renewal_List.png",
+      "bytes": 254432
+    },
+    {
+      "path": "output_final/13_OSAS_Organizations_Registry_List.png",
+      "bytes": 213887
+    },
+    {
+      "path": "output_final/14_OSAS_MasterCalendar_MonthView.png",
+      "bytes": 191301
+    },
+    {
+      "path": "output_final/15_OSAS_Analytics_Events_Dashboard.png",
+      "bytes": 195817
+    },
+    {
+      "path": "output_final/16_Dean_UserManagement_List.png",
+      "bytes": 155749
+    },
+    {
+      "path": "output_final/17_Admin_Settings.png",
+      "bytes": 79634
+    },
+    {
+      "path": "output_final/18_Dean_Reports_Registration_PDF.png",
+      "bytes": 120632
+    },
+    {
+      "path": "output_final/19_Dean_Finance_Payments_PDF.png",
+      "bytes": 88091
+    },
+    {
+      "path": "output_final/20_Student_Payments_History_Modal.png",
+      "bytes": 97531
+    },
+    {
+      "path": "output_final/21_Student_Payments_Receipt_Modal.png",
+      "bytes": 132917
+    },
+    {
+      "path": "output_final/Appendix_Output_Figures_3perPage.docx",
+      "bytes": 2532065
+    },
+    {
+      "path": "output_final/Appendix_Output_Figures_3perPage_v2.docx",
+      "bytes": 2940324
+    },
+    {
+      "path": "output_final/captions.docx",
+      "bytes": 36939
+    },
+    {
+      "path": "output_sorted/01_Student_Dashboard.png",
+      "bytes": 174416
+    },
+    {
+      "path": "output_sorted/02_Student_Profile.png",
+      "bytes": 169941
+    },
+    {
+      "path": "output_sorted/03_Student_Announcements_List.png",
+      "bytes": 352723
+    },
+    {
+      "path": "output_sorted/04_Student_Announcements_View.png",
+      "bytes": 526557
+    },
+    {
+      "path": "output_sorted/05_Student_Events_List.png",
+      "bytes": 89285
+    },
+    {
+      "path": "output_sorted/06_Student_Events_Calendar.png",
+      "bytes": 52764
+    },
+    {
+      "path": "output_sorted/07_Student_Events_Details.png",
+      "bytes": 97206
+    },
+    {
+      "path": "output_sorted/08_Student_Events_ListView.png",
+      "bytes": 48476
+    },
+    {
+      "path": "output_sorted/09_Student_Events_WeekView.png",
+      "bytes": 51047
+    },
+    {
+      "path": "output_sorted/10_Student_Payments_List.png",
+      "bytes": 117306
+    },
+    {
+      "path": "output_sorted/11_Student_Payments_History_Modal.png",
+      "bytes": 97531
+    },
+    {
+      "path": "output_sorted/12_Student_Payments_Receipt_Modal.png",
+      "bytes": 132917
+    },
+    {
+      "path": "output_sorted/13_Student_Elections_List.png",
+      "bytes": 112903
+    },
+    {
+      "path": "output_sorted/14_Student_Elections_Details.png",
+      "bytes": 153376
+    },
+    {
+      "path": "output_sorted/15_Student_Documents_MyDocs.png",
+      "bytes": 92109
+    },
+    {
+      "path": "output_sorted/16_Student_Library_List.png",
+      "bytes": 130780
+    },
+    {
+      "path": "output_sorted/17_Student_EduShare_List.png",
+      "bytes": 83021
+    },
+    {
+      "path": "output_sorted/18_Student_Complaints_List.png",
+      "bytes": 101411
+    },
+    {
+      "path": "output_sorted/19_Student_Chatbot.png",
+      "bytes": 90929
+    },
+    {
+      "path": "output_sorted/20_Admin_Dashboard.png",
+      "bytes": 124585
+    },
+    {
+      "path": "output_sorted/21_Admin_Profile.png",
+      "bytes": 74182
+    },
+    {
+      "path": "output_sorted/22_Admin_Announcements_List.png",
+      "bytes": 89526
+    },
+    {
+      "path": "output_sorted/23_Admin_Events_List.png",
+      "bytes": 92792
+    },
+    {
+      "path": "output_sorted/24_Admin_Payments_List.png",
+      "bytes": 69755
+    },
+    {
+      "path": "output_sorted/25_Admin_Payments_Announcements_List.png",
+      "bytes": 67640
+    },
+    {
+      "path": "output_sorted/26_Admin_Elections_List.png",
+      "bytes": 109076
+    },
+    {
+      "path": "output_sorted/27_Admin_Elections_Results.png",
+      "bytes": 88202
+    },
+    {
+      "path": "output_sorted/28_Admin_Documents_StudentDocs.png",
+      "bytes": 58038
+    },
+    {
+      "path": "output_sorted/29_Admin_Library.png",
+      "bytes": 58296
+    },
+    {
+      "path": "output_sorted/30_Admin_EduShare.png",
+      "bytes": 46565
+    },
+    {
+      "path": "output_sorted/31_Admin_Complaints_List.png",
+      "bytes": 77841
+    },
+    {
+      "path": "output_sorted/32_Admin_Chatbot_FAQs.png",
+      "bytes": 115075
+    },
+    {
+      "path": "output_sorted/33_Admin_Settings.png",
+      "bytes": 79634
+    },
+    {
+      "path": "output_sorted/34_Admin_Announcements_Registry_List.png",
+      "bytes": 256936
+    },
+    {
+      "path": "output_sorted/35_Admin_Events_RequestList.png",
+      "bytes": 154696
+    },
+    {
+      "path": "output_sorted/36_Admin_Elections_LiveCount_Results.png",
+      "bytes": 162900
+    },
+    {
+      "path": "output_sorted/37_Admin_Library_Resource_List.png",
+      "bytes": 87443
+    },
+    {
+      "path": "output_sorted/38_Admin_EduShare_Main_List.png",
+      "bytes": 87110
+    },
+    {
+      "path": "output_sorted/39_Admin_Chatbot_FAQ_Library_List.png",
+      "bytes": 170810
+    },
+    {
+      "path": "output_sorted/40_Admin_Complaints_Queue_List.png",
+      "bytes": 109225
+    },
+    {
+      "path": "output_sorted/41_Dean_Dashboard_Home.png",
+      "bytes": 128467
+    },
+    {
+      "path": "output_sorted/42_Dean_UserManagement_List.png",
+      "bytes": 155749
+    },
+    {
+      "path": "output_sorted/43_Dean_Profile_Overview.png",
+      "bytes": 105795
+    },
+    {
+      "path": "output_sorted/44_Dean_ContentOverview_Announcements.png",
+      "bytes": 218986
+    },
+    {
+      "path": "output_sorted/45_Dean_ContentOverview_Events.png",
+      "bytes": 155134
+    },
+    {
+      "path": "output_sorted/46_Dean_ContentOverview_Complaints.png",
+      "bytes": 131920
+    },
+    {
+      "path": "output_sorted/47_Dean_EventProposals_All_List.png",
+      "bytes": 165553
+    },
+    {
+      "path": "output_sorted/48_Dean_EventProposals_Pending_List.png",
+      "bytes": 98468
+    },
+    {
+      "path": "output_sorted/49_Dean_EventProposals_Approved_List.png",
+      "bytes": 132435
+    },
+    {
+      "path": "output_sorted/50_Dean_EventProposals_Rejected_Empty.png",
+      "bytes": 70877
+    },
+    {
+      "path": "output_sorted/51_Dean_EventProposal_Details_Cosplay_Modal.png",
+      "bytes": 1009594
+    },
+    {
+      "path": "output_sorted/52_Dean_Reports_Registration_WebList.png",
+      "bytes": 132183
+    },
+    {
+      "path": "output_sorted/53_Dean_Reports_Registration_PDF.png",
+      "bytes": 120632
+    },
+    {
+      "path": "output_sorted/54_Dean_Finance_Reports_PaymentsTab.png",
+      "bytes": 119601
+    },
+    {
+      "path": "output_sorted/55_Dean_Finance_Payments_PDF.png",
+      "bytes": 88091
+    },
+    {
+      "path": "output_sorted/56_OSAS_Dashboard_Operations_Overview.png",
+      "bytes": 288942
+    },
+    {
+      "path": "output_sorted/57_OSAS_Dashboard_Cards_Cropped.png",
+      "bytes": 89989
+    },
+    {
+      "path": "output_sorted/58_OSAS_Accreditation_Recognition_Empty.png",
+      "bytes": 214174
+    },
+    {
+      "path": "output_sorted/59_OSAS_Accreditation_Renewal_List.png",
+      "bytes": 254432
+    },
+    {
+      "path": "output_sorted/60_OSAS_Organizations_Registry_List.png",
+      "bytes": 213887
+    },
+    {
+      "path": "output_sorted/61_OSAS_Organizations_SSC_Details.png",
+      "bytes": 322566
+    },
+    {
+      "path": "output_sorted/62_OSAS_Announcements_Empty_List.png",
+      "bytes": 181953
+    },
+    {
+      "path": "output_sorted/63_OSAS_MasterCalendar_MonthView.png",
+      "bytes": 191301
+    },
+    {
+      "path": "output_sorted/64_OSAS_MasterCalendar_Filtered_Sept.png",
+      "bytes": 155808
+    },
+    {
+      "path": "output_sorted/65_OSAS_MasterCalendar_EventDetails_NovFest.png",
+      "bytes": 823928
+    },
+    {
+      "path": "output_sorted/66_OSAS_EventProposals_List.png",
+      "bytes": 194405
+    },
+    {
+      "path": "output_sorted/67_OSAS_EventProposals_Details_Cosplay.png",
+      "bytes": 1217368
+    },
+    {
+      "path": "output_sorted/68_OSAS_Analytics_Events_Dashboard.png",
+      "bytes": 195817
+    },
+    {
+      "path": "output_sorted/69_OSAS_DocLibrary_Folders_List.png",
+      "bytes": 234664
+    },
+    {
+      "path": "output_sorted/70_OSAS_DocLibrary_SOCCS_Documents.png",
+      "bytes": 257434
+    },
+    {
+      "path": "output_sorted/71_OSAS_Settings_ManageAccounts_List.png",
+      "bytes": 269747
+    },
+    {
+      "path": "output_sorted/72_OSAS_Settings_AccountManagement_Filtered.png",
+      "bytes": 254390
+    },
+    {
+      "path": "output_sorted/73_OSAS_Settings_DeanSetup_List.png",
+      "bytes": 271543
+    },
+    {
+      "path": "output_sorted/74_OSAS_Settings_DeanSetup_Vacant_Colleges.png",
+      "bytes": 342707
+    },
+    {
+      "path": "output_sorted/75_OSAS_Settings_AccredExpire_ApplyAll_Modal.png",
+      "bytes": 205184
+    },
+    {
+      "path": "output_sorted/76_OSAS_Settings_AuditLogs_Empty.png",
+      "bytes": 158319
+    },
+    {
+      "path": "output_ss/OUT01_Admin_Dashboard.png",
+      "bytes": 124585
+    },
+    {
+      "path": "output_ss/OUT02_Admin_Profile.png",
+      "bytes": 74182
+    },
+    {
+      "path": "output_ss/OUT03_Admin_Announcements_List.png",
+      "bytes": 89526
+    },
+    {
+      "path": "output_ss/OUT04_Admin_Events_List.png",
+      "bytes": 92792
+    },
+    {
+      "path": "output_ss/OUT05_Admin_Payments_List.png",
+      "bytes": 69755
+    },
+    {
+      "path": "output_ss/OUT06_Admin_Payments_Announcements_List.png",
+      "bytes": 67640
+    },
+    {
+      "path": "output_ss/OUT07_Admin_Elections_List.png",
+      "bytes": 109076
+    },
+    {
+      "path": "output_ss/OUT08_Admin_Elections_Results.png",
+      "bytes": 88202
+    },
+    {
+      "path": "output_ss/OUT09_Admin_Documents_StudentDocs.png",
+      "bytes": 58038
+    },
+    {
+      "path": "output_ss/OUT10_Admin_Library.png",
+      "bytes": 58296
+    },
+    {
+      "path": "output_ss/OUT11_Admin_EduShare.png",
+      "bytes": 46565
+    },
+    {
+      "path": "output_ss/OUT12_Admin_Complaints_List.png",
+      "bytes": 77841
+    },
+    {
+      "path": "output_ss/OUT13_Admin_Chatbot_FAQs.png",
+      "bytes": 115075
+    },
+    {
+      "path": "output_ss/OUT14_Admin_Settings.png",
+      "bytes": 79634
+    },
+    {
+      "path": "output_ss/OUT15_Admin_Announcements_Registry_List.png",
+      "bytes": 256936
+    },
+    {
+      "path": "output_ss/OUT16_Admin_Events_RequestList.png",
+      "bytes": 154696
+    },
+    {
+      "path": "output_ss/OUT17_Admin_Elections_LiveCount_Results.png",
+      "bytes": 162900
+    },
+    {
+      "path": "output_ss/OUT18_Admin_Library_Resource_List.png",
+      "bytes": 87443
+    },
+    {
+      "path": "output_ss/OUT19_Admin_EduShare_Main_List.png",
+      "bytes": 87110
+    },
+    {
+      "path": "output_ss/OUT20_Admin_Chatbot_FAQ_Library_List.png",
+      "bytes": 170810
+    },
+    {
+      "path": "output_ss/OUT21_Admin_Complaints_Queue_List.png",
+      "bytes": 109225
+    },
+    {
+      "path": "output_ss/OUT22_Dean_Dashboard_Home.png",
+      "bytes": 128467
+    },
+    {
+      "path": "output_ss/OUT23_Dean_UserManagement_List.png",
+      "bytes": 155749
+    },
+    {
+      "path": "output_ss/OUT24_Dean_Profile_Overview.png",
+      "bytes": 105795
+    },
+    {
+      "path": "output_ss/OUT25_Dean_ContentOverview_Announcements.png",
+      "bytes": 218986
+    },
+    {
+      "path": "output_ss/OUT26_Dean_ContentOverview_Events.png",
+      "bytes": 155134
+    },
+    {
+      "path": "output_ss/OUT27_Dean_ContentOverview_Complaints.png",
+      "bytes": 131920
+    },
+    {
+      "path": "output_ss/OUT28_Dean_EventProposals_All_List.png",
+      "bytes": 165553
+    },
+    {
+      "path": "output_ss/OUT29_Dean_EventProposals_Pending_List.png",
+      "bytes": 98468
+    },
+    {
+      "path": "output_ss/OUT30_Dean_EventProposals_Approved_List.png",
+      "bytes": 132435
+    },
+    {
+      "path": "output_ss/OUT31_Dean_EventProposals_Rejected_Empty.png",
+      "bytes": 70877
+    },
+    {
+      "path": "output_ss/OUT32_Dean_EventProposal_Details_Cosplay_Modal.png",
+      "bytes": 1009594
+    },
+    {
+      "path": "output_ss/OUT33_Dean_Reports_Registration_WebList.png",
+      "bytes": 132183
+    },
+    {
+      "path": "output_ss/OUT34_Dean_Reports_Registration_PDF.png",
+      "bytes": 120632
+    },
+    {
+      "path": "output_ss/OUT35_Dean_Finance_Reports_PaymentsTab.png",
+      "bytes": 119601
+    },
+    {
+      "path": "output_ss/OUT36_Dean_Finance_Payments_PDF.png",
+      "bytes": 88091
+    },
+    {
+      "path": "output_ss/OUT37_OSAS_Dashboard_Operations_Overview.png",
+      "bytes": 288942
+    },
+    {
+      "path": "output_ss/OUT38_OSAS_Dashboard_Cards_Cropped.png",
+      "bytes": 89989
+    },
+    {
+      "path": "output_ss/OUT39_OSAS_Accreditation_Recognition_Empty.png",
+      "bytes": 214174
+    },
+    {
+      "path": "output_ss/OUT40_OSAS_Accreditation_Renewal_List.png",
+      "bytes": 254432
+    },
+    {
+      "path": "output_ss/OUT41_OSAS_Organizations_Registry_List.png",
+      "bytes": 213887
+    },
+    {
+      "path": "output_ss/OUT42_OSAS_Organizations_SSC_Details.png",
+      "bytes": 322566
+    },
+    {
+      "path": "output_ss/OUT43_OSAS_Announcements_Empty_List.png",
+      "bytes": 181953
+    },
+    {
+      "path": "output_ss/OUT44_OSAS_MasterCalendar_MonthView.png",
+      "bytes": 191301
+    },
+    {
+      "path": "output_ss/OUT45_OSAS_MasterCalendar_Filtered_Sept.png",
+      "bytes": 155808
+    },
+    {
+      "path": "output_ss/OUT46_OSAS_MasterCalendar_EventDetails_NovFest.png",
+      "bytes": 823928
+    },
+    {
+      "path": "output_ss/OUT47_OSAS_EventProposals_List.png",
+      "bytes": 194405
+    },
+    {
+      "path": "output_ss/OUT48_OSAS_EventProposals_Details_Cosplay.png",
+      "bytes": 1217368
+    },
+    {
+      "path": "output_ss/OUT49_OSAS_Analytics_Events_Dashboard.png",
+      "bytes": 195817
+    },
+    {
+      "path": "output_ss/OUT50_OSAS_DocLibrary_Folders_List.png",
+      "bytes": 234664
+    },
+    {
+      "path": "output_ss/OUT51_OSAS_DocLibrary_SOCCS_Documents.png",
+      "bytes": 257434
+    },
+    {
+      "path": "output_ss/OUT52_OSAS_Settings_ManageAccounts_List.png",
+      "bytes": 269747
+    },
+    {
+      "path": "output_ss/OUT53_OSAS_Settings_AccountManagement_Filtered.png",
+      "bytes": 254390
+    },
+    {
+      "path": "output_ss/OUT54_OSAS_Settings_DeanSetup_List.png",
+      "bytes": 271543
+    },
+    {
+      "path": "output_ss/OUT55_OSAS_Settings_DeanSetup_Vacant_Colleges.png",
+      "bytes": 342707
+    },
+    {
+      "path": "output_ss/OUT56_OSAS_Settings_AccredExpire_ApplyAll_Modal.png",
+      "bytes": 205184
+    },
+    {
+      "path": "output_ss/OUT57_OSAS_Settings_AuditLogs_Empty.png",
+      "bytes": 158319
+    },
+    {
+      "path": "output_ss/OUT58_Student_Dashboard.png",
+      "bytes": 174416
+    },
+    {
+      "path": "output_ss/OUT59_Student_Profile.png",
+      "bytes": 169941
+    },
+    {
+      "path": "output_ss/OUT60_Student_Announcements_List.png",
+      "bytes": 352723
+    },
+    {
+      "path": "output_ss/OUT61_Student_Announcements_View.png",
+      "bytes": 526557
+    },
+    {
+      "path": "output_ss/OUT62_Student_Events_List.png",
+      "bytes": 89285
+    },
+    {
+      "path": "output_ss/OUT63_Student_Events_Calendar.png",
+      "bytes": 52764
+    },
+    {
+      "path": "output_ss/OUT64_Student_Events_Details.png",
+      "bytes": 97206
+    },
+    {
+      "path": "output_ss/OUT65_Student_Events_ListView.png",
+      "bytes": 48476
+    },
+    {
+      "path": "output_ss/OUT66_Student_Events_WeekView.png",
+      "bytes": 51047
+    },
+    {
+      "path": "output_ss/OUT67_Student_Payments_List.png",
+      "bytes": 117306
+    },
+    {
+      "path": "output_ss/OUT68_Student_Payments_History_Modal.png",
+      "bytes": 97531
+    },
+    {
+      "path": "output_ss/OUT69_Student_Payments_Receipt_Modal.png",
+      "bytes": 132917
+    },
+    {
+      "path": "output_ss/OUT70_Student_Elections_List.png",
+      "bytes": 112903
+    },
+    {
+      "path": "output_ss/OUT71_Student_Elections_Details.png",
+      "bytes": 153376
+    },
+    {
+      "path": "output_ss/OUT72_Student_Documents_MyDocs.png",
+      "bytes": 92109
+    },
+    {
+      "path": "output_ss/OUT73_Student_Library_List.png",
+      "bytes": 130780
+    },
+    {
+      "path": "output_ss/OUT74_Student_EduShare_List.png",
+      "bytes": 83021
+    },
+    {
+      "path": "output_ss/OUT75_Student_Complaints_List.png",
+      "bytes": 101411
+    },
+    {
+      "path": "output_ss/OUT76_Student_Chatbot.png",
+      "bytes": 90929
+    },
+    {
+      "path": "storyboard_ss/A00b_Auth_Register_UploadCOR.png",
+      "bytes": 1078980
+    },
+    {
+      "path": "storyboard_ss/A00c_Auth_Register_CompleteInfo.png",
+      "bytes": 1060946
+    },
+    {
+      "path": "storyboard_ss/A00_Auth_Login_WelcomeBack.png",
+      "bytes": 880006
+    },
+    {
+      "path": "storyboard_ss/A01b_Admin_Profile.png",
+      "bytes": 74182
+    },
+    {
+      "path": "storyboard_ss/A01c_Admin_Profile_EditModal.png",
+      "bytes": 78993
+    },
+    {
+      "path": "storyboard_ss/A01_Admin_Dashboard.png",
+      "bytes": 124585
+    },
+    {
+      "path": "storyboard_ss/A02_Admin_Announcements_List.png",
+      "bytes": 89526
+    },
+    {
+      "path": "storyboard_ss/A03_Admin_Events_List.png",
+      "bytes": 92792
+    },
+    {
+      "path": "storyboard_ss/A04c_Admin_Payments_Announcements_List.png",
+      "bytes": 67640
+    },
+    {
+      "path": "storyboard_ss/A04d_Admin_Payments_Announcements_Create.png",
+      "bytes": 105538
+    },
+    {
+      "path": "storyboard_ss/A04e_Admin_Payments_Announcements_Edit.png",
+      "bytes": 105278
+    },
+    {
+      "path": "storyboard_ss/A04f_Admin_Payments_Manual_Create.png",
+      "bytes": 107907
+    },
+    {
+      "path": "storyboard_ss/A04_Admin_Payments_List.png",
+      "bytes": 69755
+    },
+    {
+      "path": "storyboard_ss/A05f_Admin_Elections_Results.png",
+      "bytes": 88202
+    },
+    {
+      "path": "storyboard_ss/A05_Admin_Elections_List.png",
+      "bytes": 109076
+    },
+    {
+      "path": "storyboard_ss/A06_Admin_Documents_StudentDocs.png",
+      "bytes": 58038
+    },
+    {
+      "path": "storyboard_ss/A07_Admin_Library.png",
+      "bytes": 58296
+    },
+    {
+      "path": "storyboard_ss/A08_Admin_EduShare.png",
+      "bytes": 46565
+    },
+    {
+      "path": "storyboard_ss/A09_Admin_Complaints_List.png",
+      "bytes": 77841
+    },
+    {
+      "path": "storyboard_ss/A10b_Admin_Chatbot_NewFAQ_Modal.png",
+      "bytes": 127020
+    },
+    {
+      "path": "storyboard_ss/A10_Admin_Chatbot_FAQs.png",
+      "bytes": 115075
+    },
+    {
+      "path": "storyboard_ss/A11b_Admin_Settings.png",
+      "bytes": 79634
+    },
+    {
+      "path": "storyboard_ss/A12_Admin_Accreditation_Renew_Info_Requester.png",
+      "bytes": 134170
+    },
+    {
+      "path": "storyboard_ss/A13_Admin_Accreditation_Renew_Docs_Part1.png",
+      "bytes": 126514
+    },
+    {
+      "path": "storyboard_ss/A14_Admin_Accreditation_Renew_Docs_Part2.png",
+      "bytes": 132642
+    },
+    {
+      "path": "storyboard_ss/A15_Admin_Accreditation_Renew_Members_Upload.png",
+      "bytes": 142305
+    },
+    {
+      "path": "storyboard_ss/A16_Admin_Accreditation_Renew_Dean_Form.png",
+      "bytes": 131078
+    },
+    {
+      "path": "storyboard_ss/A17_Admin_Accreditation_Renew_Officers_Step6.png",
+      "bytes": 141409
+    },
+    {
+      "path": "storyboard_ss/A18_Admin_Announcements_Registry_List.png",
+      "bytes": 256936
+    },
+    {
+      "path": "storyboard_ss/A19_Admin_Announcements_Create_Modal.png",
+      "bytes": 280671
+    },
+    {
+      "path": "storyboard_ss/A20_Admin_Events_RequestList.png",
+      "bytes": 154696
+    },
+    {
+      "path": "storyboard_ss/A21_Admin_Payments_Create_Modal.png",
+      "bytes": 172686
+    },
+    {
+      "path": "storyboard_ss/A22_Admin_Payments_Select_Modal.png",
+      "bytes": 181207
+    },
+    {
+      "path": "storyboard_ss/A23_Admin_Elections_LiveCount_Results.png",
+      "bytes": 162900
+    },
+    {
+      "path": "storyboard_ss/A24_Admin_Library_Resource_List.png",
+      "bytes": 87443
+    },
+    {
+      "path": "storyboard_ss/A25_Admin_Library_AddResource_Modal.png",
+      "bytes": 162364
+    },
+    {
+      "path": "storyboard_ss/A26_Admin_EduShare_Main_List.png",
+      "bytes": 87110
+    },
+    {
+      "path": "storyboard_ss/A27_Admin_EduShare_CreateFolder_Modal.png",
+      "bytes": 165031
+    },
+    {
+      "path": "storyboard_ss/A28_Admin_EduShare_UploadFile_Modal.png",
+      "bytes": 164222
+    },
+    {
+      "path": "storyboard_ss/A29_Admin_Chatbot_FAQ_Library_List.png",
+      "bytes": 170810
+    },
+    {
+      "path": "storyboard_ss/A30_Admin_Chatbot_FAQ_Create_Modal.png",
+      "bytes": 206393
+    },
+    {
+      "path": "storyboard_ss/A31_Admin_Complaints_Queue_List.png",
+      "bytes": 109225
+    },
+    {
+      "path": "storyboard_ss/A32_Admin_Complaints_Details_Modal.png",
+      "bytes": 199346
+    },
+    {
+      "path": "storyboard_ss/D01_Dean_Dashboard_Home.png",
+      "bytes": 128467
+    },
+    {
+      "path": "storyboard_ss/D02_Dean_UserManagement_List.png",
+      "bytes": 155749
+    },
+    {
+      "path": "storyboard_ss/D03_Dean_Profile_Overview.png",
+      "bytes": 105795
+    },
+    {
+      "path": "storyboard_ss/D04_Dean_Profile_EditModal.png",
+      "bytes": 143866
+    },
+    {
+      "path": "storyboard_ss/D05_Dean_ContentOverview_Announcements.png",
+      "bytes": 218986
+    },
+    {
+      "path": "storyboard_ss/D06_Dean_ContentOverview_Events.png",
+      "bytes": 155134
+    },
+    {
+      "path": "storyboard_ss/D07_Dean_ContentOverview_Complaints.png",
+      "bytes": 131920
+    },
+    {
+      "path": "storyboard_ss/D08_Dean_EventProposals_All_List.png",
+      "bytes": 165553
+    },
+    {
+      "path": "storyboard_ss/D09_Dean_EventProposals_Pending_List.png",
+      "bytes": 98468
+    },
+    {
+      "path": "storyboard_ss/D10_Dean_EventProposals_Approved_List.png",
+      "bytes": 132435
+    },
+    {
+      "path": "storyboard_ss/D11_Dean_EventProposals_Rejected_Empty.png",
+      "bytes": 70877
+    },
+    {
+      "path": "storyboard_ss/D12_Dean_EventProposal_Details_Cosplay_Modal.png",
+      "bytes": 1009594
+    },
+    {
+      "path": "storyboard_ss/D13_Dean_Reports_Registration_WebList.png",
+      "bytes": 132183
+    },
+    {
+      "path": "storyboard_ss/D14_Dean_Reports_Registration_PDF.png",
+      "bytes": 120632
+    },
+    {
+      "path": "storyboard_ss/D15_Dean_Finance_Reports_PaymentsTab.png",
+      "bytes": 119601
+    },
+    {
+      "path": "storyboard_ss/D16_Dean_Finance_Payments_PDF.png",
+      "bytes": 88091
+    },
+    {
+      "path": "storyboard_ss/EXT01_External_GoogleSearch_Labong.png",
+      "bytes": 201509
+    },
+    {
+      "path": "storyboard_ss/EXT02_External_GoogleSearch_Labong_BambooShoot.png",
+      "bytes": 962599
+    },
+    {
+      "path": "storyboard_ss/EXT03_External_GoogleForm_SmartRescue.png",
+      "bytes": 16655
+    },
+    {
+      "path": "storyboard_ss/EXT04_External_CodeNote_GuestRoutes.png",
+      "bytes": 219490
+    },
+    {
+      "path": "storyboard_ss/EXT05_External_Slovin_Computation.png",
+      "bytes": 110739
+    },
+    {
+      "path": "storyboard_ss/O01_OSAS_Dashboard_Operations_Overview.png",
+      "bytes": 288942
+    },
+    {
+      "path": "storyboard_ss/O02_OSAS_Dashboard_Cards_Cropped.png",
+      "bytes": 89989
+    },
+    {
+      "path": "storyboard_ss/O03_OSAS_Accreditation_Recognition_Empty.png",
+      "bytes": 214174
+    },
+    {
+      "path": "storyboard_ss/O04_OSAS_Accreditation_Renewal_List.png",
+      "bytes": 254432
+    },
+    {
+      "path": "storyboard_ss/O05_OSAS_Organizations_Registry_List.png",
+      "bytes": 213887
+    },
+    {
+      "path": "storyboard_ss/O06_OSAS_Organizations_SSC_Details.png",
+      "bytes": 322566
+    },
+    {
+      "path": "storyboard_ss/O07_OSAS_Announcements_Empty_List.png",
+      "bytes": 181953
+    },
+    {
+      "path": "storyboard_ss/O08_OSAS_Announcements_Create_Modal.png",
+      "bytes": 221672
+    },
+    {
+      "path": "storyboard_ss/O09_OSAS_Announcements_Create_Form.png",
+      "bytes": 237813
+    },
+    {
+      "path": "storyboard_ss/O10_OSAS_MasterCalendar_MonthView.png",
+      "bytes": 191301
+    },
+    {
+      "path": "storyboard_ss/O11_OSAS_MasterCalendar_Filtered_Sept.png",
+      "bytes": 155808
+    },
+    {
+      "path": "storyboard_ss/O12_OSAS_MasterCalendar_EventDetails_NovFest.png",
+      "bytes": 823928
+    },
+    {
+      "path": "storyboard_ss/O13_OSAS_EventProposals_List.png",
+      "bytes": 194405
+    },
+    {
+      "path": "storyboard_ss/O14_OSAS_EventProposals_Details_Cosplay.png",
+      "bytes": 1217368
+    },
+    {
+      "path": "storyboard_ss/O15_OSAS_Analytics_Events_Dashboard.png",
+      "bytes": 195817
+    },
+    {
+      "path": "storyboard_ss/O16_OSAS_DocLibrary_Folders_List.png",
+      "bytes": 234664
+    },
+    {
+      "path": "storyboard_ss/O17_OSAS_DocLibrary_SOCCS_Documents.png",
+      "bytes": 257434
+    },
+    {
+      "path": "storyboard_ss/O18_OSAS_Settings_ManageAccounts_List.png",
+      "bytes": 269747
+    },
+    {
+      "path": "storyboard_ss/O19_OSAS_Settings_AccountManagement_Filtered.png",
+      "bytes": 254390
+    },
+    {
+      "path": "storyboard_ss/O20_OSAS_Settings_CreateOSASAdmin_Modal.png",
+      "bytes": 266313
+    },
+    {
+      "path": "storyboard_ss/O21_OSAS_Settings_DeanSetup_List.png",
+      "bytes": 271543
+    },
+    {
+      "path": "storyboard_ss/O22_OSAS_Settings_DeanSetup_Vacant_Colleges.png",
+      "bytes": 342707
+    },
+    {
+      "path": "storyboard_ss/O23_OSAS_Settings_CreateDean_Modal.png",
+      "bytes": 288140
+    },
+    {
+      "path": "storyboard_ss/O24_OSAS_Settings_AccredExpiration_Period.png",
+      "bytes": 204335
+    },
+    {
+      "path": "storyboard_ss/O25_OSAS_Settings_AccredExpire_ApplyAll_Modal.png",
+      "bytes": 205184
+    },
+    {
+      "path": "storyboard_ss/O26_OSAS_Settings_Profile_Password.png",
+      "bytes": 276336
+    },
+    {
+      "path": "storyboard_ss/O27_OSAS_Settings_AuditLogs_Empty.png",
+      "bytes": 158319
+    },
+    {
+      "path": "storyboard_ss/S01_Student_Dashboard.png",
+      "bytes": 174416
+    },
+    {
+      "path": "storyboard_ss/S02b_Student_Profile_EditModal.png",
+      "bytes": 133658
+    },
+    {
+      "path": "storyboard_ss/S02_Student_Profile.png",
+      "bytes": 169941
+    },
+    {
+      "path": "storyboard_ss/S03b_Student_Announcements_View.png",
+      "bytes": 526557
+    },
+    {
+      "path": "storyboard_ss/S03_Student_Announcements_List.png",
+      "bytes": 352723
+    },
+    {
+      "path": "storyboard_ss/S04b_Student_Events_Calendar.png",
+      "bytes": 52764
+    },
+    {
+      "path": "storyboard_ss/S04c_Student_Events_Details.png",
+      "bytes": 97206
+    },
+    {
+      "path": "storyboard_ss/S04d_Student_Events_RegisterModal.png",
+      "bytes": 97206
+    },
+    {
+      "path": "storyboard_ss/S04e_Student_Events_ListView.png",
+      "bytes": 48476
+    },
+    {
+      "path": "storyboard_ss/S04f_Student_Events_WeekView.png",
+      "bytes": 51047
+    },
+    {
+      "path": "storyboard_ss/S04_Student_Events_List.png",
+      "bytes": 89285
+    },
+    {
+      "path": "storyboard_ss/S05b_Student_Payments_GCash_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "storyboard_ss/S05c_Student_Payments_QRCode_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "storyboard_ss/S05d_Student_Payments_History_Modal.png",
+      "bytes": 97531
+    },
+    {
+      "path": "storyboard_ss/S05e_Student_Payments_Receipt_Modal.png",
+      "bytes": 132917
+    },
+    {
+      "path": "storyboard_ss/S05_Student_Payments_List.png",
+      "bytes": 117306
+    },
+    {
+      "path": "storyboard_ss/S06b_Student_Elections_Details.png",
+      "bytes": 153376
+    },
+    {
+      "path": "storyboard_ss/S06c_Student_Elections_CastVote_Modal.png",
+      "bytes": 153376
+    },
+    {
+      "path": "storyboard_ss/S06_Student_Elections_List.png",
+      "bytes": 112903
+    },
+    {
+      "path": "storyboard_ss/S07_Student_Documents_MyDocs.png",
+      "bytes": 92109
+    },
+    {
+      "path": "storyboard_ss/S08_Student_Library_List.png",
+      "bytes": 130780
+    },
+    {
+      "path": "storyboard_ss/S09_Student_EduShare_List.png",
+      "bytes": 83021
+    },
+    {
+      "path": "storyboard_ss/S10b_Student_Complaints_NewSubmission_Modal.png",
+      "bytes": 126053
+    },
+    {
+      "path": "storyboard_ss/S10_Student_Complaints_List.png",
+      "bytes": 101411
+    },
+    {
+      "path": "storyboard_ss/S11_Student_Chatbot.png",
+      "bytes": 90929
+    },
+    {
+      "path": "user_manual/01_Auth_Login.png",
+      "bytes": 880006
+    },
+    {
+      "path": "user_manual/02_Auth_Register_CompleteInfo.png",
+      "bytes": 1060946
+    },
+    {
+      "path": "user_manual/03_Student_Profile_EditModal.png",
+      "bytes": 133658
+    },
+    {
+      "path": "user_manual/04_Student_Events_RegisterModal.png",
+      "bytes": 97206
+    },
+    {
+      "path": "user_manual/05_Student_Payments_GCash_Modal.png",
+      "bytes": 173675
+    },
+    {
+      "path": "user_manual/06_Student_Elections_CastVote_Modal.png",
+      "bytes": 153376
+    },
+    {
+      "path": "user_manual/07_Student_Complaints_NewSubmission_Modal.png",
+      "bytes": 126053
+    },
+    {
+      "path": "user_manual/08_Admin_Accreditation_Renew_Requester.png",
+      "bytes": 134170
+    },
+    {
+      "path": "user_manual/09_Admin_Announcements_Create_Modal.png",
+      "bytes": 280671
+    },
+    {
+      "path": "user_manual/10_Admin_Payments_Create_Modal.png",
+      "bytes": 172686
+    },
+    {
+      "path": "user_manual/11_Admin_Library_AddResource_Modal.png",
+      "bytes": 162364
+    },
+    {
+      "path": "user_manual/12_Admin_EduShare_CreateFolder_Modal.png",
+      "bytes": 165031
+    },
+    {
+      "path": "user_manual/13_Admin_Chatbot_NewFAQ_Modal.png",
+      "bytes": 127020
+    },
+    {
+      "path": "user_manual/14_Admin_Complaints_Respond_Modal.png",
+      "bytes": 199346
+    },
+    {
+      "path": "user_manual/15_Dean_Profile_EditModal.png",
+      "bytes": 143866
+    },
+    {
+      "path": "user_manual/16_Dean_Dashboard_Home.png",
+      "bytes": 128467
+    },
+    {
+      "path": "user_manual/17_Dean_EventProposals_Pending_List.png",
+      "bytes": 98468
+    },
+    {
+      "path": "user_manual/18_Dean_EventProposal_Details_Cosplay_Modal.png",
+      "bytes": 1009594
+    },
+    {
+      "path": "user_manual/19_OSAS_Settings_CreateDean_Modal.png",
+      "bytes": 288140
+    },
+    {
+      "path": "user_manual/20_OSAS_Settings_AccredExpiration_Period.png",
+      "bytes": 204335
+    },
+    {
+      "path": "user_manual/21_OSAS_Announcements_Create_Modal.png",
+      "bytes": 221672
+    },
+    {
+      "path": "user_manual/22_Settings_Profile_Password.png",
+      "bytes": 276336
+    },
+    {
+      "path": "user_manual/User_Manual_UniOrg.docx",
+      "bytes": 4878837
+    },
+    {
+      "path": "user_manual/User_Manual_UniOrg_v2.docx",
+      "bytes": 6082680
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ============================================================
+   Neumorphism design system (shared) - scoped to page wrappers
+   Apply `.student-neu-page` or `.admin-neu-page` on the root
+   content div of a page to activate this skin.
+   ============================================================ */
+
+.student-neu-page,
+.admin-neu-page {
+    --neu-bg: #E9EDF3;
+    --neu-text: #2E3A4C;
+    --neu-muted: #5A6B80;
+    --neu-faint: #7C8A9E;
+    --neu-divider: rgba(163, 177, 198, .45);
+    --neu-dark-shadow: rgba(163, 177, 198, .6);
+    --neu-light-shadow: rgba(255, 255, 255, .85);
+    color: var(--neu-text);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body:has(.student-neu-page),
+body:has(.admin-neu-page),
+main:has(.student-neu-page) {
+    background: var(--neu-bg) !important;
+}
+
+/* ---------- Headings & text ---------- */
+.student-neu-page h1, .student-neu-page h2, .student-neu-page h3,
+.admin-neu-page h1, .admin-neu-page h2, .admin-neu-page h3 {
+    color: var(--neu-text) !important;
+    letter-spacing: -0.02em;
+}
+
+.student-neu-page .text-gray-900, .student-neu-page .text-gray-800, .student-neu-page .text-gray-700,
+.admin-neu-page .text-gray-900, .admin-neu-page .text-gray-800, .admin-neu-page .text-gray-700,
+.student-neu-page .text-slate-950, .student-neu-page .text-slate-900, .student-neu-page .text-slate-800, .student-neu-page .text-slate-700,
+.admin-neu-page .text-slate-950, .admin-neu-page .text-slate-900, .admin-neu-page .text-slate-800, .admin-neu-page .text-slate-700 {
+    color: var(--neu-text) !important;
+}
+.student-neu-page .text-gray-600, .student-neu-page .text-gray-500,
+.admin-neu-page .text-gray-600, .admin-neu-page .text-gray-500,
+.student-neu-page .text-slate-600, .student-neu-page .text-slate-500,
+.admin-neu-page .text-slate-600, .admin-neu-page .text-slate-500 {
+    color: var(--neu-muted) !important;
+}
+.student-neu-page .text-gray-400, .student-neu-page .text-gray-300,
+.admin-neu-page .text-gray-400, .admin-neu-page .text-gray-300,
+.student-neu-page .text-slate-400,
+.admin-neu-page .text-slate-400 {
+    color: var(--neu-faint) !important;
+}
+
+/* ---------- Borders & dividers ---------- */
+.student-neu-page .border-gray-200, .student-neu-page .border-gray-300,
+.admin-neu-page .border-gray-200, .admin-neu-page .border-gray-300,
+.student-neu-page .border-slate-200, .student-neu-page .border-slate-300,
+.admin-neu-page .border-slate-200, .admin-neu-page .border-slate-300 {
+    border-color: var(--neu-divider) !important;
+}
+.student-neu-page .divide-gray-200 > :not([hidden]) ~ :not([hidden]),
+.admin-neu-page .divide-gray-200 > :not([hidden]) ~ :not([hidden]),
+.student-neu-page .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+.admin-neu-page .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+.student-neu-page .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+.admin-neu-page .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--neu-divider) !important;
+}
+
+/* ---------- Surface tones ---------- */
+.student-neu-page .bg-gray-100, .admin-neu-page .bg-gray-100 { background-color: #DDE4EE !important; }
+.student-neu-page .bg-gray-50, .admin-neu-page .bg-gray-50 { background-color: #E3E9F1 !important; }
+.student-neu-page .bg-slate-100, .admin-neu-page .bg-slate-100 { background-color: #DDE4EE !important; }
+.student-neu-page .bg-slate-50, .admin-neu-page .bg-slate-50 { background-color: #E3E9F1 !important; }
+.student-neu-page .bg-slate-50\/60, .student-neu-page .bg-slate-50\/70,
+.admin-neu-page .bg-slate-50\/60, .admin-neu-page .bg-slate-50\/70 {
+    background-color: rgba(227, 233, 241, .6) !important;
+}
+.student-neu-page.bg-slate-50\/60, .admin-neu-page.bg-slate-50\/60,
+.student-neu-page.bg-slate-50\/70, .admin-neu-page.bg-slate-50\/70 {
+    background-color: var(--neu-bg) !important;
+}
+.student-neu-page .bg-emerald-50, .admin-neu-page .bg-emerald-50 { background-color: rgba(16, 185, 129, .12) !important; }
+.student-neu-page .bg-green-50, .admin-neu-page .bg-green-50 { background-color: rgba(16, 185, 129, .12) !important; }
+.student-neu-page .bg-green-100, .admin-neu-page .bg-green-100 { background-color: rgba(16, 185, 129, .15) !important; }
+.student-neu-page .bg-amber-50, .admin-neu-page .bg-amber-50 { background-color: rgba(245, 158, 11, .13) !important; }
+.student-neu-page .bg-yellow-50, .admin-neu-page .bg-yellow-50 { background-color: rgba(245, 158, 11, .13) !important; }
+.student-neu-page .bg-yellow-100, .admin-neu-page .bg-yellow-100 { background-color: rgba(245, 158, 11, .15) !important; }
+.student-neu-page .bg-blue-50, .admin-neu-page .bg-blue-50 { background-color: rgba(37, 99, 235, .11) !important; }
+.student-neu-page .bg-blue-100, .admin-neu-page .bg-blue-100 { background-color: rgba(37, 99, 235, .13) !important; }
+.student-neu-page .bg-red-50, .admin-neu-page .bg-red-50 { background-color: rgba(220, 38, 38, .10) !important; }
+.student-neu-page .bg-red-100, .admin-neu-page .bg-red-100 { background-color: rgba(220, 38, 38, .12) !important; }
+
+/* ---------- Raised neu cards ---------- */
+.student-neu-page .bg-white.rounded-lg,
+.student-neu-page .bg-white.rounded-xl,
+.student-neu-page .bg-white.rounded-2xl,
+.student-neu-page .bg-white.rounded-3xl,
+.admin-neu-page .bg-white.rounded-lg,
+.admin-neu-page .bg-white.rounded-xl,
+.admin-neu-page .bg-white.rounded-2xl,
+.admin-neu-page .bg-white.rounded-3xl {
+    border: 0 !important;
+    background: var(--neu-bg) !important;
+    box-shadow: 8px 8px 16px var(--neu-dark-shadow), -8px -8px 16px var(--neu-light-shadow) !important;
+    border-radius: 1.25rem !important;
+}
+
+/* ---------- Buttons: primary ---------- */
+.student-neu-page button[style*="background-color: var(--primary-color)"],
+.admin-neu-page button[style*="background-color: var(--primary-color)"],
+.student-neu-page a[style*="background-color: var(--primary-color)"],
+.admin-neu-page a[style*="background-color: var(--primary-color)"] {
+    border: 0 !important;
+    border-radius: .85rem !important;
+    box-shadow: 4px 4px 10px rgba(var(--primary-color-rgb, 124, 58, 237), .35), -4px -4px 10px rgba(255, 255, 255, .85) !important;
+    transition: transform .22s ease, filter .22s ease, box-shadow .22s ease;
+}
+.student-neu-page button[style*="background-color: var(--primary-color)"]:hover,
+.admin-neu-page button[style*="background-color: var(--primary-color)"]:hover,
+.student-neu-page a[style*="background-color: var(--primary-color)"]:hover,
+.admin-neu-page a[style*="background-color: var(--primary-color)"]:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+}
+
+/* ---------- Buttons: solid color (blue/green/red/indigo) ---------- */
+.student-neu-page button.bg-blue-600, .admin-neu-page button.bg-blue-600,
+.student-neu-page a.bg-blue-600, .admin-neu-page a.bg-blue-600,
+.student-neu-page button.bg-indigo-600, .admin-neu-page button.bg-indigo-600,
+.student-neu-page button.bg-green-600, .admin-neu-page button.bg-green-600 {
+    border-radius: .85rem !important;
+    box-shadow: 4px 4px 10px rgba(37, 99, 235, .30), -4px -4px 10px rgba(255, 255, 255, .85) !important;
+    transition: transform .22s ease, filter .22s ease;
+}
+.student-neu-page button.bg-green-600, .admin-neu-page button.bg-green-600 {
+    box-shadow: 4px 4px 10px rgba(16, 185, 129, .35), -4px -4px 10px rgba(255, 255, 255, .85) !important;
+}
+.student-neu-page button.bg-blue-600:hover, .admin-neu-page button.bg-blue-600:hover,
+.student-neu-page a.bg-blue-600:hover, .admin-neu-page a.bg-blue-600:hover,
+.student-neu-page button.bg-indigo-600:hover, .admin-neu-page button.bg-indigo-600:hover,
+.student-neu-page button.bg-green-600:hover, .admin-neu-page button.bg-green-600:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
+/* ---------- Buttons: danger ---------- */
+.student-neu-page button.bg-red-600, .admin-neu-page button.bg-red-600,
+.student-neu-page button.bg-red-500, .admin-neu-page button.bg-red-500 {
+    border-radius: .85rem !important;
+    box-shadow: 4px 4px 10px rgba(220, 38, 38, .35), -4px -4px 10px rgba(255, 255, 255, .85) !important;
+    transition: transform .22s ease, filter .22s ease;
+}
+.student-neu-page button.bg-red-600:hover, .admin-neu-page button.bg-red-600:hover,
+.student-neu-page button.bg-red-500:hover, .admin-neu-page button.bg-red-500:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
+/* ---------- Buttons: secondary (bordered) ---------- */
+.student-neu-page button.border,
+.admin-neu-page button.border {
+    border: 0 !important;
+    border-radius: .85rem !important;
+    background: var(--neu-bg) !important;
+    color: var(--neu-muted) !important;
+    box-shadow: 4px 4px 8px var(--neu-dark-shadow), -4px -4px 8px var(--neu-light-shadow) !important;
+    transition: box-shadow .22s ease, color .22s ease;
+}
+.student-neu-page button.border:hover,
+.admin-neu-page button.border:hover {
+    box-shadow: inset 3px 3px 6px var(--neu-dark-shadow), inset -3px -3px 6px var(--neu-light-shadow) !important;
+    color: var(--neu-text) !important;
+}
+.student-neu-page button[disabled], .admin-neu-page button[disabled],
+.student-neu-page button.cursor-not-allowed, .admin-neu-page button.cursor-not-allowed {
+    box-shadow: inset 3px 3px 6px rgba(163, 177, 198, .45), inset -3px -3px 6px rgba(255, 255, 255, .8) !important;
+}
+
+/* ---------- Row hover ---------- */
+.student-neu-page .hover\:bg-gray-50:hover,
+.admin-neu-page .hover\:bg-gray-50:hover {
+    background-color: rgba(var(--primary-color-rgb, 124, 58, 237), .05) !important;
+}
+
+/* ---------- Chips / badges ---------- */
+.student-neu-page .rounded-full,
+.admin-neu-page .rounded-full {
+    border: 0 !important;
+    box-shadow: 3px 3px 6px rgba(163, 177, 198, .5), -3px -3px 6px rgba(255, 255, 255, .9) !important;
+}
+
+/* ---------- Inputs ---------- */
+.student-neu-page input[type="text"], .student-neu-page input[type="email"],
+.student-neu-page input[type="password"], .student-neu-page input[type="date"],
+.student-neu-page input[type="datetime-local"], .student-neu-page input[type="number"],
+.student-neu-page input[type="search"], .student-neu-page input[type="tel"],
+.student-neu-page input[type="url"], .student-neu-page textarea, .student-neu-page select,
+.admin-neu-page input[type="text"], .admin-neu-page input[type="email"],
+.admin-neu-page input[type="password"], .admin-neu-page input[type="date"],
+.admin-neu-page input[type="datetime-local"], .admin-neu-page input[type="number"],
+.admin-neu-page input[type="search"], .admin-neu-page input[type="tel"],
+.admin-neu-page input[type="url"], .admin-neu-page textarea, .admin-neu-page select {
+    border: 0 !important;
+    border-radius: .8rem !important;
+    background: var(--neu-bg) !important;
+    color: var(--neu-text) !important;
+    box-shadow: inset 3px 3px 6px rgba(163, 177, 198, .45), inset -3px -3px 6px rgba(255, 255, 255, .85) !important;
+}
+.student-neu-page input:focus, .student-neu-page textarea:focus, .student-neu-page select:focus,
+.admin-neu-page input:focus, .admin-neu-page textarea:focus, .admin-neu-page select:focus {
+    outline: 3px solid rgba(var(--primary-color-rgb, 124, 58, 237), .30);
+    outline-offset: 2px;
+}
+
+/* ---------- Tables ---------- */
+.student-neu-page table thead,
+.admin-neu-page table thead {
+    background: #DDE4EE !important;
+}
+.student-neu-page table thead th,
+.admin-neu-page table thead th {
+    color: var(--neu-muted) !important;
+}
+.student-neu-page table tbody tr,
+.admin-neu-page table tbody tr {
+    transition: background-color .2s ease;
+}
+.student-neu-page table tbody tr:hover,
+.admin-neu-page table tbody tr:hover {
+    background: rgba(var(--primary-color-rgb, 124, 58, 237), .045);
+}
+.student-neu-page table tbody td,
+.admin-neu-page table tbody td {
+    border-color: var(--neu-divider) !important;
+}
+
+/* ---------- Modals ---------- */
+.student-neu-page .fixed .bg-white,
+.admin-neu-page .fixed .bg-white {
+    border: 0 !important;
+    border-radius: 1.25rem !important;
+    background: #ffffff !important;
+}
+.student-neu-page .fixed > .bg-white,
+.student-neu-page .fixed > div > .bg-white,
+.admin-neu-page .fixed > .bg-white,
+.admin-neu-page .fixed > div > .bg-white {
+    box-shadow: 0 24px 60px rgba(17, 17, 19, .28) !important;
+}
+.student-neu-page .fixed .bg-white\/50,
+.admin-neu-page .fixed .bg-white\/50 {
+    background: rgba(255, 255, 255, .5) !important;
+}
+
+/* ---------- Focus ---------- */
+.student-neu-page button:focus-visible, .student-neu-page a:focus-visible,
+.admin-neu-page button:focus-visible, .admin-neu-page a:focus-visible {
+    outline: 3px solid rgba(var(--primary-color-rgb, 124, 58, 237), .35);
+    outline-offset: 3px;
+}
+
+/* ============================================================
+   Footer: neumorphic skin (shared) - activates when the page
+   uses any neumorphic wrapper. Blends the footer into the
+   page background instead of the flat white fallback.
+   ============================================================ */
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer {
+    --neu-bg: #E9EDF3;
+    --neu-text: #2E3A4C;
+    --neu-muted: #5A6B80;
+    --neu-faint: #7C8A9E;
+    --neu-divider: rgba(163, 177, 198, .45);
+    --neu-dark-shadow: rgba(163, 177, 198, .6);
+    --neu-light-shadow: rgba(255, 255, 255, .85);
+    background: var(--neu-bg) !important;
+    color: var(--neu-text) !important;
+    border-top-color: var(--neu-divider) !important;
+    box-shadow: inset 0 16px 18px -18px var(--neu-dark-shadow);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer .text-gray-600,
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer .text-gray-500 {
+    color: var(--neu-muted) !important;
+}
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer .text-gray-400,
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer .text-gray-300 {
+    color: var(--neu-faint) !important;
+}
+
+/* Quick links: raised pill on hover (matches nav pill language) */
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer a.neu-footer-link {
+    display: inline-block;
+    padding: .25rem .4rem;
+    margin: -.25rem -.4rem;
+    border-radius: 999px;
+    transition: box-shadow .22s ease, background-color .22s ease, color .22s ease;
+}
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer a.neu-footer-link:hover {
+    background: rgba(var(--primary-color-rgb, 124, 58, 237), .08);
+    color: var(--primary-color) !important;
+    box-shadow: 3px 3px 7px var(--neu-dark-shadow), -3px -3px 7px var(--neu-light-shadow);
+}
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer a.neu-footer-link:focus-visible {
+    outline: 3px solid rgba(var(--primary-color-rgb, 124, 58, 237), .35);
+    outline-offset: 2px;
+    border-radius: 999px;
+}
+
+/* Contact icons: extruded circular buttons (matches nav bell pattern) */
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer i.neu-footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 999px;
+    background: var(--neu-bg);
+    box-shadow: 3px 3px 7px var(--neu-dark-shadow), -3px -3px 7px var(--neu-light-shadow);
+    vertical-align: middle;
+}
+
+/* Copyright: soft inset divider instead of a hard line */
+body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+             .student-announcements-page, .student-announcement-detail-page,
+             .student-edushare-page, .student-library-page, .student-election-page,
+             .student-documents-page, .student-profile-page, .student-payments-page,
+             .student-events-page, .student-event-detail-page, .student-complaints-page,
+             .admin-neu-page)) footer.neu-footer .neu-footer-bottom {
+    border-top-color: var(--neu-divider) !important;
+    box-shadow: inset 0 10px 12px -12px var(--neu-dark-shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body:has(:is(.student-neu-page, .student-dashboard, .student-chat-page,
+                 .student-announcements-page, .student-announcement-detail-page,
+                 .student-edushare-page, .student-library-page, .student-election-page,
+                 .student-documents-page, .student-profile-page, .student-payments-page,
+                 .student-events-page, .student-event-detail-page, .student-complaints-page,
+                 .admin-neu-page)) footer.neu-footer a.neu-footer-link {
+        transition: none !important;
+    }
+}

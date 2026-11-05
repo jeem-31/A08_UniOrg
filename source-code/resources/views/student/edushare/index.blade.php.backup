@@ -1,0 +1,741 @@
+@extends('layouts.app')
+
+@section('title', 'EduShare')
+
+@section('content')
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-8">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-900">EduShare</h1>
+            <p class="text-gray-600 mt-2">Share and access files</p>
+        </div>
+        <div class="flex items-center space-x-3">
+            <!-- Search Bar -->
+            <form method="GET" action="{{ route('edushare.index') }}" class="relative">
+                <input type="text" name="search" value="{{ $search ?? '' }}" placeholder="Search files..." class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                <i class="ph ph-magnifying-glass absolute left-3 top-3 text-gray-400"></i>
+                @if($search)
+                <a href="{{ route('edushare.index') }}" class="absolute right-3 top-3 text-gray-400 hover:text-gray-600">
+                    <i class="ph ph-x"></i>
+                </a>
+                @endif
+            </form>
+            <button onclick="showModal('upload')" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center">
+                <i class="ph ph-plus mr-2 text-yellow-400"></i> New
+            </button>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="mb-8">
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-2 relative">
+            <nav class="flex space-x-2 relative">
+                <!-- Sliding indicator -->
+                <div id="tab-indicator" class="absolute h-full rounded-lg transition-all duration-300 ease-out" style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3), 0 2px 4px -1px rgba(139, 92, 246, 0.2); opacity: 0;"></div>
+                
+                <button onclick="switchTab('all')" id="tab-all" class="tab-button flex-1 py-3 px-4 rounded-lg font-medium text-sm transition-all duration-200 flex items-center justify-center relative z-10">
+                    <i class="ph ph-globe mr-2"></i> All Files
+                </button>
+                <button onclick="switchTab('my')" id="tab-my" class="tab-button flex-1 py-3 px-4 rounded-lg font-medium text-sm transition-all duration-200 flex items-center justify-center relative z-10">
+                    <i class="ph ph-folder mr-2"></i> My Uploads
+                </button>
+                <button onclick="switchTab('shared')" id="tab-shared" class="tab-button flex-1 py-3 px-4 rounded-lg font-medium text-sm transition-all duration-200 flex items-center justify-center relative z-10">
+                    <i class="ph ph-share-network mr-2"></i> Shared with Me
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="content-all" class="tab-content" style="display: none;">
+        @if($allFolders->count() > 0 || $allItems->count() > 0)
+            @if($allFolders->count() > 0)
+            <div class="mb-8">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Folders</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    @foreach($allFolders as $folder)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <i class="ph ph-folder text-yellow-500 text-3xl mr-3"></i>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900">{{ $folder->name }}</h3>
+                                @if($folder->description)
+                                <p class="text-xs text-gray-500 mt-1">{{ Str::limit($folder->description, 50) }}</p>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500">
+                            <i class="ph ph-user mr-1"></i> {{ $folder->user->full_name }}
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+            
+            @if($allItems->count() > 0)
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Files</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    @foreach($allItems as $item)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-3 flex-shrink-0">
+                                @php
+                                    $icon = 'ph-file';
+                                    $color = 'text-gray-600';
+                                    if(in_array($item->file_type, ['pdf'])) {
+                                        $icon = 'ph-file-pdf';
+                                        $color = 'text-red-600';
+                                    } elseif(in_array($item->file_type, ['doc', 'docx'])) {
+                                        $icon = 'ph-file-doc';
+                                        $color = 'text-blue-600';
+                                    } elseif(in_array($item->file_type, ['xls', 'xlsx'])) {
+                                        $icon = 'ph-file-xls';
+                                        $color = 'text-green-600';
+                                    } elseif(in_array($item->file_type, ['ppt', 'pptx'])) {
+                                        $icon = 'ph-file-ppt';
+                                        $color = 'text-orange-600';
+                                    } elseif(in_array($item->file_type, ['jpg', 'jpeg', 'png', 'gif'])) {
+                                        $icon = 'ph-file-image';
+                                        $color = 'text-purple-600';
+                                    } elseif(in_array($item->file_type, ['zip', 'rar'])) {
+                                        $icon = 'ph-file-zip';
+                                        $color = 'text-yellow-600';
+                                    }
+                                @endphp
+                                <i class="ph {{ $icon }} {{ $color }} text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-semibold text-gray-900 truncate">{{ $item->title }}</h3>
+                                @if($item->description)
+                                <p class="text-xs text-gray-500 mt-1">{{ Str::limit($item->description, 60) }}</p>
+                                @endif
+                                <p class="text-xs text-gray-400 mt-1">{{ strtoupper($item->file_type) }}</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-3">
+                            <i class="ph ph-user mr-1"></i> {{ $item->user->full_name }}
+                        </div>
+                        <a href="{{ route('edushare.download', $item) }}" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-3 py-2 rounded text-center text-sm block">
+                            <i class="ph ph-download-simple mr-1"></i> Download
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+        @else
+        <div class="bg-white rounded-lg shadow p-12 text-center">
+            <i class="ph ph-folder-open text-6xl text-gray-300 mb-4"></i>
+            <p class="text-gray-500">No files available yet.</p>
+        </div>
+        @endif
+    </div>
+
+    <!-- My Uploads Tab -->
+    <div id="content-my" class="tab-content" style="display: none;">
+        @if($currentFolder || count($breadcrumbs) > 0)
+        <div class="mb-6 flex items-center justify-between">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="{{ route('edushare.index', ['tab' => 'my']) }}" class="hover:text-purple-600">
+                    <i class="ph ph-folder mr-1"></i> My Uploads
+                </a>
+                @foreach($breadcrumbs as $crumb)
+                    <i class="ph ph-caret-right mx-2 text-gray-400"></i>
+                    <a href="{{ route('edushare.index', ['folder' => $crumb->id, 'tab' => 'my']) }}" class="hover:text-purple-600">
+                        {{ $crumb->name }}
+                    </a>
+                @endforeach
+            </div>
+            @if($currentFolder)
+            <a href="{{ $currentFolder->parent_id ? route('edushare.index', ['folder' => $currentFolder->parent_id, 'tab' => 'my']) : route('edushare.index', ['tab' => 'my']) }}" class="inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition text-sm font-medium">
+                <i class="ph ph-arrow-left mr-2"></i> Back
+            </a>
+            @endif
+        </div>
+        @endif
+
+        @if($myFolders->count() > 0 || $myItems->count() > 0)
+            @if($myFolders->count() > 0)
+            <div class="mb-8">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">My Folders</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    @foreach($myFolders as $folder)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-start justify-between mb-3">
+                            <a href="{{ route('edushare.index', ['folder' => $folder->id, 'tab' => 'my']) }}" class="flex-1">
+                                <div class="flex items-center">
+                                    <i class="ph ph-folder text-yellow-500 text-3xl mr-3"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">{{ $folder->name }}</h3>
+                                        @if($folder->description)
+                                        <p class="text-xs text-gray-500 mt-1">{{ Str::limit($folder->description, 50) }}</p>
+                                        @endif
+                                    </div>
+                                </div>
+                            </a>
+                            <button onclick="if(confirm('Delete this folder?')) deleteFolder({{ $folder->id }})" class="text-red-600 hover:text-red-800">
+                                <i class="ph ph-trash"></i>
+                            </button>
+                        </div>
+                        <div class="text-xs text-gray-500">
+                            <i class="ph ph-clock mr-1"></i> {{ $folder->created_at->diffForHumans() }}
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+            
+            @if($myItems->count() > 0)
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">My Files</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    @foreach($myItems as $item)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-3 flex-shrink-0">
+                                @php
+                                    $icon = 'ph-file';
+                                    $color = 'text-gray-600';
+                                    if(in_array($item->file_type, ['pdf'])) {
+                                        $icon = 'ph-file-pdf';
+                                        $color = 'text-red-600';
+                                    } elseif(in_array($item->file_type, ['doc', 'docx'])) {
+                                        $icon = 'ph-file-doc';
+                                        $color = 'text-blue-600';
+                                    } elseif(in_array($item->file_type, ['xls', 'xlsx'])) {
+                                        $icon = 'ph-file-xls';
+                                        $color = 'text-green-600';
+                                    } elseif(in_array($item->file_type, ['ppt', 'pptx'])) {
+                                        $icon = 'ph-file-ppt';
+                                        $color = 'text-orange-600';
+                                    } elseif(in_array($item->file_type, ['jpg', 'jpeg', 'png', 'gif'])) {
+                                        $icon = 'ph-file-image';
+                                        $color = 'text-purple-600';
+                                    } elseif(in_array($item->file_type, ['zip', 'rar'])) {
+                                        $icon = 'ph-file-zip';
+                                        $color = 'text-yellow-600';
+                                    }
+                                @endphp
+                                <i class="ph {{ $icon }} {{ $color }} text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-semibold text-gray-900 truncate">{{ $item->title }}</h3>
+                                @if($item->description)
+                                <p class="text-xs text-gray-500 mt-1">{{ Str::limit($item->description, 60) }}</p>
+                                @endif
+                                <p class="text-xs text-gray-400 mt-1">{{ strtoupper($item->file_type) }}</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-3">
+                            <i class="ph ph-clock mr-1"></i> {{ $item->created_at->diffForHumans() }}
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="{{ route('edushare.download', $item) }}" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white px-3 py-2 rounded text-center text-sm">
+                                <i class="ph ph-download-simple mr-1"></i> Download
+                            </a>
+                            <button onclick="if(confirm('Delete this file?')) deleteItem({{ $item->id }})" class="text-red-600 hover:text-red-800 px-2">
+                                <i class="ph ph-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+        @else
+        <div class="bg-white rounded-lg shadow p-12 text-center">
+            <i class="ph ph-folder-open text-6xl text-gray-300 mb-4"></i>
+            <p class="text-gray-500">No uploads yet.</p>
+            <button onclick="showModal('upload')" class="mt-4 text-purple-600 hover:text-purple-800 font-semibold">
+                <i class="ph ph-upload-simple mr-1"></i> Upload your first file
+            </button>
+        </div>
+        @endif
+    </div>
+
+    <!-- Shared with Me Tab -->
+    <div id="content-shared" class="tab-content" style="display: none;">
+        @if($sharedFolders->count() > 0 || $sharedItems->count() > 0)
+            @if($sharedFolders->count() > 0)
+            <div class="mb-8">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Shared Folders</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    @foreach($sharedFolders as $folder)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <i class="ph ph-folder text-yellow-500 text-3xl mr-3"></i>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900">{{ $folder->name }}</h3>
+                                @if($folder->description)
+                                <p class="text-xs text-gray-500 mt-1">{{ Str::limit($folder->description, 50) }}</p>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500">
+                            <i class="ph ph-user mr-1"></i> {{ $folder->user->full_name }}
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+            
+            @if($sharedItems->count() > 0)
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Shared Files</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    @foreach($sharedItems as $item)
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 border border-gray-200">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-3 flex-shrink-0">
+                                @php
+                                    $icon = 'ph-file';
+                                    $color = 'text-gray-600';
+                                    if(in_array($item->file_type, ['pdf'])) {
+                                        $icon = 'ph-file-pdf';
+                                        $color = 'text-red-600';
+                                    } elseif(in_array($item->file_type, ['doc', 'docx'])) {
+                                        $icon = 'ph-file-doc';
+                                        $color = 'text-blue-600';
+                                    } elseif(in_array($item->file_type, ['xls', 'xlsx'])) {
+                                        $icon = 'ph-file-xls';
+                                        $color = 'text-green-600';
+                                    } elseif(in_array($item->file_type, ['ppt', 'pptx'])) {
+                                        $icon = 'ph-file-ppt';
+                                        $color = 'text-orange-600';
+                                    } elseif(in_array($item->file_type, ['jpg', 'jpeg', 'png', 'gif'])) {
+                                        $icon = 'ph-file-image';
+                                        $color = 'text-purple-600';
+                                    } elseif(in_array($item->file_type, ['zip', 'rar'])) {
+                                        $icon = 'ph-file-zip';
+                                        $color = 'text-yellow-600';
+                                    }
+                                @endphp
+                                <i class="ph {{ $icon }} {{ $color }} text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-semibold text-gray-900 truncate">{{ $item->title }}</h3>
+                                @if($item->description)
+                                <p class="text-xs text-gray-500 mt-1">{{ Str::limit($item->description, 60) }}</p>
+                                @endif
+                                <p class="text-xs text-gray-400 mt-1">{{ strtoupper($item->file_type) }}</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-3">
+                            <i class="ph ph-user mr-1"></i> {{ $item->user->full_name }}
+                        </div>
+                        <a href="{{ route('edushare.download', $item) }}" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-3 py-2 rounded text-center text-sm block">
+                            <i class="ph ph-download-simple mr-1"></i> Download
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
+        @else
+        <div class="bg-white rounded-lg shadow p-12 text-center">
+            <i class="ph ph-share-network text-6xl text-gray-300 mb-4"></i>
+            <p class="text-gray-500">No files shared with you yet.</p>
+        </div>
+        @endif
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div onclick="hideModal('upload')" class="fixed inset-0 bg-black opacity-50"></div>
+            <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-900">New Upload</h2>
+                    <button onclick="hideModal('upload')" class="text-gray-400 hover:text-gray-600">
+                        <i class="ph ph-x text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Upload Type Selection -->
+                <div class="mb-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="selectUploadType('file')" id="btn-file" class="upload-type-btn active p-4 border-2 rounded-lg text-center transition">
+                            <i class="ph ph-file text-3xl text-purple-600 mb-2"></i>
+                            <p class="font-medium">Upload File</p>
+                        </button>
+                        <button onclick="selectUploadType('folder')" id="btn-folder" class="upload-type-btn p-4 border-2 border-gray-200 rounded-lg text-center transition hover:border-purple-300">
+                            <i class="ph ph-folder text-3xl text-yellow-500 mb-2"></i>
+                            <p class="font-medium">New Folder</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- File Upload Form -->
+                <form id="fileForm" onsubmit="uploadFile(event)">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Title <span class="text-red-500">*</span></label>
+                            <input type="text" name="title" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500" placeholder="Enter file title">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Description</label>
+                            <textarea name="description" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500" placeholder="Enter description (optional)"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">File <span class="text-red-500">*</span></label>
+                            <input type="file" name="file" required class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                        </div>
+                        <div class="flex justify-end space-x-3 pt-4">
+                            <button type="button" onclick="hideModal('upload')" id="cancelFileBtn" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">Cancel</button>
+                            <button type="submit" id="uploadFileBtn" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold">
+                                <i class="ph ph-upload-simple mr-2"></i> <span id="uploadFileText">Upload</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Folder Creation Form -->
+                <form id="folderForm" onsubmit="createFolder(event)" class="hidden">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Folder Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="folderName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500" placeholder="Enter folder name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Description</label>
+                            <textarea id="folderDescription" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500" placeholder="Enter description (optional)"></textarea>
+                        </div>
+                        <div class="flex justify-end space-x-3 pt-4">
+                            <button type="button" onclick="hideModal('upload')" id="cancelFolderBtn" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">Cancel</button>
+                            <button type="submit" id="createFolderBtn" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold">
+                                <i class="ph ph-folder-plus mr-2"></i> <span id="createFolderText">Create Folder</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="hidden fixed top-6 right-6 z-50 bg-white rounded-lg shadow-xl px-6 py-4 flex items-center space-x-3 max-w-md border-l-4">
+        <div class="flex-shrink-0">
+            <div id="toastIcon" class="h-10 w-10 rounded-full flex items-center justify-center">
+                <i class="ph text-xl"></i>
+            </div>
+        </div>
+        <div class="flex-1">
+            <p id="toastTitle" class="text-sm font-semibold text-gray-900"></p>
+            <p id="toastMessage" class="text-sm text-gray-600"></p>
+        </div>
+        <button onclick="hideToast()" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition">
+            <i class="ph ph-x text-lg"></i>
+        </button>
+    </div>
+</div>
+
+<style>
+.tab-content {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tab-button {
+    color: #6B7280;
+    background-color: transparent;
+    transition: color 0.2s ease;
+}
+
+.tab-button:hover:not(.active) {
+    color: #374151;
+}
+
+.tab-button.active {
+    color: white;
+}
+
+.upload-type-btn.active {
+    border-color: #8B5CF6;
+    background-color: #F3E8FF;
+}
+
+#tab-indicator {
+    pointer-events: none;
+}
+</style>
+
+<script>
+const currentFolderId = {{ $currentFolder ? $currentFolder->id : 'null' }};
+const urlParams = new URLSearchParams(window.location.search);
+// If there's a folder, default to 'my' tab, otherwise use URL param or 'all'
+let currentTab = currentFolderId ? (urlParams.get('tab') || 'my') : (urlParams.get('tab') || 'all');
+
+// Initialize tab on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Set indicator position immediately without animation
+    const indicator = document.getElementById('tab-indicator');
+    indicator.style.transition = 'none';
+    indicator.style.opacity = '0';
+    
+    // Position the indicator
+    updateTabIndicator(currentTab);
+    
+    // Show the indicator and re-enable transition
+    requestAnimationFrame(() => {
+        indicator.style.opacity = '1';
+        indicator.style.transition = 'all 0.3s ease-out';
+    });
+    
+    // Show the correct tab content
+    switchTabContent(currentTab);
+});
+
+function updateTabIndicator(tab) {
+    const indicator = document.getElementById('tab-indicator');
+    const activeTab = document.getElementById('tab-' + tab);
+    const nav = activeTab.parentElement;
+    
+    // Get position and size
+    const navRect = nav.getBoundingClientRect();
+    const tabRect = activeTab.getBoundingClientRect();
+    
+    // Calculate position relative to nav
+    const left = tabRect.left - navRect.left;
+    const width = tabRect.width;
+    
+    // Update indicator
+    indicator.style.width = width + 'px';
+    indicator.style.transform = `translateX(${left}px)`;
+}
+
+function switchTabContent(tab) {
+    // Hide all tabs
+    document.querySelectorAll('.tab-content').forEach(el => {
+        el.style.display = 'none';
+        el.classList.add('hidden');
+    });
+    document.querySelectorAll('.tab-button').forEach(el => {
+        el.classList.remove('active');
+    });
+    
+    // Show selected tab
+    const selectedContent = document.getElementById('content-' + tab);
+    selectedContent.style.display = 'block';
+    selectedContent.classList.remove('hidden');
+    document.getElementById('tab-' + tab).classList.add('active');
+}
+
+function switchTab(tab) {
+    // Switch content
+    switchTabContent(tab);
+    
+    // Animate indicator
+    updateTabIndicator(tab);
+    
+    currentTab = tab;
+    
+    // Update URL without reload
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tab);
+    window.history.pushState({}, '', url);
+}
+
+// Update indicator on window resize
+window.addEventListener('resize', function() {
+    updateTabIndicator(currentTab);
+});
+
+function showModal(type) {
+    document.getElementById(type + 'Modal').classList.remove('hidden');
+}
+
+function hideModal(type) {
+    document.getElementById(type + 'Modal').classList.add('hidden');
+}
+
+function selectUploadType(type) {
+    document.querySelectorAll('.upload-type-btn').forEach(btn => {
+        btn.classList.remove('active', 'border-purple-500', 'bg-purple-50');
+        btn.classList.add('border-gray-200');
+    });
+    
+    if (type === 'file') {
+        document.getElementById('btn-file').classList.add('active', 'border-purple-500', 'bg-purple-50');
+        document.getElementById('fileForm').classList.remove('hidden');
+        document.getElementById('folderForm').classList.add('hidden');
+    } else {
+        document.getElementById('btn-folder').classList.add('active', 'border-purple-500', 'bg-purple-50');
+        document.getElementById('folderForm').classList.remove('hidden');
+        document.getElementById('fileForm').classList.add('hidden');
+    }
+}
+
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    const icon = document.getElementById('toastIcon');
+    const title = document.getElementById('toastTitle');
+    const msg = document.getElementById('toastMessage');
+    
+    title.textContent = type === 'success' ? 'Success!' : 'Error!';
+    msg.textContent = message;
+    
+    toast.classList.remove('hidden', 'border-green-500', 'border-red-500');
+    icon.classList.remove('bg-green-100', 'bg-red-100');
+    icon.querySelector('i').classList.remove('ph-check-circle', 'ph-warning-circle', 'text-green-600', 'text-red-600');
+    
+    if (type === 'success') {
+        toast.classList.add('border-green-500');
+        icon.classList.add('bg-green-100');
+        icon.querySelector('i').classList.add('ph-check-circle', 'text-green-600');
+    } else {
+        toast.classList.add('border-red-500');
+        icon.classList.add('bg-red-100');
+        icon.querySelector('i').classList.add('ph-warning-circle', 'text-red-600');
+    }
+    
+    setTimeout(() => hideToast(), 4000);
+}
+
+function hideToast() {
+    document.getElementById('toast').classList.add('hidden');
+}
+
+function uploadFile(event) {
+    event.preventDefault();
+    
+    const uploadBtn = document.getElementById('uploadFileBtn');
+    const uploadText = document.getElementById('uploadFileText');
+    const cancelBtn = document.getElementById('cancelFileBtn');
+    
+    // Disable button and show loading
+    uploadBtn.disabled = true;
+    cancelBtn.disabled = true;
+    uploadBtn.classList.add('opacity-75', 'cursor-not-allowed');
+    uploadText.innerHTML = '<i class="ph ph-spinner ph-spin mr-2"></i>Uploading...';
+    
+    const formData = new FormData(event.target);
+    if (currentFolderId) formData.append('folder_id', currentFolderId);
+
+    fetch('{{ route('edushare.store') }}', {
+        method: 'POST',
+        headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}' },
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            hideModal('upload');
+            showToast(data.message, 'success');
+            setTimeout(() => location.reload(), 1000);
+        } else {
+            // Re-enable button on error
+            uploadBtn.disabled = false;
+            cancelBtn.disabled = false;
+            uploadBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            uploadText.innerHTML = 'Upload';
+            hideModal('upload');
+            showToast(data.message || 'Failed to upload file', 'error');
+        }
+    })
+    .catch(() => {
+        // Re-enable button on error
+        uploadBtn.disabled = false;
+        cancelBtn.disabled = false;
+        uploadBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+        uploadText.innerHTML = 'Upload';
+        hideModal('upload');
+        showToast('Failed to upload file', 'error');
+    });
+}
+
+function createFolder(event) {
+    event.preventDefault();
+    
+    const createBtn = document.getElementById('createFolderBtn');
+    const createText = document.getElementById('createFolderText');
+    const cancelBtn = document.getElementById('cancelFolderBtn');
+    
+    // Disable button and show loading
+    createBtn.disabled = true;
+    cancelBtn.disabled = true;
+    createBtn.classList.add('opacity-75', 'cursor-not-allowed');
+    createText.innerHTML = '<i class="ph ph-spinner ph-spin mr-2"></i>Creating...';
+    
+    const formData = new FormData();
+    formData.append('name', document.getElementById('folderName').value);
+    formData.append('description', document.getElementById('folderDescription').value);
+    if (currentFolderId) formData.append('parent_id', currentFolderId);
+
+    fetch('{{ route('edushare.folder.create') }}', {
+        method: 'POST',
+        headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}' },
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            hideModal('upload');
+            showToast(data.message, 'success');
+            setTimeout(() => location.reload(), 1000);
+        } else {
+            // Re-enable button on error
+            createBtn.disabled = false;
+            cancelBtn.disabled = false;
+            createBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            createText.innerHTML = 'Create Folder';
+            hideModal('upload');
+            showToast(data.message || 'Failed to create folder', 'error');
+        }
+    })
+    .catch(() => {
+        // Re-enable button on error
+        createBtn.disabled = false;
+        cancelBtn.disabled = false;
+        createBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+        createText.innerHTML = 'Create Folder';
+        hideModal('upload');
+        showToast('Failed to create folder', 'error');
+    });
+}
+
+function deleteItem(id) {
+    fetch(`/edushare/item/${id}`, {
+        method: 'DELETE',
+        headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}' }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast(data.message, 'success');
+            setTimeout(() => location.reload(), 1000);
+        }
+    })
+    .catch(() => showToast('Failed to delete file', 'error'));
+}
+
+function deleteFolder(id) {
+    fetch(`/edushare/folder/${id}`, {
+        method: 'DELETE',
+        headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}' }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast(data.message, 'success');
+            setTimeout(() => location.reload(), 1000);
+        }
+    })
+    .catch(() => showToast('Failed to delete folder', 'error'));
+}
+</script>
+@endsection

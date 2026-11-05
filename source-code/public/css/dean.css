@@ -1,0 +1,42 @@
+/* Dean Portal Styles */
+.dean-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dean-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(130, 56, 179, 0.2);
+}
+
+.btn-dean {
+    background-color: #8238B3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-dean:hover {
+    background-color: #3D0066;
+    transform: translateY(-2px);
+}
+
+.approval-card {
+    border-left: 4px solid #8238B3;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.priority-high {
+    border-left-color: #dc2626;
+}
+
+.priority-medium {
+    border-left-color: #f59e0b;
+}
+
+.priority-low {
+    border-left-color: #10b981;
+}

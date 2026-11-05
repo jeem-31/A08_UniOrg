@@ -1,0 +1,302 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    AUTO-TAGGING SYSTEM - UniOrg
+                    Paano Gumagana ang Natural Language API
+═══════════════════════════════════════════════════════════════════════════════
+
+📅 Created: May 11, 2026
+🎯 Purpose: Explain how NL API is used for auto-tagging documents
+
+═══════════════════════════════════════════════════════════════════════════════
+                    🔄 COMPLETE AUTO-TAGGING FLOW
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: OCR (Text Extraction)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 📄 Document (PDF/Image)                                                     │
+│                                                                              │
+│ ↓ Google Cloud Vision API                                                   │
+│                                                                              │
+│ 📝 Extracted Text (98%+ accuracy)                                           │
+│    - Handles handwriting                                                    │
+│    - Multi-language support                                                 │
+│    - Returns confidence score                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+STEP 2: ENTITY EXTRACTION (Natural Language API) ⭐ PRIMARY FOR AUTO-TAGGING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 📝 Extracted Text                                                           │
+│                                                                              │
+│ ↓ Google Cloud Natural Language API                                         │
+│                                                                              │
+│ 🏷️ Entities Extracted:                                                      │
+│    ┌──────────────────────────────────────────────────────────────────┐    │
+│    │ Type 1: PERSON                                                    │    │
+│    │ - Names: "Juan Dela Cruz", "Maria Santos"                        │    │
+│    │ - Salience: 0.15 (importance score)                              │    │
+│    ├──────────────────────────────────────────────────────────────────┤    │
+│    │ Type 2: LOCATION                                                  │    │
+│    │ - Places: "LSPU Santa Cruz", "Laguna"                            │    │
+│    │ - Salience: 0.08                                                 │    │
+│    ├──────────────────────────────────────────────────────────────────┤    │
+│    │ Type 3: ORGANIZATION ⭐ PRIORITIZED FOR TAGS                      │    │
+│    │ - Orgs: "Computer Society", "LSPU-OSAS"                          │    │
+│    │ - Salience: 0.25 (high importance)                               │    │
+│    ├──────────────────────────────────────────────────────────────────┤    │
+│    │ Type 4: EVENT                                                     │    │
+│    │ - Events: "General Assembly", "Orientation"                      │    │
+│    │ - Salience: 0.12                                                 │    │
+│    └──────────────────────────────────────────────────────────────────┘    │
+│                                                                              │
+│ 🎯 FILTERING:                                                                │
+│    - Only entities with salience > 0.1 are kept                             │
+│    - Generic entities removed ("Republic", "Province", "OFFICE")            │
+│    - Organizations (Type 3) are prioritized                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+STEP 3: AI ANALYSIS (Vertex AI)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 📝 Extracted Text + 🏷️ Entities                                             │
+│                                                                              │
+│ ↓ Vertex AI (Google's Production AI)                                        │
+│                                                                              │
+│ 🤖 AI-Generated Analysis:                                                   │
+│    - Document Type: "Letter of Application"                                 │
+│    - Organization: "Computer Society"                                       │
+│    - School Year: "2023-2024"                                               │
+│    - Key Dates: ["September 15, 2023", "October 1, 2023"]                  │
+│    - AI Tags: ["Application", "Student Organization", "Recognition"]        │
+│    - Summary: "Letter requesting recognition for Computer Society..."       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+STEP 4: TAG GENERATION (Hybrid AI + NLP)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 🏷️ FINAL TAGS (Priority System):                                            │
+│                                                                              │
+│ Priority 1: AI-Generated Tags (from Vertex AI) ⭐ MAIN SOURCE               │
+│    ✅ "Application"                                                          │
+│    ✅ "Student Organization"                                                 │
+│    ✅ "Recognition"                                                          │
+│                                                                              │
+│ Priority 2: Document Type                                                   │
+│    ✅ "Letter of Application"                                                │
+│                                                                              │
+│ Priority 3: Organization Name                                               │
+│    ✅ "Computer Society"                                                     │
+│                                                                              │
+│ Priority 4: School Year                                                     │
+│    ✅ "2023-2024"                                                            │
+│                                                                              │
+│ Priority 5: High-Salience Entities (from NLP) - Only if < 8 tags           │
+│    ✅ "LSPU-OSAS" (Organization, salience: 0.25)                             │
+│    ✅ "General Assembly" (Event, salience: 0.12)                             │
+│                                                                              │
+│ 🎯 FINAL RESULT: 8 tags                                                     │
+│    ["Application", "Student Organization", "Recognition",                   │
+│     "Letter of Application", "Computer Society", "2023-2024",               │
+│     "LSPU-OSAS", "General Assembly"]                                        │
+│                                                                              │
+│ ⚠️ LIMITS:                                                                   │
+│    - Maximum: 10 tags                                                       │
+│    - Duplicates removed automatically                                       │
+│    - NLP entities only added if less than 8 tags already                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                    📊 SALIENCE SCORE EXPLAINED
+═══════════════════════════════════════════════════════════════════════════════
+
+Salience = Importance/Relevance Score (0.0 to 1.0)
+
+0.0 - 0.05  → Very Low Importance (IGNORED)
+0.05 - 0.1  → Low Importance (IGNORED)
+0.1 - 0.2   → Medium Importance (INCLUDED if space available)
+0.2 - 0.5   → High Importance (PRIORITIZED)
+0.5 - 1.0   → Very High Importance (ALWAYS INCLUDED)
+
+Example:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Entity: "Computer Society"                                                  │
+│ Type: ORGANIZATION (Type 3)                                                 │
+│ Salience: 0.35 (High Importance)                                            │
+│ Mentions: 5 times in document                                               │
+│ ✅ INCLUDED as tag                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Entity: "Republic"                                                          │
+│ Type: LOCATION (Type 2)                                                     │
+│ Salience: 0.08 (Low Importance)                                             │
+│ Mentions: 1 time in document                                                │
+│ ❌ IGNORED (below threshold + generic term)                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                    ⚙️ CONFIGURATION
+═══════════════════════════════════════════════════════════════════════════════
+
+FILE: .env
+
+# Enable Natural Language API for auto-tagging
+GOOGLE_CLOUD_NLP_ENABLED=true
+
+# Required for NLP API
+GOOGLE_CLOUD_PROJECT_ID=gen-lang-client-0122901684
+GOOGLE_CLOUD_KEY_FILE=storage/app/google-cloud/credentials.json
+GOOGLE_APPLICATION_CREDENTIALS="${GOOGLE_CLOUD_KEY_FILE}"
+
+═══════════════════════════════════════════════════════════════════════════════
+                    📂 CODE LOCATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. NLP SERVICE (Entity Extraction)
+   📄 app/Services/GoogleCloudNLPService.php
+   
+   Key Methods:
+   - extractEntities($text)      → Extract entities from text
+   - analyzeSentiment($text)     → Analyze sentiment
+   - classifyText($text)         → Classify into categories
+   - analyzeSyntax($text)        → Parse syntax
+
+2. DOCUMENT PROCESSOR (Auto-Tagging Logic)
+   📄 app/Http/Controllers/Osas/DocumentProcessorController.php
+   
+   Key Methods:
+   - processWithGoogleCloud()    → Main processing flow
+   - generateTagsFromGemini()    → Tag generation with priority system
+   - extractKeyInfoFromGemini()  → Extract key information
+
+3. TAG GENERATION LOGIC
+   📄 app/Http/Controllers/Osas/DocumentProcessorController.php
+   
+   Method: generateTagsFromGemini($geminiResult, $entities)
+   
+   Lines: ~740-790
+   
+   Priority System:
+   1. AI tags from Vertex AI
+   2. Document type
+   3. Organization name
+   4. School year
+   5. NLP entities (salience > 0.1)
+
+═══════════════════════════════════════════════════════════════════════════════
+                    🧪 TESTING AUTO-TAGGING
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Go to: http://192.168.1.21:8000/osas/document-testing
+
+2. Upload a document (PDF/Image)
+
+3. Select processing mode: "Google Cloud"
+
+4. Click "Process Document"
+
+5. Check the results:
+   ✅ Tags generated
+   ✅ Entities extracted
+   ✅ Document type detected
+   ✅ Summary created
+
+═══════════════════════════════════════════════════════════════════════════════
+                    📊 EXAMPLE OUTPUT
+═══════════════════════════════════════════════════════════════════════════════
+
+INPUT DOCUMENT:
+"Letter of Application for Recognition
+Computer Society
+School Year 2023-2024
+
+Dear LSPU-OSAS,
+
+We, the officers and members of the Computer Society, hereby apply for 
+recognition as a student organization for the academic year 2023-2024.
+
+Our organization aims to promote computer literacy and technology awareness
+among students through various activities and programs.
+
+Respectfully submitted,
+Juan Dela Cruz
+President, Computer Society"
+
+OUTPUT:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 📄 Document Type: Letter of Application                                     │
+│                                                                              │
+│ 🏷️ Tags (8):                                                                 │
+│    1. Application                    (AI-generated)                         │
+│    2. Student Organization           (AI-generated)                         │
+│    3. Recognition                    (AI-generated)                         │
+│    4. Letter of Application          (Document type)                        │
+│    5. Computer Society               (Organization name)                    │
+│    6. 2023-2024                      (School year)                          │
+│    7. LSPU-OSAS                      (NLP entity, salience: 0.25)           │
+│    8. Technology                     (NLP entity, salience: 0.15)           │
+│                                                                              │
+│ 🏢 Entities Extracted:                                                       │
+│    - Juan Dela Cruz (PERSON, salience: 0.18)                                │
+│    - Computer Society (ORGANIZATION, salience: 0.35)                        │
+│    - LSPU-OSAS (ORGANIZATION, salience: 0.25)                               │
+│                                                                              │
+│ 📝 Summary:                                                                  │
+│    "Letter requesting recognition for Computer Society as a student         │
+│     organization for academic year 2023-2024, focusing on promoting         │
+│     computer literacy and technology awareness."                            │
+│                                                                              │
+│ ℹ️ Key Information:                                                          │
+│    - Organization: Computer Society                                         │
+│    - School Year: 2023-2024                                                 │
+│    - President: Juan Dela Cruz                                              │
+│    - Purpose: Recognition application                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                    ❓ FREQUENTLY ASKED QUESTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+Q: Paano ko i-enable ang Natural Language API?
+A: Set GOOGLE_CLOUD_NLP_ENABLED=true sa .env file
+
+Q: Bakit walang entities na na-extract?
+A: Check if:
+   - GOOGLE_CLOUD_NLP_ENABLED=true
+   - credentials.json file exists
+   - Text has meaningful content (not just images)
+
+Q: Paano ko ma-adjust ang salience threshold?
+A: Edit line ~770 in DocumentProcessorController.php:
+   if ($entity['salience'] > 0.1)  // Change 0.1 to your desired threshold
+
+Q: Ilang tags ang maximum?
+A: Maximum 10 tags per document (configurable in code)
+
+Q: Ano ang difference ng AI tags vs NLP entities?
+A: - AI tags: Generated by Vertex AI (intelligent, context-aware)
+   - NLP entities: Extracted by Natural Language API (factual, name-based)
+   - Both are combined for best results
+
+Q: Pwede ba akong gumamit ng NLP lang without AI?
+A: Yes, pero mas maganda ang results with AI. NLP provides entities,
+   AI provides context and intelligent tagging.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    🎯 SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Natural Language API is ALREADY INTEGRATED and WORKING
+✅ Used for entity extraction (persons, organizations, locations, events)
+✅ Entities are combined with AI-generated tags for best results
+✅ Priority system ensures most relevant tags are included
+✅ Salience threshold (0.1) filters out unimportant entities
+✅ Maximum 10 tags per document
+✅ Hybrid approach: AI intelligence + NLP factual extraction
+
+🔧 TO ENABLE:
+   Set GOOGLE_CLOUD_NLP_ENABLED=true in .env
+
+📍 CODE LOCATION:
+   app/Services/GoogleCloudNLPService.php
+   app/Http/Controllers/Osas/DocumentProcessorController.php
+
+═══════════════════════════════════════════════════════════════════════════════
+                    END OF GUIDE
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "scope": "18 existing pure PHPUnit unit-test files; temporary config, unreachable DB guard retained",
+  "tests": 158,
+  "assertions": 660,
+  "failures": 3,
+  "errors": 0,
+  "failure_cases": [
+    {
+      "class": "Tests\\Unit\\SupportedDocumentCatalogTest",
+      "test": "test_it_exposes_only_the_exact_supported_fields_labels_and_cardinalities",
+      "kind": "SupportedDocumentCatalog contract mismatch"
+    },
+    {
+      "class": "Tests\\Unit\\SupportedDocumentCatalogTest",
+      "test": "test_scalar_paths_use_primary_slots_and_arbitrary_attributes_are_ignored",
+      "kind": "SupportedDocumentCatalog contract mismatch"
+    },
+    {
+      "class": "Tests\\Unit\\SupportedDocumentCatalogTest",
+      "test": "test_unsupported_fields_are_rejected_by_direct_lookup",
+      "kind": "SupportedDocumentCatalog contract mismatch"
+    }
+  ],
+  "broadcast_connection": "log",
+  "system_php_changed": false,
+  "full_database_or_end_to_end_suite": "not performed",
+  "passed": 155,
+  "upstream_comparison": [
+    {
+      "file": "app/Services/DocumentIntelligence/SupportedDocumentCatalog.php",
+      "unchanged_from_upstream": true,
+      "sha256": "4c27e05c4de178fe2bab0f7ad86099a536fc1ad852d3758e37acea0f147461e0"
+    },
+    {
+      "file": "tests/Unit/SupportedDocumentCatalogTest.php",
+      "unchanged_from_upstream": true,
+      "sha256": "4df229401106884b0cfbbf99a7e18733d302d8aa8191a1438980fa584227d946"
+    }
+  ]
+}

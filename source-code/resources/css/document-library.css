@@ -1,0 +1,143 @@
+/* Responsive, keyboard-friendly layout for the OSAS Document Library. */
+html {
+    scroll-padding-top: 6rem;
+}
+
+[data-document-library-region],
+[data-document-library-region] * {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+[data-document-library-region] {
+    max-width: 100%;
+}
+
+[data-document-library-region] :where(a, button, input, select, summary):focus-visible {
+    position: relative;
+    z-index: 2;
+    outline: 3px solid #26488c;
+    outline-offset: 3px;
+    scroll-margin-block: 6rem 1rem;
+}
+
+[data-document-library-region] summary::-webkit-details-marker {
+    display: none;
+}
+
+[data-document-library-region] :where(h1, h2, h3, p, dd, li, a, span, option) {
+    overflow-wrap: anywhere;
+}
+
+[data-document-library-region] :where(input, select, button, a) {
+    max-width: 100%;
+}
+
+[data-document-library-region] select {
+    text-overflow: ellipsis;
+}
+
+[data-document-library-region] [data-library-action-group],
+[data-document-library-region] [data-library-filter-actions] {
+    align-items: stretch;
+}
+
+@media (max-width: 639px) {
+    [data-document-library-region] [data-library-action-group] > *,
+    [data-document-library-region] [data-library-filter-actions] > * {
+        width: 100%;
+    }
+
+    [data-document-library-region] [data-library-filter-actions] > * {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    body:has([data-document-library-region]) .main-content-expanded,
+    body:has([data-document-library-region]) .main-content-collapsed {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    body:has([data-document-library-region]) .sidebar {
+        top: 72px;
+        height: calc(100dvh - 72px);
+        max-width: calc(100vw - 3rem);
+        transform: translateX(-105%);
+    }
+
+    body:has([data-document-library-region]) .sidebar-expanded {
+        width: min(280px, calc(100vw - 3rem));
+        transform: translateX(0);
+    }
+
+    body:has([data-document-library-region]) .top-bar {
+        z-index: 60;
+        gap: 0.5rem;
+        padding-inline: 0.5rem;
+    }
+
+    body:has([data-document-library-region]) .top-bar > :last-child {
+        gap: 0.5rem;
+    }
+
+    body:has([data-document-library-region]) main {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    [data-document-library-region] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body:has([data-document-library-region]) main {
+        padding: 1.25rem;
+    }
+
+    [data-document-library-region] [data-library-action-group] {
+        flex-wrap: wrap;
+    }
+}
+
+/* Document preview modal is styled via the same Tailwind utility classes
+   used by the student document preview modal. */
+@media (forced-colors: active) {
+    [data-document-library-region] :where(a, button, input, select, summary):focus-visible {
+        outline-color: Highlight;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-document-library-region] *,
+    [data-document-library-region] *::before,
+    [data-document-library-region] *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Skeleton loading state shown while a folder/document view is fetched. */
+[data-document-library-region] [data-library-skeleton] {
+    display: block;
+}
+
+.document-library-skeleton-block {
+    background: #e5e7eb;
+    border-radius: 0.5rem;
+    animation: document-library-skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes document-library-skeleton-pulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .document-library-skeleton-block {
+        animation: none;
+    }
+}

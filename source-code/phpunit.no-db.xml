@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="UnitNoDatabase">
+            <directory>tests/Unit</directory>
+            <exclude>tests/Unit/CheckOrganizationPermissionMiddlewareTest.php</exclude>
+            <exclude>tests/Unit/CurrentLibraryOutputScopeTest.php</exclude>
+            <exclude>tests/Unit/DocumentAnalysisLifecycleTest.php</exclude>
+            <exclude>tests/Unit/DocumentAnalysisOrchestratorTest.php</exclude>
+            <exclude>tests/Unit/DocumentAnalysisRegistrarTest.php</exclude>
+            <exclude>tests/Unit/DocumentLibraryEntryPolicyTest.php</exclude>
+            <exclude>tests/Unit/DocumentLibraryQueryIndexesMigrationTest.php</exclude>
+            <exclude>tests/Unit/DocumentLibraryQueryServiceTest.php</exclude>
+            <exclude>tests/Unit/DocumentLibrarySourceIndexerTest.php</exclude>
+            <exclude>tests/Unit/FolderPathResolverTest.php</exclude>
+            <exclude>tests/Unit/PerformanceLoggingTest.php</exclude>
+            <exclude>tests/Unit/ReconcilePendingDocumentAnalysesCommandTest.php</exclude>
+        </testsuite>
+        <testsuite name="FeatureNoDatabase">
+            <directory>tests/Feature</directory>
+            <exclude>tests/Feature/AdminRenewUploadDocumentRegistrationTest.php</exclude>
+            <exclude>tests/Feature/ApplicantUploadDocumentRegistrationTest.php</exclude>
+            <exclude>tests/Feature/ColorPickerComponentTest.php</exclude>
+            <exclude>tests/Feature/CurrentDocumentAnalysisQueriesTest.php</exclude>
+            <exclude>tests/Feature/DocumentIntelligenceApiTest.php</exclude>
+            <exclude>tests/Feature/DocumentIntelligenceWorkflowRegressionTest.php</exclude>
+            <exclude>tests/Feature/DocumentLibrarySourceRouteTest.php</exclude>
+            <exclude>tests/Feature/OrganizationContextTest.php</exclude>
+            <exclude>tests/Feature/OrganizationSwitcherTest.php</exclude>
+            <exclude>tests/Feature/PermissionCacheInvalidationTest.php</exclude>
+            <exclude>tests/Feature/SettingsControllerTest.php</exclude>
+            <exclude>tests/Feature/SettingsRoutesTest.php</exclude>
+            <exclude>tests/Feature/SmartSearchControllerTest.php</exclude>
+            <exclude>tests/Feature/WarmPermissionCacheTest.php</exclude>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>app</directory>
+        </include>
+    </source>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <!-- Test-only key. Never reuse a deployment key here. -->
+        <env name="APP_KEY" value="base64:jL2RoeI2sjtIu9cB2laE1GXxfhl+xiB+V+FtEtFbjmU="/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <!-- Fail-closed guard: no reachable database target while the testing env gate is unmet. -->
+        <env name="DB_CONNECTION" value="pgsql" force="true"/>
+        <env name="DATABASE_URL" value="" force="true"/>
+        <env name="DB_HOST" value="database-gate-not-satisfied.invalid" force="true"/>
+        <env name="DB_PORT" value="1" force="true"/>
+        <env name="DB_DATABASE" value="database-gate-not-satisfied" force="true"/>
+        <env name="DB_USERNAME" value="database-gate-not-satisfied" force="true"/>
+        <env name="DB_PASSWORD" value="database-gate-not-satisfied" force="true"/>
+    </php>
+</phpunit>

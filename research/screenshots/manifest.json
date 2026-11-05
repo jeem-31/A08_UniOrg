@@ -1,0 +1,128 @@
+[
+  {
+    "file": "research/screenshots/osas-dashboard.webp",
+    "source": "storyboard_ss/O01_OSAS_Dashboard_Operations_Overview.png",
+    "source_sha256": "26934f1c85c39f32b8b8494d08b0aad2b8a348eceace8ed18a17efa479549812",
+    "sha256": "d32da258a443def2423433fe986f319d744aa18d5c4d5bb055ef597906e625b9",
+    "dimensions": [
+      1917,
+      1092
+    ],
+    "redactions_xyxy": [
+      [
+        1515,
+        6,
+        1815,
+        84
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  },
+  {
+    "file": "research/screenshots/accreditation.webp",
+    "source": "storyboard_ss/O04_OSAS_Accreditation_Renewal_List.png",
+    "source_sha256": "c5cc46ee5f6d079b649580909d09783f7fd3f3805188507070dcc1a9f14fb6c4",
+    "sha256": "c6c133be34b7a6c84e400ec212df833c9a43eb5815e3e7ce1dcad30f43c45df1",
+    "dimensions": [
+      1917,
+      1085
+    ],
+    "redactions_xyxy": [
+      [
+        1515,
+        6,
+        1815,
+        84
+      ],
+      [
+        892,
+        579,
+        1105,
+        613
+      ],
+      [
+        892,
+        665,
+        1105,
+        699
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  },
+  {
+    "file": "research/screenshots/master-calendar.webp",
+    "source": "storyboard_ss/O10_OSAS_MasterCalendar_MonthView.png",
+    "source_sha256": "23ec1bd22147be82a2f8eee68dcbfcb74bbb4a68e5b108f435abd08e2676e2ee",
+    "sha256": "454b78d60eaea32197ef7f8ff3ba7d659cd9aaba58d7a7825eb73902fa414e39",
+    "dimensions": [
+      1917,
+      1091
+    ],
+    "redactions_xyxy": [
+      [
+        1515,
+        6,
+        1815,
+        84
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  },
+  {
+    "file": "research/screenshots/document-library.webp",
+    "source": "storyboard_ss/O17_OSAS_DocLibrary_SOCCS_Documents.png",
+    "source_sha256": "5b9830a69da41aee84b69be698ea3a4a02f42473609fd63bc9797f06d8b6ac4d",
+    "sha256": "bcaf1e5d8965068d071d9e1678489115b7f5a7bf58e514b15ea969c367581503",
+    "dimensions": [
+      1917,
+      1087
+    ],
+    "redactions_xyxy": [
+      [
+        1500,
+        6,
+        1800,
+        85
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  },
+  {
+    "file": "research/screenshots/e-library.webp",
+    "source": "storyboard_ss/S08_Student_Library_List.png",
+    "source_sha256": "ed3f53d7e9a3cb9f8456c1a81333ce5afee0140ad41e1fcd21b20ab7bd4e9728",
+    "sha256": "f04015fd4173d852c4c07247f50b89e4ced6b9cc1e25de1b8752da3ec0da0178",
+    "dimensions": [
+      1366,
+      768
+    ],
+    "redactions_xyxy": [
+      [
+        1170,
+        0,
+        1366,
+        66
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  },
+  {
+    "file": "research/screenshots/edushare.webp",
+    "source": "storyboard_ss/S09_Student_EduShare_List.png",
+    "source_sha256": "c62c9c2becbbe0299064dec432a4ca0f3c1bf38381d241013c3554dd8c65a2d0",
+    "sha256": "a441eb420cbd7ba35f35fb27dc5079498ad75c12bdaa0e7f929d3563237acdf7",
+    "dimensions": [
+      1366,
+      768
+    ],
+    "redactions_xyxy": [
+      [
+        1170,
+        0,
+        1366,
+        66
+      ]
+    ],
+    "metadata": "No EXIF or ICC metadata retained"
+  }
+]

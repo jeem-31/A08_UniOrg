@@ -1,0 +1,2 @@
+# Preserve audited source and asset bytes across Git checkouts on every platform.
+* -text

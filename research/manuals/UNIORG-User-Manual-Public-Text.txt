@@ -1,0 +1,694 @@
+UNIORG USER MANUAL — PUBLIC TEXT DERIVATIVE
+Source: latest manuscript appendix, retrieved 2026-11-05. Embedded screenshots omitted for privacy; procedures and source figure captions preserved.
+https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing
+
+User's Manual  
+UNIORG: A CONFIGURABLE UNIVERSITY-WIDE STUDENT ORGANIZATION MANAGEMENT PLATFORM WITH OCR AND NLP FOR DOCUMENT PROCESSING AND AUTO-TAGGING
+USER'S MANUAL
+
+
+GENERAL INFORMATION
+System Overview
+UNIORG is a configurable university-wide student organization management platform developed for the Office of Student Affairs and Services (OSAS) of Laguna State Polytechnic University Santa Cruz Campus. It functions as the central workspace of 39 recognized student organizations and covers the full cycle of organization life, from accreditation and document management to events, payments, elections and communications. The platform provides role-based web portals for OSAS personnel, college deans, organization advisers and officers, as well as students. Its document pipeline combines OCR text extraction with NLP auto-tagging and AI summaries so accreditation papers and organizational records remain searchable and organized.
+Each organization is given its own configurable workspace with announcements, events calendar, payment collections, elections, e-library and EduShare folders, feedback hub and member list. Transactions follow a clear approval chain. Event proposals pass through the dean and OSAS before publishing, accreditation applications move through a guided multi-step renewal flow, while manual e-wallet payments are verified by organization admins against uploaded receipts. This keeps every record traceable, from submission up to approval.
+Authorized Use Permission
+UNIORG is a restricted university-operated system. Access to its administrative, accreditation, financial and configuration modules is strictly limited to authorized personnel of OSAS, the college deans and the designated advisers and officers of recognized student organizations. Students may only access their own records and the public or member-level functions of organizations they belong to. Access privileges are enforced through Role-Based Access Control (RBAC), so each account only sees the data and functions needed for its duties. Security policies, role assignments and accreditation period settings are restricted to OSAS administrators, and field-level users cannot alter system hierarchies. All accreditation decisions, proposal approvals, payment verifications and access events are recorded in the system logs for transparency and accountability.
+By accessing UNIORG, users agree to its terms of service and acknowledge that the system processes sensitive information, including student identification records, Certificates of Registration, accreditation documents and payment receipts. All collection and processing comply with Republic Act No. 10173, or the Data Privacy Act of 2012. Any unauthorized extraction, distribution or misuse of student data or organizational records is prohibited and subject to administrative and legal penalties.
+Points of Contact (Help Desk)
+For account issues, accreditation concerns and technical problems, users may reach the OSAS help desk through the official OSAS office of LSPU Santa Cruz Campus during office hours. Organization-level concerns such as membership, payments and event details should first be coordinated with the respective organization adviser or officers through the in-system complaints and feedback hub or announcements channel. For quick answers, the built-in chatbot and FAQ library inside each workspace provide guidance on common procedures.
+Authentication and Account Setup
+  
+
+Figure 125. This figure shows the login page of UniOrg.
+
+
+Step 1. Open the UniOrg web application in the browser.
+Step 2. Enter your ID Number (format 2025-1020 or 24-1234-5678) and your password. Use the eye icon to show or hide the password.
+Step 3. Click the Login button.
+Step 4. The system verifies your credentials and redirects you to your role-based dashboard.
+
+
+  
+
+Figure 126. This figure shows the Upload COR step of student registration in UniOrg.
+
+
+Step 1. Open the student registration page and fill out the basic account details first.
+Step 2. Proceed to the verification step and ready a clear photo or scan of your Certificate of Registration.
+Step 3. Upload the COR file in the upload slot provided.
+Step 4. Click Submit and wait for the confirmation message.
+Step 5. Your account moves to the Complete Info step once the COR is accepted.
+
+
+  
+
+Figure 127. This figure shows the Complete Info step of student registration in UniOrg.
+
+
+Step 1. From the login page, click the Register or Sign up button.
+Step 2. Upload your Certificate of Registration (COR) for student verification.
+Step 3. Fill out your personal details: First Name, Last Name, Student Number, Program, Year Level, Email Address, Contact Number, and Password.
+Step 4. Review your entries and click the Submit button.
+Step 5. A success message displays, and you can now log in to your account.
+
+
+Student Users
+  
+
+Figure 128. This figure shows the student profile edit modal of UniOrg.
+
+
+Step 1. Log in and go to your Profile page.
+Step 2. Click the Edit Profile button to open the edit modal.
+Step 3. Update your profile photo, contact number, or other personal details.
+Step 4. Click the Save button.
+Step 5. A confirmation message displays and your updated details appear on your profile.
+
+
+  
+
+Figure 129. This figure shows the student dashboard of UniOrg.
+
+
+Step 1. Log in with your student account to land on the dashboard.
+Step 2. View the summary cards for announcements, events, payments, and elections.
+Step 3. Use the sidebar to jump to any module you need.
+Step 4. Click the notifications bell to check the latest updates.
+
+
+  
+
+Figure 130. This figure shows the student announcements list of UniOrg.
+
+
+Step 1. Go to the Announcements tab to view all posted announcements.
+Step 2. Click an announcement to read its full details.
+Step 3. Check the pinned items for the most important updates.
+Step 4. Use the search or filter if you are looking for a specific post.
+
+
+  
+
+Figure 131. This figure shows the student events list of UniOrg.
+
+
+Step 1. Go to the Events tab to browse the upcoming events.
+Step 2. Use the search or filter to find an event you like.
+Step 3. Click an event to view its details and schedule.
+Step 4. Click Register to join the event.
+
+
+  
+
+Figure 132. This figure shows the student events calendar view of UniOrg.
+
+
+Step 1. Open the Events calendar view to see activities by date.
+Step 2. Switch between month and week views as needed.
+Step 3. Click an event chip on the calendar to view its details.
+Step 4. Register directly from the details shown.
+
+
+  
+
+Figure 133. This figure shows the event registration modal of UniOrg.
+
+
+Step 1. Go to the Events tab to view the list of upcoming events.
+Step 2. Click the event you want to join to view its details.
+Step 3. Click the Register button to open the registration modal.
+Step 4. Confirm your registration in the modal and click Submit.
+Step 5. Your registration is recorded and appears in your registered events list.
+
+
+  
+
+Figure 134. This figure shows the student payments list of UniOrg.
+
+
+Step 1. Go to the Payments tab to view all payables.
+Step 2. Check the amount, category, and due date of each item.
+Step 3. Select the payment you want to settle.
+Step 4. Submit your GCash payment and receipt for verification.
+
+
+  
+
+Figure 135. This figure shows the GCash payment submission of UniOrg.
+
+
+Step 1. Go to the Payments tab to view the list of payables.
+Step 2. Select the payment item and choose GCash as the payment method.
+Step 3. Send the exact amount to the displayed GCash account number.
+Step 4. Enter your GCash reference number and upload the screenshot of your receipt in the modal.
+Step 5. Click the Submit button.
+Step 6. Your payment is marked as pending until the organization admin verifies it, and you may view your receipt in the payment history.
+
+
+  
+
+Figure 136. This figure shows the student elections list of UniOrg.
+
+
+Step 1. Go to the Elections tab to view all elections.
+Step 2. Check which elections are active and which are closed.
+Step 3. Open an active election to view its positions and candidates.
+Step 4. Cast your vote within the voting period.
+
+
+  
+
+Figure 137. This figure shows the election vote casting modal of UniOrg.
+
+
+Step 1. Go to the Elections tab during the voting period to view the active election.
+Step 2. Select the position and the candidate you want to vote for.
+Step 3. Click the Vote or Cast Vote button to open the confirmation modal.
+Step 4. Review your selection and click Confirm.
+Step 5. A success message displays, and your vote is recorded. Note that each student can only vote once per position.
+
+
+  
+
+Figure 138. This figure shows the student documents page of UniOrg.
+
+
+Step 1. Open the My Documents page to view your submitted documents.
+Step 2. Check the verification status of each document.
+Step 3. Upload a new document with its type and validity details.
+Step 4. Track the status until an officer verifies it.
+
+
+  
+
+Figure 139. This figure shows the student e-library list of UniOrg.
+
+
+Step 1. Go to the E-Library tab to browse shared resources.
+Step 2. Use the search bar to find a title or topic.
+Step 3. Click a resource to preview its details.
+Step 4. Download the file if you need a copy.
+
+
+  
+
+Figure 140. This figure shows the student EduShare list of UniOrg.
+
+
+Step 1. Go to the EduShare tab to browse shared folders and files.
+Step 2. Open a folder to view its contents.
+Step 3. Use the search to locate a specific material.
+Step 4. Download the file you need.
+
+
+  
+
+Figure 141. This figure shows the new complaint submission modal of UniOrg.
+
+
+Step 1. Go to the Complaints or Feedback Hub tab.
+Step 2. Click the New Complaint or File Complaint button.
+Step 3. Fill out the subject, category, and the detailed description of your concern.
+Step 4. Attach any supporting file if needed and click Submit.
+Step 5. Your complaint is recorded and you can track its status in your complaints list.
+
+
+  Figure 142. This figure shows the student chatbot of UniOrg.
+Step 1. Open the chatbot panel from your dashboard.
+Step 2. Type your question in the chat box and send it.
+Step 3. Read the answer generated from the FAQ library.
+Step 4. Ask a follow-up or contact an officer if needed.
+Organization Admin and Officer Users (covers Adviser)
+  
+
+Figure 143. This figure shows the organization admin dashboard of UniOrg.
+
+
+Step 1. Log in with your organization admin account.
+Step 2. View the overview cards for members, events, payments, and pending items.
+Step 3. Click any card or sidebar item to manage that module.
+Step 4. Check notifications for accreditation and proposal updates.
+
+
+  
+
+Figure 144. This figure shows the accreditation renewal requester information form of UniOrg.
+
+
+Step 1. Log in as an organization admin and go to the Accreditation module.
+Step 2. Click the Renew or Apply for Accreditation button.
+Step 3. Fill out the requester information form with the organization name, school year, and contact person details.
+Step 4. Click Next to proceed to the document requirements step.
+Step 5. Complete the remaining steps: upload the required documents, upload the members list, fill out the college dean form, and encode the incoming officers.
+Step 6. Submit the application. OSAS reviews it and updates its accreditation status.
+
+
+  
+
+Figure 145. This figure shows the accreditation document requirements part 1 of UniOrg.
+
+
+Step 1. After the requester info step, click Continue to reach Document Requirements.
+Step 2. Upload each required document in its assigned slot.
+Step 3. Accepted formats are PDF, JPG, and PNG with max 10MB each.
+Step 4. Wait for the OCR and NLP processing status to complete per file.
+Step 5. Proceed to the next part once all slots are filled.
+
+
+  
+
+Figure 146. This figure shows the accreditation document requirements part 2 of UniOrg.
+
+
+Step 1. Continue with the remaining requirement slots in this part.
+Step 2. Replace any rejected file by uploading a clearer copy.
+Step 3. Check the AI summary and tags per document if displayed.
+Step 4. Click Next to move to the members list step.
+
+
+  
+
+Figure 147. This figure shows the members list upload step of accreditation renewal in UniOrg.
+
+
+Step 1. Upload the official members list file in the upload slot.
+Step 2. Verify that the encoded count matches your expected members.
+Step 3. Fix any errors in the file and re-upload if needed.
+Step 4. Click Next to proceed to the dean form step.
+
+
+  
+
+Figure 148. This figure shows the college dean form step of accreditation renewal in UniOrg.
+
+
+Step 1. Fill out the college dean certification details required.
+Step 2. Attach the signed certification file in its slot.
+Step 3. Double-check the entries for correctness.
+Step 4. Click Next to move to the officers step.
+
+
+  
+
+Figure 149. This figure shows the incoming officers step of accreditation renewal in UniOrg.
+
+
+Step 1. Encode the incoming officers with their respective positions.
+Step 2. Review the list to make sure it is complete and accurate.
+Step 3. Remove or correct any wrong entry before submitting.
+Step 4. Submit the application for OSAS review.
+
+
+  
+
+Figure 150. This figure shows the announcement creation modal of UniOrg.
+
+
+Step 1. Go to the Announcements module.
+Step 2. Click the Create or New Announcement button.
+Step 3. Enter the announcement title, details, and target audience.
+Step 4. Click the Post or Publish button.
+Step 5. The announcement is posted and appears in the announcements list of the members.
+
+
+  
+
+Figure 151. This figure shows the admin announcements list of UniOrg.
+
+
+Step 1. Go to Announcements to view all posted announcements.
+Step 2. Click an item to view or edit its contents.
+Step 3. Delete outdated posts to keep the list clean.
+Step 4. Click Create to post a new announcement.
+
+
+  
+
+Figure 152. This figure shows the payment creation modal of UniOrg.
+
+
+Step 1. Go to the Payments module.
+Step 2. Click the Create or New Payment button.
+Step 3. Enter the payment title, amount, deadline, and payment instructions.
+Step 4. Click the Save or Publish button.
+Step 5. The payable is published and members can now submit their payments for verification.
+
+
+  
+
+Figure 153. This figure shows the admin payments list of UniOrg.
+
+
+Step 1. Go to Payments to view all payment collections.
+Step 2. Track which members have paid and which are pending.
+Step 3. Open a collection to verify submitted receipts.
+Step 4. Click Create to publish a new collection.
+
+
+  
+
+Figure 154. This figure shows the admin elections list of UniOrg.
+
+
+Step 1. Go to Elections to view all elections of the organization.
+Step 2. Open an election to manage its candidates and schedule.
+Step 3. Monitor the voting progress while it is active.
+Step 4. Publish the results once voting ends.
+
+
+  
+
+Figure 155. This figure shows the election results view of UniOrg.
+
+
+Step 1. Open the finished election to view the tally.
+Step 2. Check the vote count per candidate per position.
+Step 3. Verify the winners before publishing.
+Step 4. Click Publish so members can view the results.
+
+
+  
+
+Figure 156. This figure shows the student documents management page of UniOrg.
+
+
+Step 1. Go to Documents to review submitted student documents.
+Step 2. Open each submission to check its details and file.
+Step 3. Mark it verified or return it with remarks.
+Step 4. Track the overall status in the list.
+
+
+  
+
+Figure 157. This figure shows the e-library resource upload modal of UniOrg.
+
+
+Step 1. Go to the E-Library module.
+Step 2. Click the Add or Upload Resource button.
+Step 3. Enter the resource title, type, and description, then attach the file.
+Step 4. Click the Save or Upload button.
+Step 5. The resource is saved and appears in the e-library list for members to access.
+
+
+  
+
+Figure 158. This figure shows the e-library management page of UniOrg.
+
+
+Step 1. Go to E-Library to manage shared resources.
+Step 2. Review the list of uploaded materials and their downloads.
+Step 3. Add new resources or remove outdated ones.
+Step 4. Check that members can access the published items.
+
+
+  
+
+Figure 159. This figure shows the EduShare folder creation modal of UniOrg.
+
+
+Step 1. Go to the EduShare module.
+Step 2. Click the New Folder or Create Folder button.
+Step 3. Enter the folder name and description.
+Step 4. Click the Create button.
+Step 5. The folder is created and you can now upload files into it for the members.
+
+
+  
+
+Figure 160. This figure shows the chatbot FAQ creation modal of UniOrg.
+
+
+Step 1. Go to the Chatbot or FAQ management module.
+Step 2. Click the New FAQ or Add FAQ button.
+Step 3. Enter the frequently asked question and its answer.
+Step 4. Click the Save button.
+Step 5. The FAQ is saved and the chatbot uses it when members ask related questions.
+
+
+  
+
+Figure 161. This figure shows the chatbot FAQs page of UniOrg.
+
+
+Step 1. Go to the Chatbot or FAQ page to view all entries.
+Step 2. Review the questions and answers stored.
+Step 3. Add new FAQs or update existing answers.
+Step 4. The chatbot uses these entries when members ask.
+
+
+  
+
+Figure 162. This figure shows the complaint response modal of UniOrg.
+
+
+Step 1. Go to the Complaints module to view the list of filed complaints.
+Step 2. Click a complaint to view its full details.
+Step 3. Type your response or resolution in the respond modal.
+Step 4. Click the Send or Resolve button.
+Step 5. The complainant is notified of your response and the complaint status is updated.
+
+
+  Figure 163. This figure shows the admin complaints list of UniOrg.
+Step 1. Go to Complaints to view the filed complaints queue.
+Step 2. Open a complaint to read its full details.
+Step 3. Type your response or resolution in the respond modal.
+Step 4. Send it so the complainant gets notified and the status updates.
+Dean Users
+
+
+  
+
+Figure 164. This figure shows the dean dashboard of UniOrg.
+
+
+Step 1. Log in using your dean account to land on the dean dashboard.
+Step 2. View the summary cards showing the number of organizations, members, pending proposals, and announcements in your college.
+Step 3. Use the sidebar to navigate to User Management, Content Overview, Event Proposals, or Reports.
+Step 4. Click any notification or pending item to go directly to the page that needs your action.
+
+
+  
+
+Figure 165. This figure shows the department user management list of UniOrg.
+
+
+Step 1. Go to User Management to view department users.
+Step 2. Search or filter to find a specific account.
+Step 3. Open a user to review their profile and role.
+Step 4. Update roles or deactivate accounts as needed.
+
+
+  
+
+Figure 166. This figure shows the pending event proposals list of UniOrg.
+
+
+Step 1. Go to the Event Proposals module and open the Pending tab.
+Step 2. Review the list of event proposals submitted by the organizations for approval.
+Step 3. Click a proposal to open its details and review the event information and attached documents.
+Step 4. Click Approve to endorse the proposal or Reject with your remarks.
+Step 5. The proposal status is updated and the organization is notified of your decision.
+
+
+  
+
+Figure 167. This figure shows the event proposal details modal of UniOrg.
+
+
+Step 1. From the event proposals list, click the proposal you want to review.
+Step 2. The details modal opens showing the event title, date, venue, description, and attached documents.
+Step 3. Read through the proposal and verify that the details are complete and correct.
+Step 4. Click the Approve button to endorse the event, or the Reject button with your remarks if revisions are needed.
+Step 5. A confirmation message displays and the proposal moves to its updated status.
+
+
+  Figure 168. This figure shows the registration reports web list of UniOrg.
+Step 1. Go to Reports and open the registration section.
+Step 2. Select the event to view its registrants.
+Step 3. Review the list shown on the page.
+Step 4. Export or print the report if required.
+  Figure 169. This figure shows the financial reports payments tab of UniOrg.
+Step 1. Go to Reports and open the Finance section.
+Step 2. Select the Payments tab to view collections and totals.
+Step 3. Review the figures per organization or event.
+Step 4. Export the summary for liquidation if needed.
+  Figure 170. This figure shows the content overview announcements tab of UniOrg.
+Step 1. Go to Content Overview as a dean.
+Step 2. Open the Announcements tab to monitor posts.
+Step 3. Review the content shared within your college.
+Step 4. Flag any item that needs correction by the org.
+  Figure 171. This figure shows the dean profile edit modal of UniOrg.
+Step 1. Log in as a dean and go to your Profile page.
+Step 2. Click the Edit Profile button to open the edit modal.
+Step 3. Update your profile details as needed.
+Step 4. Click the Save button.
+Step 5. A confirmation message displays and your updated details appear on your profile.
+  Figure 172. This figure shows the approved event proposals list of UniOrg.
+Step 1. Go to Event Proposals and open the Approved tab.
+Step 2. Review the proposals you already endorsed.
+Step 3. Open any item to re-check its details.
+Step 4. The organizations are notified of the approval.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OSAS Users
+  
+
+Figure 173. This figure shows the OSAS operations dashboard of UniOrg.
+
+
+Step 1. Log in with your OSAS account to view the operations dashboard.
+Step 2. Check the cards for accreditations, proposals, and organizations.
+Step 3. Click any pending item to act on it directly.
+Step 4. Use the sidebar to manage each area.
+
+
+  
+
+Figure 174. This figure shows the accreditation renewal list of UniOrg.
+
+
+Step 1. Go to Accreditation to view renewal applications.
+Step 2. Open an application to review its documents and details.
+Step 3. Approve it or return it with remarks for compliance.
+Step 4. The organization sees the updated status.
+
+
+  
+
+Figure 175. This figure shows the organization registry list of UniOrg.
+
+
+Step 1. Go to Organizations to browse the registry.
+Step 2. Search for an organization by name or college.
+Step 3. Open its profile to view accreditation and details.
+Step 4. Archive or update records as needed.
+
+
+  
+
+Figure 176. This figure shows the master calendar month view of UniOrg.
+
+
+Step 1. Go to the Master Calendar to view all events.
+Step 2. Browse the month view for university-wide activities.
+Step 3. Filter by organization or date if needed.
+Step 4. Click an event to view its full details.
+
+
+  
+
+Figure 177. This figure shows the OSAS event proposals list of UniOrg.
+
+
+Step 1. Go to Event Proposals to review submissions across organizations.
+Step 2. Open a proposal to check its documents and details.
+Step 3. Approve or return it with your remarks.
+Step 4. The organization and dean are notified.
+
+
+  
+
+Figure 178. This figure shows the analytics and reports dashboard of UniOrg.
+
+
+Step 1. Go to Analytics to view event and participation charts.
+Step 2. Review the statistics shown per college or organization.
+Step 3. Use the figures for planning and reports.
+Step 4. Export the data if a hard copy is needed.
+
+
+  
+
+Figure 179. This figure shows the document library folders list of UniOrg.
+
+
+Step 1. Go to the Document Library to browse folders per organization.
+Step 2. Open a folder to view its archived documents.
+Step 3. Use the AI summary and tags to find files fast.
+Step 4. Download any file when needed.
+
+
+  
+
+Figure 180. This figure shows the managed accounts list of UniOrg.
+
+
+Step 1. Go to Settings and open Account Management.
+Step 2. Browse the list of managed accounts.
+Step 3. Search or filter by role or college.
+Step 4. Create, update, or deactivate accounts as needed.
+
+
+  
+
+Figure 181. This figure shows the dean account creation modal of UniOrg.
+
+
+Step 1. Log in as an OSAS user and go to Settings, then Account Management.
+Step 2. Click the Create Dean or Add Dean button.
+Step 3. Enter the dean details and assign the college.
+Step 4. Click the Save button.
+Step 5. The dean account is created and appears in the accounts list.
+
+
+  
+
+Figure 182. This figure shows the accreditation expiration period setting of UniOrg.
+
+
+Step 1. Go to Settings in the OSAS panel.
+Step 2. Locate the accreditation expiration period setting.
+Step 3. Set the expiration period for the accreditation cycle.
+Step 4. Click Apply to All and Save.
+Step 5. The expiration setting is applied and is used to track the accreditation status of the organizations.
+
+
+  
+
+Figure 183. This figure shows the OSAS announcement creation modal of UniOrg.
+
+
+Step 1. Go to the Announcements module.
+Step 2. Click the Create or New Announcement button.
+Step 3. Enter the announcement title, details, and target audience.
+Step 4. Click the Post or Publish button.
+Step 5. The announcement is posted university-wide and appears in the announcements list.
+
+
+Account Settings (All Users)
+
+
+  
+
+Figure 184. This figure shows the password change form of UniOrg.
+
+
+Step 1. Go to your Profile or the Settings page.
+Step 2. Enter your current password in the old password field.
+Step 3. Enter your new password and confirm it.
+Step 4. Click the Submit or Update button.
+Step 5. Your password is updated and you can now use the new password when logging in.

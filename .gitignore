@@ -1,0 +1,40 @@
+# Private working material and tools
+.local/
+notes/
+tmp/
+reference-*.tmp.*
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+# Credentials and runtime data, at any depth
+.env
+.env.*
+!.env.example
+token.json
+client_secret*.json
+credentials.json
+auth.json
+*service-account*.json
+*.pem
+*.key
+node_modules/
+vendor/
+*.sqlite
+*.sqlite3
+*.sql.gz
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+!**/storage/logs/.gitignore
+!**/storage/framework/cache/.gitignore
+!**/storage/framework/sessions/.gitignore
+!**/storage/framework/views/.gitignore
+public/hot
+# Local tools / IDE state
+.idea/
+.vscode/
+.codex/
+.agents/
+.aws/

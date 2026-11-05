@@ -1,0 +1,507 @@
+@extends('layouts.app')
+
+@section('title', 'My Payments - SOCCSync')
+
+@section('content')
+<div class="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header Section -->
+        <div class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-2">My Payments</h1>
+                    <p class="text-gray-600">Manage and track your payment transactions</p>
+                </div>
+                <button onclick="openHistoryModal()" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg hover:shadow-lg transition-all duration-300 font-semibold">
+                    <i class="ph ph-clock-counter-clockwise mr-2"></i>Payment History
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Payment Announcements Section -->
+        @if($announcements->count() > 0)
+        <div class="mb-12">
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    <i class="ph ph-megaphone text-purple-600 mr-3"></i>Active Payment Announcements
+                </h2>
+                <p class="text-gray-600 mt-2">Click on any payment to proceed with payment</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                @foreach($announcements as $announcement)
+                    <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                        <!-- Card Header -->
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-4">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-lg font-bold text-white">{{ $announcement->title }}</h3>
+                                <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white text-purple-600">
+                                    {{ ucfirst(str_replace('_', ' ', $announcement->category)) }}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-6">
+                            <!-- Amount and Due Date -->
+                            <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-4 mb-6">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-gray-600 font-semibold">Amount:</span>
+                                    <span class="text-3xl font-bold text-purple-600">₱{{ number_format($announcement->amount, 2) }}</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-semibold">Due Date:</span>
+                                    <span class="text-sm font-semibold text-gray-700">{{ \Carbon\Carbon::parse($announcement->due_date)->format('M d, Y') }}</span>
+                                </div>
+                            </div>
+
+                            <!-- Pay Now Button -->
+                            <button type="button" class="w-full px-4 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-sm font-bold rounded-lg hover:shadow-lg transition-all duration-300 gcash-pay-btn"
+                                    data-id="{{ $announcement->id }}"
+                                    data-amount="{{ $announcement->amount }}"
+                                    data-title="{{ $announcement->title }}"
+                                    data-action="{{ route('payments.gcash', $announcement) }}"
+                                    data-gcash="{{ $announcement->gcash_number }}">
+                                <i class="ph ph-device-mobile mr-2"></i>Pay Now
+                            </button>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+        @else
+            <div class="bg-white rounded-xl shadow-md p-12 text-center">
+                <i class="ph ph-bell-slash text-gray-300 text-6xl mb-4"></i>
+                <h2 class="text-2xl font-bold text-gray-700 mb-2">No Active Payments</h2>
+                <p class="text-gray-500">There are currently no payment announcements. Please check back later.</p>
+            </div>
+        @endif
+
+    <!-- Payment History Modal -->
+<div id="historyModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-xl shadow-xl p-8 max-w-4xl w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-900">Payment History</h2>
+            <button onclick="closeHistoryModal()" class="text-gray-400 hover:text-gray-600">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Transaction ID</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Category</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Method</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    @forelse($payments as $payment)
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $payment->transaction_id }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ ucfirst(str_replace('_', ' ', $payment->category)) }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">₱{{ number_format($payment->amount, 2) }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ strtoupper($payment->payment_method) }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 text-xs rounded
+                                    {{ $payment->status === 'completed' ? 'bg-green-100 text-green-800' : '' }}
+                                    {{ $payment->status === 'pending' ? 'bg-yellow-100 text-yellow-800' : '' }}
+                                    {{ $payment->status === 'failed' ? 'bg-red-100 text-red-800' : '' }}">
+                                    {{ ucfirst($payment->status) }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $payment->created_at->format('M d, Y') }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <a href="{{ route('payments.show', $payment) }}" class="text-purple-600 hover:text-purple-900">View</a>
+                                @if($payment->receipt_path)
+                                    <a href="{{ route('payments.download-receipt', $payment) }}" class="text-green-600 hover:text-green-900 ml-2">
+                                        <i class="ph ph-download-simple"></i> Receipt
+                                    </a>
+                                @endif
+                            </td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td colspan="7" class="px-6 py-12 text-center text-gray-500">
+                                <i class="ph ph-receipt text-gray-300 text-6xl mb-4"></i>
+                                <p class="text-lg">No payment history yet</p>
+                            </td>
+                        </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-6">
+            {{ $payments->links() }}
+        </div>
+    </div>
+</div>
+
+<!-- Success Toast Notification -->
+@if(session('success'))
+<div x-data="{ show: true }"
+     x-show="show"
+     x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform translate-x-8"
+     x-transition:enter-end="opacity-100 transform translate-x-0"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform translate-x-0"
+     x-transition:leave-end="opacity-0 transform translate-x-8"
+     x-init="setTimeout(() => show = false, 4000)"
+     class="fixed top-6 right-6 z-50 bg-white border-l-4 border-green-500 rounded-lg shadow-xl px-6 py-4 flex items-center space-x-3 max-w-md"
+     style="display: none;">
+    <div class="flex-shrink-0">
+        <div class="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center">
+            <i class="ph ph-check-circle text-xl text-green-600"></i>
+        </div>
+    </div>
+    <div class="flex-1">
+        <p class="text-sm font-semibold text-gray-900">Success!</p>
+        <p class="text-sm text-gray-600">{{ session('success') }}</p>
+    </div>
+    <button @click="show = false" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition">
+        <i class="ph ph-x text-lg"></i>
+    </button>
+</div>
+@endif
+
+</div>
+<!-- GCash Payment Modal -->
+<div id="gcashModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 overflow-hidden">
+        <!-- Modal Header -->
+        <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <i class="ph ph-device-mobile text-2xl"></i>
+                    <h2 class="text-2xl font-bold">Pay with GCash</h2>
+                </div>
+                <button onclick="closeGcashModal()" class="text-green-100 hover:text-white transition">
+                    <i class="ph ph-x text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="p-8">
+            <!-- Payment Form -->
+            <form id="gcashPaymentForm" method="POST" class="gcash-form">
+                <input type="hidden" name="_token" id="csrf_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="amount" id="gcash_amount">
+                <input type="hidden" name="title" id="gcash_title">
+                <input type="hidden" name="announcement_id" id="gcash_announcement_id">
+                <input type="hidden" name="gcash_number" id="gcash_number">
+
+                <!-- Amount Display -->
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-6">
+                    <p class="text-gray-600 text-sm font-semibold mb-1">Payment Amount</p>
+                    <p class="text-3xl font-bold text-green-600" id="displayAmount">₱0.00</p>
+                </div>
+
+                <!-- GCash Number Display -->
+                <div class="bg-white border-2 border-green-500 rounded-lg p-4 mb-6">
+                    <p class="text-gray-700 text-sm font-semibold mb-2 flex items-center">
+                        <i class="ph ph-device-mobile text-green-600 mr-2"></i>Send payment to this GCash number:
+                    </p>
+                    <p class="text-2xl font-bold text-gray-900 text-center py-2" id="displayGcashNumber">09XX-XXX-XXXX</p>
+                    <p class="text-xs text-gray-600 text-center mt-2">SOCCS Official Account</p>
+                </div>
+
+                <!-- Info Box -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded">
+                    <p class="text-xs text-blue-800 mb-2"><strong>Payment Instructions:</strong></p>
+                    <ol class="text-xs text-blue-800 list-decimal list-inside space-y-1">
+                        <li>Send the exact amount to the GCash number above</li>
+                        <li>Take a screenshot of your payment confirmation</li>
+                        <li>Click "Proceed to Payment" below</li>
+                        <li>Your payment will be verified by SOCCS officers</li>
+                    </ol>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="gcashSubmitBtn" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 px-4 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="ph ph-check-circle"></i>
+                    <span>Proceed to Payment</span>
+                </button>
+            </form>
+
+            <!-- Processing Message -->
+            <div id="gcashProcessing" class="hidden text-center">
+                <div class="mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                        <i class="ph ph-spinner text-blue-600 text-4xl animate-spin"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Processing Payment...</h3>
+                <p class="text-gray-600 mb-6">Please wait while we submit your payment.</p>
+            </div>
+
+            <!-- Success Message -->
+            <div id="gcashSuccess" class="hidden text-center">
+                <div class="mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                        <i class="ph ph-check-circle text-green-600 text-4xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Payment Initiated!</h3>
+                <p class="text-gray-600 mb-6">Your payment has been submitted and is now pending verification by SOCCS officers.</p>
+                <button onclick="handlePaymentDone()" class="w-full bg-purple-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-purple-700 transition">
+                    <i class="ph ph-check mr-2"></i>Done
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openGcashModal(amount, title, announcementId, gcashNumber) {
+    const modal = document.getElementById('gcashModal');
+    const form = document.getElementById('gcashPaymentForm');
+    const successDiv = document.getElementById('gcashSuccess');
+    const processingDiv = document.getElementById('gcashProcessing');
+
+    modal.classList.remove('hidden');
+    document.getElementById('gcash_amount').value = amount;
+    document.getElementById('gcash_title').value = title;
+    document.getElementById('gcash_announcement_id').value = announcementId;
+    document.getElementById('gcash_number').value = gcashNumber || '09XX-XXX-XXXX';
+    document.getElementById('displayAmount').textContent = '₱' + parseFloat(amount).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('displayGcashNumber').textContent = gcashNumber || '09XX-XXX-XXXX';
+    successDiv.classList.add('hidden');
+    processingDiv.classList.add('hidden');
+    form.classList.remove('hidden');
+}
+
+function closeGcashModal() {
+    document.getElementById('gcashModal').classList.add('hidden');
+    document.getElementById('gcashPaymentForm').reset();
+    document.getElementById('gcashSuccess').classList.add('hidden');
+    document.getElementById('gcashProcessing').classList.add('hidden');
+}
+
+function openHistoryModal() {
+    document.getElementById('historyModal').classList.remove('hidden');
+}
+
+function closeHistoryModal() {
+    document.getElementById('historyModal').classList.add('hidden');
+}
+
+function handlePaymentDone() {
+    // Get payment details from session storage (set during redirect)
+    const paymentData = sessionStorage.getItem('pendingPaymentData');
+
+    if (!paymentData) {
+        alert('Payment data not found. Please try again.');
+        closeGcashModal();
+        return;
+    }
+
+    const data = JSON.parse(paymentData);
+    const csrfToken = document.getElementById('csrf_token').value;
+
+    // Submit payment to mark as completed
+    fetch(`/payments/${data.announcement_id}/complete`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': csrfToken,
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            amount: parseFloat(data.amount),
+            title: data.title
+        })
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            // Clear pending payment data
+            sessionStorage.removeItem('pendingPaymentData');
+            // Store success message for toast after reload
+            sessionStorage.setItem('paymentSuccess', result.message || 'Payment submitted successfully!');
+            closeGcashModal();
+            location.reload();
+        } else {
+            throw new Error(result.message || 'Payment failed');
+        }
+    })
+    .catch(error => {
+        alert('Error completing payment: ' + error.message);
+        closeGcashModal();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // GCash Payment Button Listeners
+    document.querySelectorAll('.gcash-pay-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const announcementId = this.dataset.id;
+            const gcashNumber = this.dataset.gcash || '09XX-XXX-XXXX';
+            openGcashModal(this.dataset.amount, this.dataset.title, announcementId, gcashNumber);
+        });
+    });
+
+    // GCash Form Submit Handler
+    const gcashForm = document.getElementById('gcashPaymentForm');
+    if (gcashForm) {
+        gcashForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const amount = document.getElementById('gcash_amount').value;
+            const title = document.getElementById('gcash_title').value;
+            const announcementId = document.getElementById('gcash_announcement_id').value;
+
+            if (!amount || !title || !announcementId) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            // Show processing message
+            document.getElementById('gcashPaymentForm').classList.add('hidden');
+            document.getElementById('gcashProcessing').classList.remove('hidden');
+
+            // Create checkout session via backend
+            const csrfToken = document.getElementById('csrf_token').value;
+
+            fetch('{{ route("payments.create-checkout") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken,
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    amount: parseFloat(amount),
+                    title: title,
+                    announcement_id: announcementId
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.error || 'Payment processing failed');
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.checkout_url) {
+                    // Redirect to PayMongo checkout (or mock success page)
+                    window.location.href = data.checkout_url;
+                } else {
+                    throw new Error(data.error || 'No checkout URL received');
+                }
+            })
+            .catch(error => {
+                document.getElementById('gcashProcessing').classList.add('hidden');
+                document.getElementById('gcashPaymentForm').classList.remove('hidden');
+                alert('Error: ' + error.message);
+            });
+        });
+    }
+
+    // Check if returning from PayMongo payment - open modal immediately
+    @if(session('payment_success'))
+        // Store payment data in session storage for Done button
+        const paymentData = {
+            announcement_id: '{{ session("payment_data")["announcement_id"] ?? "" }}',
+            amount: '{{ session("payment_data")["amount"] ?? "" }}',
+            title: '{{ session("payment_data")["title"] ?? "" }}',
+            category: '{{ session("payment_data")["category"] ?? "" }}'
+        };
+
+        sessionStorage.setItem('pendingPaymentData', JSON.stringify(paymentData));
+
+        // Force modal to show with a slight delay to ensure DOM is ready
+        setTimeout(function() {
+            const gcashModal = document.getElementById('gcashModal');
+            const gcashForm = document.getElementById('gcashPaymentForm');
+            const gcashProcessing = document.getElementById('gcashProcessing');
+            const gcashSuccess = document.getElementById('gcashSuccess');
+
+            console.log('Modal elements found:', {
+                modal: !!gcashModal,
+                form: !!gcashForm,
+                processing: !!gcashProcessing,
+                success: !!gcashSuccess
+            });
+
+            if (gcashModal && gcashForm && gcashProcessing && gcashSuccess) {
+                console.log('Opening modal...');
+
+                // Force display with inline style and remove hidden class
+                gcashModal.style.display = 'flex';
+                gcashModal.classList.remove('hidden');
+
+                gcashForm.style.display = 'none';
+                gcashForm.classList.add('hidden');
+
+                gcashProcessing.style.display = 'none';
+                gcashProcessing.classList.add('hidden');
+
+                gcashSuccess.style.display = 'block';
+                gcashSuccess.classList.remove('hidden');
+
+                console.log('Modal opened! Styles:', {
+                    modalDisplay: gcashModal.style.display,
+                    formDisplay: gcashForm.style.display,
+                    processingDisplay: gcashProcessing.style.display,
+                    successDisplay: gcashSuccess.style.display
+                });
+            } else {
+                console.error('Some modal elements not found!');
+            }
+        }, 100);
+    @endif
+
+    // Check for payment completion success message
+    const paymentSuccessMsg = sessionStorage.getItem('paymentSuccess');
+    if (paymentSuccessMsg) {
+        sessionStorage.removeItem('paymentSuccess');
+        // Create and show success toast
+        const toast = document.createElement('div');
+        toast.setAttribute('x-data', '{ show: true }');
+        toast.setAttribute('x-show', 'show');
+        toast.setAttribute('x-init', 'setTimeout(() => show = false, 4000)');
+        toast.className = 'fixed top-6 right-6 z-50 bg-white border-l-4 border-green-500 rounded-lg shadow-xl px-6 py-4 flex items-center space-x-3 max-w-md';
+        toast.innerHTML = `
+            <div class="flex-shrink-0">
+                <div class="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <i class="ph ph-check-circle text-xl text-green-600"></i>
+                </div>
+            </div>
+            <div class="flex-1">
+                <p class="text-sm font-semibold text-gray-900">Success!</p>
+                <p class="text-sm text-gray-600">${paymentSuccessMsg}</p>
+            </div>
+            <button onclick="this.parentElement.remove()" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition">
+                <i class="ph ph-x text-lg"></i>
+            </button>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 4500);
+    }
+
+    // Close modals when clicking outside
+    window.addEventListener('click', function(event) {
+        const gcashModal = document.getElementById('gcashModal');
+        const historyModal = document.getElementById('historyModal');
+
+        if (event.target === gcashModal) {
+            closeGcashModal();
+        }
+        if (event.target === historyModal) {
+            closeHistoryModal();
+        }
+    });
+});
+</script>
+
+@endsection

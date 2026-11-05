@@ -1,0 +1,363 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    AI SYSTEM CONFIGURATION - UniOrg
+═══════════════════════════════════════════════════════════════════════════════
+
+📅 Last Updated: Aug 2, 2026
+🔧 Status: Active & Configured
+
+═══════════════════════════════════════════════════════════════════════════════
+                        AVAILABLE PROCESSING MODES
+═══════════════════════════════════════════════════════════════════════════════
+
+1. RULE-BASED (No AI) ⚙️
+   - Pure PHP logic
+   - Pattern matching
+   - No external API required
+   - Fast & Free
+   - Status: ✅ ACTIVE
+
+2. GOOGLE GEMINI 🤖
+   - AI-powered text analysis
+   - Smart document classification
+   - Auto-tagging
+   - Entity extraction
+   - Status: ✅ ACTIVE
+
+3. GOOGLE CLOUD ☁️
+   - Google Cloud Vision (OCR)
+   - Google Cloud Natural Language (NLP)
+   - Entity extraction
+   - Sentiment analysis
+   - Status: ✅ ACTIVE
+
+═══════════════════════════════════════════════════════════════════════════════
+                        REMOVED/DEPRECATED MODES
+═══════════════════════════════════════════════════════════════════════════════
+
+❌ HUGGING FACE - Removed (Not used)
+❌ HYBRID MODE - Removed (Required Hugging Face)
+❌ VERTEX AI - Removed (Aug 2, 2026; 403 billing block + nag-trigger ng 30s production timeout). app/Services/VertexAIService.php deleted; Gemini na ang primary parser, deterministic bilang safety net.
+
+═══════════════════════════════════════════════════════════════════════════════
+                        ENVIRONMENT VARIABLES (.env)
+═══════════════════════════════════════════════════════════════════════════════
+
+# Google Cloud Vision API
+GOOGLE_CLOUD_VISION_ENABLED=true
+GOOGLE_CLOUD_NLP_ENABLED=true
+GOOGLE_CLOUD_PROJECT_ID=
+GOOGLE_CLOUD_KEY_FILE=
+GOOGLE_APPLICATION_CREDENTIALS=
+GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY=
+
+# Google Gemini API (2026: AQ.Ab = bagong Auth key format; AIzaSy Standard keys i-reject na simula Sept 2026)
+GOOGLE_GEMINI_API_KEY=
+# Model (Aug 2026, bagong account): gemini-flash-latest ang gumana. 1.5-flash=404 deprecated, 2.0/2.5-flash=wala sa free tier.
+# Certification of Officers prefill = AI-first smart hybrid (Vertex AI REMOVED Aug 2, 2026):
+#   - Gemini ang PRIMARY parser (parseWithGemini, Gemini-only, text cap 30K chars), deterministic fixed-layout parser = safety net.
+#   - Smart hybrid skip: set_time_limit(120); kapag deterministikong kumpleto (completed, walang warnings, may dean+2 advisers)
+#     → SKIP ang AI block → instant 0.1–0.3s, zero Gemini calls para sa standard PDFs.
+#   - Kapag may kulang: Gemini pumupuno lang sa empty slots via CertificationOfOfficersPrefillMerger (AI-first agreement semantics),
+#     anti-hallucination guard (plausiblyInSource: lahat ng last-name tokens + ≥1 first/middle token dapat nasa source text).
+#     Envelope may data_source: fixed|ai|merged|none.
+
+═══════════════════════════════════════════════════════════════════════════════
+                        RULE-BASED PROCESSING LOGIC
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 File: app/Services/DocumentProcessorService.php
+
+DOCUMENT TYPE DETECTION RULES:
+────────────────────────────────────────────────────────────────────────────────
+
+1. FINANCIAL REPORT
+   Keywords: financial report, treasurer, budget, expenses, income
+   Patterns: Amount patterns, financial terms
+
+2. ACCOMPLISHMENT REPORT
+   Keywords: accomplishment, activities conducted, achievements
+   Patterns: Date ranges, activity lists
+
+3. CERTIFICATE
+   Keywords: certificate, certify, hereby certifies
+   Patterns: Formal certification language
+
+4. MEMORANDUM
+   Keywords: memorandum, memo, to:, from:, subject:
+   Patterns: Memo header format
+
+5. LETTER
+   Keywords: dear, sincerely, respectfully
+   Patterns: Letter salutations
+
+6. MINUTES OF MEETING
+   Keywords: minutes, meeting, attendees, agenda
+   Patterns: Meeting structure
+
+7. PROPOSAL
+   Keywords: proposal, project proposal, objectives
+   Patterns: Proposal sections
+
+8. RESOLUTION
+   Keywords: resolution, whereas, resolved
+   Patterns: Resolution format
+
+9. CONSTITUTION
+   Keywords: constitution, article, section, bylaws
+   Patterns: Legal document structure
+
+10. PLAN OF ACTIVITIES
+    Keywords: plan of activities, schedule, timeline
+    Patterns: Activity schedules
+
+═══════════════════════════════════════════════════════════════════════════════
+                        KEY INFORMATION EXTRACTION RULES
+═══════════════════════════════════════════════════════════════════════════════
+
+ORGANIZATION NAME:
+- Pattern: /organization[:\s]+([A-Z][A-Za-z\s&]+)/i
+- Pattern: /([A-Z][A-Za-z\s&]+)\s+Organization/i
+- Pattern: /Student\s+Organization[:\s]+([A-Z][A-Za-z\s&]+)/i
+
+SCHOOL YEAR:
+- Pattern: /S\.?Y\.?\s*(\d{4}[-–]\d{4})/i
+- Pattern: /School\s+Year[:\s]+(\d{4}[-–]\d{4})/i
+- Pattern: /Academic\s+Year[:\s]+(\d{4}[-–]\d{4})/i
+
+SEMESTER:
+- Pattern: /(First|Second|Summer|1st|2nd)\s+Semester/i
+
+DATE:
+- Pattern: /Date[:\s]+([A-Za-z]+\s+\d{1,2},?\s+\d{4})/i
+- Pattern: /(\d{1,2}\/\d{1,2}\/\d{4})/
+- Pattern: /([A-Za-z]+\s+\d{1,2},?\s+\d{4})/
+
+AMOUNT (Financial):
+- Pattern: /(?:PHP|₱|Php)\s*[\d,]+\.?\d*/
+- Pattern: /Total[:\s]+(?:PHP|₱)?\s*[\d,]+\.?\d*/i
+
+PRESIDENT:
+- Pattern: /President[:\s]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i
+
+ADVISER:
+- Pattern: /Adviser[:\s]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i
+
+═══════════════════════════════════════════════════════════════════════════════
+                        AUTO-TAGGING RULES
+═══════════════════════════════════════════════════════════════════════════════
+
+TAG GENERATION PRIORITY:
+
+1. DOCUMENT TYPE (Always included)
+   - Financial Report
+   - Accomplishment Report
+   - Certificate
+   - etc.
+
+2. ORGANIZATION NAME (If found)
+   - Extracted from document text
+   - Cleaned and normalized
+
+3. SCHOOL YEAR (If found)
+   - Format: 2023-2024
+   - Extracted from patterns
+
+4. SEMESTER (If found)
+   - First Semester
+   - Second Semester
+   - Summer
+
+5. FINANCIAL KEYWORDS (For financial docs)
+   - Budget
+   - Expenses
+   - Income
+   - Financial
+
+6. ACTIVITY KEYWORDS (For activity docs)
+   - Activities
+   - Events
+   - Programs
+
+7. ACADEMIC KEYWORDS
+   - Academic
+   - Student
+   - Organization
+
+TAG LIMITS:
+- Maximum: 10 tags per document
+- Minimum: 3 tags (document type + 2 others)
+- Duplicates: Automatically removed
+
+═══════════════════════════════════════════════════════════════════════════════
+                        GEMINI AI PROCESSING
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 File: app/Services/GeminiDocumentProcessor.php
+
+MODEL: gemini-flash-latest (Free tier, AQ. auth key)
+API ENDPOINT: https://generativelanguage.googleapis.com/v1beta
+
+PROCESSING STEPS:
+
+1. OCR EXTRACTION
+   - Extract text from PDF/Image
+   - Clean and normalize text
+
+2. AI ANALYSIS (Gemini)
+   - Document type classification
+   - Key information extraction
+   - Entity recognition
+   - Summary generation
+
+3. TAG GENERATION
+   - AI-generated tags
+   - Context-aware tagging
+   - Relevance scoring
+
+PROMPT STRUCTURE:
+────────────────────────────────────────────────────────────────────────────────
+Analyze this document and extract:
+1. Document type
+2. Organization name
+3. School year
+4. Key dates
+5. Important entities
+6. Summary (2-3 sentences)
+7. Relevant tags (5-10 tags)
+
+Return as JSON format.
+────────────────────────────────────────────────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════════════════
+                        GOOGLE CLOUD PROCESSING
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 File: app/Services/GoogleCloudVisionService.php
+📂 File: app/Services/GoogleCloudNLPService.php
+
+SERVICES USED:
+
+1. GOOGLE CLOUD VISION
+   - Document Text Detection (OCR)
+   - High accuracy (98%+)
+   - Handles handwriting
+   - Multi-language support
+   - Confidence Score: 0-100% (converted from 0.0-1.0 decimal)
+
+2. GOOGLE CLOUD NATURAL LANGUAGE (PRIMARY FOR AUTO-TAGGING)
+   - Entity extraction (PRIMARY USE)
+   - Sentiment analysis
+   - Syntax analysis
+   - Content classification
+
+ENTITY TYPES EXTRACTED:
+- PERSON (Type 1) - Names of people
+- LOCATION (Type 2) - Places, addresses
+- ORGANIZATION (Type 3) - Institutions, org names (PRIORITIZED FOR TAGS)
+- EVENT (Type 4) - Activities, events
+- WORK_OF_ART (Type 5)
+- CONSUMER_GOOD (Type 6)
+- OTHER (Type 7)
+
+SALIENCE THRESHOLD: 0.1
+- Only entities with salience > 0.1 are included
+- Salience = importance/relevance score (0.0 to 1.0)
+- Higher salience = more important to document
+
+AUTO-TAGGING FLOW WITH NLP:
+1. Google Cloud Vision extracts text (OCR)
+2. Google Cloud NLP extracts entities from text
+3. Gemini analyzes document and generates AI tags
+4. Tags combined using priority system:
+   - Priority 1: AI-generated tags from Gemini (MAIN)
+   - Priority 2: Document type
+   - Priority 3: Organization name
+   - Priority 4: School year
+   - Priority 5: High-salience entities from NLP (salience > 0.1)
+5. Final tags limited to 10 maximum
+
+ENTITY FILTERING FOR TAGS:
+- Organizations (Type 3) prioritized
+- Generic entities filtered out (e.g., "Republic", "Province", "OFFICE")
+- Duplicates removed automatically
+- Only adds entities if less than 8 tags already
+
+═══════════════════════════════════════════════════════════════════════════════
+                        FILE LOCATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTROLLERS:
+├── app/Http/Controllers/Osas/DocumentProcessorController.php
+│   └── Main controller for document processing
+
+SERVICES:
+├── app/Services/DocumentProcessorService.php (Rule-based)
+├── app/Services/GeminiService.php (Gemini API wrapper)
+├── app/Services/GeminiDocumentProcessor.php (Gemini processing)
+├── app/Services/GoogleCloudVisionService.php (Vision API)
+├── app/Services/GoogleCloudNLPService.php (NLP API)
+└── app/Services/OcrService.php (OCR utilities)
+
+CREDENTIALS:
+└── storage/app/google-cloud/credentials.json (Service account)
+
+CONFIGURATION:
+└── .env (Environment variables)
+
+═══════════════════════════════════════════════════════════════════════════════
+                        USAGE EXAMPLES
+═══════════════════════════════════════════════════════════════════════════════
+
+1. RULE-BASED PROCESSING:
+   POST /osas/document-processor/process
+   Body: {
+     document: [file],
+     processing_mode: "rule_based"
+   }
+
+2. GEMINI AI PROCESSING:
+   POST /osas/document-processor/process
+   Body: {
+     document: [file],
+     processing_mode: "gemini"
+   }
+
+3. GOOGLE CLOUD PROCESSING:
+   POST /osas/document-processor/process
+   Body: {
+     document: [file],
+     processing_mode: "google_cloud"
+   }
+
+═══════════════════════════════════════════════════════════════════════════════
+                        PERFORMANCE COMPARISON
+═══════════════════════════════════════════════════════════════════════════════
+
+MODE            SPEED       ACCURACY    COST        BEST FOR
+────────────────────────────────────────────────────────────────────────────────
+Rule-Based      ⚡⚡⚡       ⭐⭐⭐      FREE        Simple documents
+Gemini AI       ⚡⚡        ⭐⭐⭐⭐⭐   FREE*       Complex analysis
+Google Cloud    ⚡          ⭐⭐⭐⭐⭐   PAID**      High accuracy OCR
+
+* Free tier: 15 requests/minute
+** Free tier: 1,000 units/month
+
+═══════════════════════════════════════════════════════════════════════════════
+                        TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+ERROR: "Google Cloud Vision is not enabled"
+FIX: Set GOOGLE_CLOUD_VISION_ENABLED=true in .env
+
+ERROR: "Google Gemini API key not configured"
+FIX: Add GOOGLE_GEMINI_API_KEY to .env
+
+ERROR: "Credentials file not found"
+FIX: Ensure storage/app/google-cloud/credentials.json exists
+
+ERROR: "SSL verification failed"
+FIX: Already handled with 'verify' => false in development
+
+═══════════════════════════════════════════════════════════════════════════════
+                        END OF DOCUMENT
+═══════════════════════════════════════════════════════════════════════════════

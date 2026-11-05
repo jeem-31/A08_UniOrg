@@ -1,0 +1,54 @@
+{
+  "source_palette": "UniOrg login/OSAS, confirmed branch 1cbf524",
+  "checks": [
+    {
+      "role": "body text",
+      "foreground": "#172b4d",
+      "background": "#F9FBFF",
+      "contrast": 13.61,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "role": "secondary text",
+      "foreground": "#52627b",
+      "background": "#F9FBFF",
+      "contrast": 5.98,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "role": "hero title",
+      "foreground": "#F9FBFF",
+      "background": "#26488C",
+      "contrast": 8.49,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "role": "hero gold text",
+      "foreground": "#f2d99e",
+      "background": "#26488C",
+      "contrast": 6.36,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "role": "gold button text",
+      "foreground": "#14233e",
+      "background": "#C4973B",
+      "contrast": 5.85,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "role": "large gold results",
+      "foreground": "#C4973B",
+      "background": "#1a3461",
+      "contrast": 4.59,
+      "minimum": 3,
+      "passed": true
+    }
+  ],
+  "visual_review": "pending browser access"
+}
