@@ -6,7 +6,7 @@ Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jee
 
 - [x] Original research AGENTS.md, notes/memory.md and recent session-log.md read.
 - [x] Existing workspace inspected; no existing project work overwritten.
-- [x] Local Git repository initialized with main.
+- [x] Local Git repository initialized with main and origin configured to the researcher-supplied submission repository.
 - [x] Researcher-supplied submission repository is accessible; no existing remote branches were present before upload preparation.
 - [x] Required folders, index.html, CSS/JS/assets, README.md, .gitignore and .nojekyll created.
 - [x] Reference AgeSense website and repository README inspected; original UNIORG design/content created.
@@ -62,8 +62,9 @@ Browser review resumed after the user requested continuation. Computer Use then 
 ## GitHub and submission actions
 
 - [x] User supplied the target submission repository for upload preparation.
+- [x] User explicitly approved pushing the reviewed submission package on 2026-11-05.
 - [x] Repository URL recorded above.
-- [ ] Reviewed local package uploaded to main and remote commit verified.
+- [x] Reviewed local package uploaded to main; initial accepted commit d4809ed4fa8b769a66d1fda0bf3e16bf0d28e609 independently verified with git ls-remote.
 - [ ] User authorizes GitHub Pages publication.
 - [ ] Pages configured from main, / (root); actual deployed URL recorded.
 - [ ] Deployed website checked at its GitHub Pages project path on desktop and mobile.

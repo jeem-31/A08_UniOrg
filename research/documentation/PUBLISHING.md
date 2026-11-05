@@ -1,6 +1,6 @@
 # GitHub and GitHub Pages
 
-The researchers selected [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) as the submission repository. It was accessible with no remote branches before the initial upload preparation. GitHub Pages and the submission form remain pending.
+The researchers selected [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) as the submission repository and explicitly approved uploading the reviewed package. The initial accepted main commit, `d4809ed4fa8b769a66d1fda0bf3e16bf0d28e609`, was verified on GitHub on 2026-11-05. GitHub Pages, collaborator access and the submission form remain pending separate instructions.
 
 ## Before publication
 

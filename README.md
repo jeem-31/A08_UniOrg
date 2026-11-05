@@ -7,7 +7,7 @@ Adviser: **Rachiel R. Rivano, PhD**
 Laguna State Polytechnic University – Santa Cruz Campus · College of Computer Studies  
 BS Information Technology, Web and Mobile Application Development · Client: Office of Student Affairs and Services (OSAS)
 
-This local repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript was supplied by the researchers through [Google Docs](https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing). The current source is confirmed as branch Modification_based_Mia, pinned to 1cbf524; its complete sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
+This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript was supplied by the researchers through [Google Docs](https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing). The current source is confirmed as branch Modification_based_Mia, pinned to 1cbf524; its complete sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
 
 ## Preview the website
 
@@ -71,7 +71,7 @@ Run `python scripts/package_submission.py` to create a ZIP in ignored `.local/re
 
 ## Publish with GitHub Pages
 
-The selected submission repository is [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg). Publish **main → / (root)** through Settings → Pages → Deploy from a branch when publication is authorized. See [the detailed procedure](research/documentation/PUBLISHING.md). Pages publication, collaborator access and form submission remain pending.
+The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) after explicit researcher approval on 2026-11-05; the remote commit was verified. Publish **main → / (root)** through Settings → Pages → Deploy from a branch when publication is authorized. See [the detailed procedure](research/documentation/PUBLISHING.md). Pages publication, collaborator access and form submission remain pending.
 
 | Submission field | Status |
 | --- | --- |

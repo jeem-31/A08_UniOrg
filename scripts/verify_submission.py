@@ -8,7 +8,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {'.local', '.git', '__pycache__'}
+EXCLUDED = {'.local', '.git', 'notes', '__pycache__'}
 
 
 class Page(HTMLParser):
@@ -43,7 +43,7 @@ for current, directories, names in os.walk(ROOT, followlinks=False):
             if folder != ROOT:
                 errors.append(f'Nested Git directory: {path.relative_to(ROOT)}')
             directories.remove(name)
-        elif name in {'.local', '__pycache__'}:
+        elif name in {'.local', 'notes', '__pycache__'}:
             directories.remove(name)
     files.extend(folder / name for name in names)
 pages = {p: Page(p) for p in files if p.suffix == '.html' and 'source-code' not in p.relative_to(ROOT).parts}
