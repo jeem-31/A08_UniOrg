@@ -1,0 +1,171 @@
+{
+  "verified_date": "2026-11-05",
+  "website_url": "https://jeem-31.github.io/A08_UniOrg/",
+  "deployment_run": "https://github.com/jeem-31/A08_UniOrg/actions/runs/42046589407",
+  "deployed_commit": "7beb60a16015eda02d81735e4bf5e7ac0fbc4a44",
+  "checked_urls": 32,
+  "errors": [],
+  "browser_visual_and_interactive_checks": "pending; HTTP checks do not replace browser QA",
+  "checks": [
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/README.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/SUBMISSION_CHECKLIST.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/assets/css/style.css",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/assets/images/mark.svg",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/assets/js/main.js",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/index.html",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/conceptual-framework.png",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/index.html",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/proposed-accreditation.png",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/system-architecture.png",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/system-context.png",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/diagrams/use-case.png",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/CONTENT_SOURCES.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/LEGACY_SOURCE_REVIEW.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/MATERIALS_INVENTORY.json",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/PUBLISHING.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/RESULTS.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/SOURCE_PROVENANCE.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/VERIFICATION.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/documentation/index.html",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/manuals/UNIORG-User-Manual-Public-Text.txt",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/manuals/index.html",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/manuscript/UNIORG-Manuscript-Public-Text.txt",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/README.md",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/accreditation.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/document-library.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/e-library.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/edushare.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/master-calendar.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/research/screenshots/osas-dashboard.webp",
+      "status": 200,
+      "matches_local_bytes": true
+    },
+    {
+      "url": "https://jeem-31.github.io/A08_UniOrg/source-code/README.md",
+      "status": 200,
+      "matches_local_bytes": true
+    }
+  ]
+}

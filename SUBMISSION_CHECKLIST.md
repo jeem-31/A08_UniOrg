@@ -1,6 +1,6 @@
 # UNIORG submission checklist
 
-Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jeem-31/A08_UniOrg as the submission repository. GitHub Pages publication, collaborator invitation and form submission remain pending separate instructions.
+Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jeem-31/A08_UniOrg as the submission repository and configured GitHub Pages from main/root. The deployed site is verified available. Collaborator invitation and form submission remain pending separate instructions.
 
 ## Verified
 
@@ -30,12 +30,13 @@ Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jee
 - [x] Official process-local Imagick runtime loaded; lockfile platform checks and isolated Composer dependency installation passed without changing system PHP settings.
 - [x] Existing pure-unit PHP test selection executed: 158 tests, 155 passed and 3 unresolved failures documented. This does not mark the PHP suite as passed.
 - [x] Initial desktop hero observed; subtitle contrast and malformed link arrows corrected in files. Post-fix review remains pending.
-- [x] Clean local ZIP packaging script added with source-hash, ZIP CRC and per-file hash validation; no external publication.
+- [x] Clean local ZIP packaging script added with source-hash, ZIP CRC and per-file hash validation.
 
 - [x] Website palette aligned with confirmed UniOrg login/OSAS blue, navy, gold and off-white colors; six sampled contrast checks passed.
 
 ## Pending verification
 
+- [ ] Upstream credential owner revokes/rotates the Google API key found in original source documentation; the submission copy removes it.
 - [ ] Resolve/review the three upstream SupportedDocumentCatalog contract failures; provision a disposable PostgreSQL database for migration, database-test and end-to-end verification.
 - [ ] Desktop browser visual review of hero, text, diagrams, gallery and results.
 - [ ] Mobile review at approximately 390px and narrow 320px widths; check no horizontal overflow.
@@ -54,7 +55,7 @@ Browser review resumed after the user requested continuation. Computer Use then 
 | Confirmed system source | https://github.com/zorojuro0101/-UniOrg/tree/Modification_based_Mia — commit 1cbf524b77947010041bf3fdbdbbfd7412e06176 |
 | Submission repository owner/name | jeem-31/A08_UniOrg |
 | Repository URL | https://github.com/jeem-31/A08_UniOrg |
-| GitHub Pages URL | Pending authorized publication |
+| GitHub Pages URL | https://jeem-31.github.io/A08_UniOrg/ — HTTP 200 verified |
 | Live system URL | Official link not supplied/confirmed |
 | Demo video URL | Not supplied |
 | Designated submission Google Form | Link not yet supplied |
@@ -65,8 +66,9 @@ Browser review resumed after the user requested continuation. Computer Use then 
 - [x] User explicitly approved pushing the reviewed submission package on 2026-11-05.
 - [x] Repository URL recorded above.
 - [x] Reviewed local package uploaded to main; initial accepted commit d4809ed4fa8b769a66d1fda0bf3e16bf0d28e609 independently verified with git ls-remote.
-- [ ] User authorizes GitHub Pages publication.
-- [ ] Pages configured from main, / (root); actual deployed URL recorded.
+- [x] Researcher enabled GitHub Pages; initial build requested during deployment troubleshooting.
+- [x] Pages configured from main, / (root); actual deployed URL recorded.
+- [x] Pages build and deployment succeeded; 32 deployed pages/assets/downloads returned HTTP 200 and matched local bytes. See research/documentation/PAGES_VERIFICATION.json.
 - [ ] Deployed website checked at its GitHub Pages project path on desktop and mobile.
 - [ ] User authorizes repository access invitation for GitHub account **teamccs-git**.
 - [ ] teamccs-git access confirmed.
@@ -74,5 +76,4 @@ Browser review resumed after the user requested continuation. Computer Use then 
 - [ ] User explicitly authorizes final form submission.
 - [ ] Submission receipt/confirmation recorded after actual submission.
 
-Follow research/documentation/PUBLISHING.md when publication is authorized. Do not infer a repository URL, Pages URL or submission status from naming conventions.
-- [ ] Upstream credential owner revokes/rotates the Google API key found in original source documentation; the submission copy removes it.
+Follow research/documentation/PUBLISHING.md for deployment details. Repository and Pages URLs above have been verified; collaborator access and form submission are not implied by publication.

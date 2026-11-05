@@ -24,7 +24,11 @@ The offline verifier output is recorded in LOCAL_CHECK_RESULTS.json after the fi
 - The default PHP does not enable Imagick. A process-local official Imagick runtime now passes all platform requirements, and locked Composer installation completed in the ignored verification copy. The 18-file pure-unit run produced 155 passes and 3 catalog-contract failures from 158 tests; the supplied no-db suite stopped at a RefreshDatabase test against the unreachable guard. No complete database/integration/runtime suite is claimed. Details: BACKEND_VERIFICATION.md and BACKEND_UNIT_RESULTS.json. PostgreSQL migration/bootstrap, cloud APIs and end-to-end operation remain unverified; Docker has no running daemon.
 - No OCR accuracy/time-saving/load/security guarantee independently measured. Research results are manuscript-reported controlled-test and acceptance findings.
 - Full paginated/signed manuscript remains outside the public package because appendices contain private material. The public text derivative and original Google Doc link are provided. Restricted academic submission of an approved PDF remains for researcher review.
-- Official live system, demo video, new submission repository, Pages deployment and Google Form links are not confirmed. Missing entries remain explicit; no working destination is invented.
+- Official live system, demo video and Google Form links are not confirmed. The submission repository and research website URLs are now verified; deploying the static research website does not deploy the Laravel system.
+
+## GitHub Pages deployment
+
+The researcher enabled main/root publishing. An explicit build request resolved the missing initial build. The first pages build and deployment run succeeded: https://github.com/jeem-31/A08_UniOrg/actions/runs/42046589407. The live website is https://jeem-31.github.io/A08_UniOrg/. All 32 checked pages, styles/scripts, images and public text downloads returned HTTP 200 and matched local bytes. Full results are in PAGES_VERIFICATION.json. This verifies HTTP delivery, not desktop/mobile rendering or interactive behavior.
 
 ## Local release archive
 

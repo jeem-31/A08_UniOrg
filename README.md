@@ -71,12 +71,12 @@ Run `python scripts/package_submission.py` to create a ZIP in ignored `.local/re
 
 ## Publish with GitHub Pages
 
-The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) after explicit researcher approval on 2026-11-05; the remote commit was verified. Publish **main → / (root)** through Settings → Pages → Deploy from a branch when publication is authorized. See [the detailed procedure](research/documentation/PUBLISHING.md). Pages publication, collaborator access and form submission remain pending.
+The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) after explicit researcher approval on 2026-11-05. The researchers configured Pages from **main → / (root)**, and the first build was requested during deployment troubleshooting. The [research website is live](https://jeem-31.github.io/A08_UniOrg/): 32 deployed pages/assets/downloads returned HTTP 200 and matched the local bytes. See [deployment verification](research/documentation/PAGES_VERIFICATION.json) and [publication instructions](research/documentation/PUBLISHING.md). Browser visual/interactivity checks, collaborator access and form submission remain pending.
 
 | Submission field | Status |
 | --- | --- |
 | Repository URL | https://github.com/jeem-31/A08_UniOrg |
-| GitHub Pages URL | Pending authorized publication |
+| GitHub Pages URL | https://jeem-31.github.io/A08_UniOrg/ — HTTP 200 verified |
 | Required GitHub account access | teamccs-git — invitation not sent |
 | Designated Google Form | Link not yet provided |
 | Latest official source code | Modification_based_Mia at 1cbf524; sanitized copy included |

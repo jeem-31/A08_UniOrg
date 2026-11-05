@@ -1,6 +1,8 @@
 # GitHub and GitHub Pages
 
-The researchers selected [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) as the submission repository and explicitly approved uploading the reviewed package. The initial accepted main commit, `d4809ed4fa8b769a66d1fda0bf3e16bf0d28e609`, was verified on GitHub on 2026-11-05. GitHub Pages, collaborator access and the submission form remain pending separate instructions.
+The researchers selected [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) as the submission repository and explicitly approved uploading the reviewed package. The initial accepted main commit, `d4809ed4fa8b769a66d1fda0bf3e16bf0d28e609`, was verified on GitHub on 2026-11-05. They then enabled Pages from main/root. No build had started, so a build was explicitly requested during troubleshooting; [the first deployment succeeded](https://github.com/jeem-31/A08_UniOrg/actions/runs/42046589407).
+
+The verified website URL is **https://jeem-31.github.io/A08_UniOrg/**. All 32 checked deployed pages/assets/downloads returned HTTP 200 and matched the local files. See PAGES_VERIFICATION.json. Desktop/mobile visual and interaction checks remain pending, as do collaborator access and the submission form.
 
 ## Before publication
 
