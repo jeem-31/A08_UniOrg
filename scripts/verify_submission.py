@@ -1,5 +1,6 @@
 """Standard-library checks for a local, static research submission."""
 from html.parser import HTMLParser
+from hashlib import sha256
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
@@ -68,10 +69,24 @@ for path, page in pages.items():
 
 required = ['index.html','README.md','SUBMISSION_CHECKLIST.md','.gitignore','.nojekyll',
             'assets/css','assets/js','assets/images','research/manuscript','research/documentation',
-            'research/diagrams','research/screenshots','research/manuals','source-code']
+            'research/diagrams','research/screenshots','research/manuals','research/manuals/images',
+            'research/manuals/images-manifest.json','source-code']
 for item in required:
     if not (ROOT / item).exists():
         errors.append(f'Missing required path: {item}')
+
+manual_manifest = ROOT/'research/manuals/images-manifest.json'
+if manual_manifest.exists():
+    manual = json.loads(manual_manifest.read_text(encoding='utf-8'))
+    entries = manual.get('images', [])
+    if len(entries)!=60 or {entry.get('figure') for entry in entries}!=set(range(125,185)):
+        errors.append('Illustrated manual must contain all 60 source figure entries (125-184).')
+    for entry in entries:
+        target = (ROOT/'research/manuals'/entry['image']).resolve()
+        if not target.is_relative_to(ROOT/'research/manuals/images') or not target.is_file():
+            errors.append(f'Missing or invalid manual image: figure {entry.get("figure")}')
+        elif sha256(target.read_bytes()).hexdigest()!=entry['sha256']:
+            errors.append(f'Manual image differs from reviewed manifest: figure {entry["figure"]}')
 
 for p in files:
     rel = p.relative_to(ROOT)

@@ -1,0 +1,350 @@
+{
+  "manual_figures": 60,
+  "procedure_lists_preserved": 60,
+  "procedure_steps_preserved": 264,
+  "original_procedure_text_unchanged": true,
+  "permanent_masks_checked": 76,
+  "image_hashes_dimensions_and_metadata": "passed",
+  "errors": [],
+  "browser_layout_and_interaction": "Computer Use stopped because the Windows browser URL could not be determined with sufficient confidence; no layout/interactivity pass claimed.",
+  "source_images_from_latest_manuscript": 57,
+  "supplemental_original_screenshots": 3,
+  "related_screen_state_notes": [
+    133,
+    137
+  ],
+  "visual_image_review": "all 60 images; adjusted masks reviewed again",
+  "ocr_review": {
+    "images": 60,
+    "remaining_reviewed_pattern_matches": 0,
+    "errors": 0,
+    "limitation": "Supplementary pattern check, not a comprehensive personal-data detector."
+  },
+  "local_http": {
+    "checked_urls": 64,
+    "all_returned_200": true,
+    "webp_content_type": "image/webp",
+    "checks": [
+      {
+        "path": "research/manuals/index.html",
+        "status": 200,
+        "content_type": "text/html"
+      },
+      {
+        "path": "assets/css/manual.css",
+        "status": 200,
+        "content_type": "text/css"
+      },
+      {
+        "path": "assets/js/main.js",
+        "status": 200,
+        "content_type": "text/javascript"
+      },
+      {
+        "path": "research/manuals/UNIORG-User-Manual-Public-Text.txt",
+        "status": 200,
+        "content_type": "text/plain"
+      },
+      {
+        "path": "research/manuals/images/figure-125.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-126.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-127.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-128.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-129.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-130.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-131.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-132.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-133.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-134.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-135.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-136.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-137.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-138.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-139.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-140.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-141.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-142.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-143.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-144.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-145.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-146.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-147.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-148.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-149.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-150.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-151.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-152.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-153.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-154.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-155.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-156.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-157.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-158.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-159.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-160.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-161.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-162.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-163.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-164.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-165.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-166.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-167.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-168.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-169.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-170.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-171.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-172.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-173.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-174.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-175.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-176.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-177.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-178.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-179.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-180.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-181.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-182.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-183.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "path": "research/manuals/images/figure-184.webp",
+        "status": 200,
+        "content_type": "image/webp"
+      }
+    ]
+  }
+}

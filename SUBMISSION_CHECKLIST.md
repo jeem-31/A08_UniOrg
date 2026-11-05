@@ -15,7 +15,8 @@ Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jee
 - [x] Problems, general/specific objectives, methodology and all ten feature areas checked against the latest manuscript.
 - [x] Reported results checked against Tables 4.54 and 4.62; findings are labeled as reported, controlled-condition results.
 - [x] Six actual feature screenshots selected; identity/requester names masked in delivered pixels.
-- [x] Five source diagram extracts and complete public text manual (60 procedures) included.
+- [x] Five source diagram extracts and illustrated public manual with all 60 procedures and captioned screenshots included; separate text download preserved.
+- [x] Manual images aligned by actual screen content; three original research screenshots supplement the appendix, and two related screen states are explicitly identified. Source positions, hashes and baked redactions recorded in research/manuals/images-manifest.json.
 - [x] Public manuscript text includes Chapters I–V and literature cited; private tester profiles, embedded images and appendices omitted.
 - [x] Misidentified TUGON manual excluded; superseded FINAL_RC manuscript excluded.
 - [x] Original research files left unchanged; downloaded originals/private working files ignored under .local/.
@@ -25,7 +26,7 @@ Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jee
 - [x] Source privacy scan/exclusions and eight sanitization changes documented with per-file hashes; Google key removed from upstream text documentation after push protection flagged it.
 - [x] Frontend locked install/build passed; 34 existing JavaScript tests passed.
 - [x] PHP syntax checks passed for 743 files; Composer manifest validated with upstream constraint warnings.
-- [x] Static website verification passed: four HTML pages, 84 local links/anchors, no broken local targets.
+- [x] Static website verification passed: four HTML pages; local links, anchors and manual images checked by scripts/verify_submission.py. Latest counts are in research/documentation/LOCAL_CHECK_RESULTS.json.
 - [x] Local HTTP pages/downloads succeed; hidden working/Git paths are not served.
 - [x] Official process-local Imagick runtime loaded; lockfile platform checks and isolated Composer dependency installation passed without changing system PHP settings.
 - [x] Existing pure-unit PHP test selection executed: 158 tests, 155 passed and 3 unresolved failures documented. This does not mark the PHP suite as passed.

@@ -46,4 +46,6 @@ The researchers supplied [the latest Chapter 1–5 Google Doc](https://docs.goog
 
 ## Public file policy
 
+The illustrated manual retains all 60 original procedure lists/captions and includes 57 images from the verified manuscript PDF plus three matching original research PNGs. Images are aligned to the actual feature rather than copied from mismatched appendix positions. Event registration (Figure 133) and voting (Figure 137) have explicit notes identifying the supplied related screen states. See ../manuals/images-manifest.json for provenance and permanent raster redactions. No missing UI or dialog is fabricated.
+
 Do not copy original appendices wholesale: they can contain signatures, private profiles, receipts, CORs, interview records and photographs. Public downloads must be privacy-reviewed derivatives. The linked Google Doc retains the author's existing sharing controls; this task does not change access.

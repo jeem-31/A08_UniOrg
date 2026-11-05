@@ -1,0 +1,2008 @@
+{
+  "source_manuscript_url": "https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing",
+  "source_pdf_sha256": "72a588218d20cff4f423df6d996ba91e59f0483258a3b4145e20b06478afe424",
+  "figures": 60,
+  "mapping_review": "Images aligned by visible feature, not blindly by source caption placement.",
+  "privacy": "Opaque redactions are baked into exported raster pixels. No source images, PDF layers or metadata are packaged.",
+  "images": [
+    {
+      "figure": 125,
+      "caption": "This figure shows the login page of UniOrg.",
+      "image": "images/figure-125.webp",
+      "source": {
+        "kind": "researcher_original_screenshot",
+        "relative_file": "user_manual/01_Auth_Login.png"
+      },
+      "source_image_sha256": "89c2103c8b9e4a789e53baa3aa30e273352c34ae808ac7038d93738e4bcae323",
+      "sha256": "f85ccd51c7a5342b5f3f40ab77ff90ee62e1dcbcfeb98d009844d7859f61e87c",
+      "dimensions": [
+        1336,
+        874
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1418,
+        1037
+      ],
+      "crop_source_xyxy": [
+        26.0,
+        130.0,
+        1362.0,
+        1004.0
+      ],
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 126,
+      "caption": "This figure shows the Upload COR step of student registration in UniOrg.",
+      "image": "images/figure-126.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 126,
+        "pdf_page": 371,
+        "xref": 1144
+      },
+      "source_image_sha256": "117a184d69e7bf8020d67887b0e64f0e51a6f1cde09f2fdce2ea11a227eda8ec",
+      "sha256": "7e7209f54f609541326603fce02ae82ce742700e2bc48420d77970ae25ead702",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1920,
+        1200
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 127,
+      "caption": "This figure shows the Complete Info step of student registration in UniOrg.",
+      "image": "images/figure-127.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 125,
+        "pdf_page": 371,
+        "xref": 1143
+      },
+      "source_image_sha256": "6f02a23c51f26172b6c647898b1b9c9294c175e1ed344fd7622b928a742f3143",
+      "sha256": "d133683b0d23e343f4f83c0638c7e2557a1c738a31d63d753966e504ef163415",
+      "dimensions": [
+        1460,
+        1090
+      ],
+      "redactions_source_xyxy": [
+        [
+          795,
+          343,
+          1363,
+          394
+        ],
+        [
+          937,
+          436,
+          1072,
+          488
+        ]
+      ],
+      "source_dimensions": [
+        1460,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 128,
+      "caption": "This figure shows the student profile edit modal of UniOrg.",
+      "image": "images/figure-128.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 127,
+        "pdf_page": 372,
+        "xref": 1147
+      },
+      "source_image_sha256": "2b7328b43f04b49e458ee3ca6a14bae9912f008ae3aed3877aebb2ab9f1dc1e2",
+      "sha256": "4d7416cd35bb78346a51face50f19acb4e91681d71d6a49e2b92001487fccb2f",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          286,
+          291,
+          1080,
+          345
+        ],
+        [
+          956,
+          668,
+          1366,
+          768
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 129,
+      "caption": "This figure shows the student dashboard of UniOrg.",
+      "image": "images/figure-129.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 129,
+        "pdf_page": 373,
+        "xref": 1151
+      },
+      "source_image_sha256": "e8ca065c3142c7982f323652209ee402b2eaa1506702a6352be144562ac737df",
+      "sha256": "510d76ab4ba951322ed6ea505bcb18398aa0cc6e20b1453f7b551ce083318bc1",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          68,
+          145,
+          465,
+          200
+        ],
+        [
+          969,
+          652,
+          1366,
+          768
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 130,
+      "caption": "This figure shows the student announcements list of UniOrg.",
+      "image": "images/figure-130.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 130,
+        "pdf_page": 374,
+        "xref": 1154
+      },
+      "source_image_sha256": "92acaf933f1ca0114bc91b27a09c5c96bdbb4b03237a3fbf7f31a0d81eaf92d0",
+      "sha256": "2905649b3ee42a54ad872fb3dd91d864e11125067f9fd90e25aadf05e81f38ec",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          102,
+          672,
+          438,
+          730
+        ],
+        [
+          512,
+          672,
+          957,
+          730
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 131,
+      "caption": "This figure shows the student events list of UniOrg.",
+      "image": "images/figure-131.webp",
+      "source": {
+        "kind": "researcher_original_screenshot",
+        "relative_file": "storyboard_ss/S04e_Student_Events_ListView.png"
+      },
+      "source_image_sha256": "4a2169d3276f7c2865413e850fd012256da2c292e4d066db0e794f6f249a852a",
+      "sha256": "f873ec2d12a3e42fe3ea3122b362b11ad4e0a5595095ccbb85ff6aeef239597c",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 132,
+      "caption": "This figure shows the student events calendar view of UniOrg.",
+      "image": "images/figure-132.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 132,
+        "pdf_page": 375,
+        "xref": 1158
+      },
+      "source_image_sha256": "35c8345f1acd246fa51d76a7315cd85114231920537e147ac0a70c5f339dea78",
+      "sha256": "68f72cff80228850efbaf23b6a59892470909e683e13ba661547a230525b91fc",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 133,
+      "caption": "This figure shows the event registration modal of UniOrg.",
+      "image": "images/figure-133.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 128,
+        "pdf_page": 373,
+        "xref": 1150
+      },
+      "source_image_sha256": "c44d0fd8b64e15a94e5e8e5b8f5d5a418430951e8ce1b5e687e2f6433362c3dd",
+      "sha256": "2124e07bbaff3ac3e870ce983f5786d77f670217543246bdce3bdc7a0b41874d",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": "Related screen: event details. The supplied image does not show the registration confirmation dialog described in the steps.",
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 134,
+      "caption": "This figure shows the student payments list of UniOrg.",
+      "image": "images/figure-134.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 134,
+        "pdf_page": 376,
+        "xref": 1162
+      },
+      "source_image_sha256": "b08fce6d2eeabbffa6b9094ddeb6ff673e55b3c6132d2f43d0a36204c0cdc999",
+      "sha256": "113456045295ff7e55a436a5185201bd86901f82cd4868b503511c9dd5c5e449",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 135,
+      "caption": "This figure shows the GCash payment submission of UniOrg.",
+      "image": "images/figure-135.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 133,
+        "pdf_page": 375,
+        "xref": 1159
+      },
+      "source_image_sha256": "f3eaf46e713652e90e993eb2bd63d9f49f62dcec668cb929b4888fa2c9e037a7",
+      "sha256": "3be350f2601a9ed57a9a163d0b91e8a08ea2879bfb10aa501f1d4e68a90d8e8c",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          560,
+          334,
+          827,
+          388
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 136,
+      "caption": "This figure shows the student elections list of UniOrg.",
+      "image": "images/figure-136.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 136,
+        "pdf_page": 377,
+        "xref": 1166
+      },
+      "source_image_sha256": "94324b770e4ee6a36dd9823d0ac840bfac57a7b1a0ce6813bc7d8b132ad9ac37",
+      "sha256": "659372fe598626497d9892de12f788e60b3e44f1fab8bcd72e4f0fd719044b6e",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          601,
+          633,
+          1039,
+          768
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 137,
+      "caption": "This figure shows the election vote casting modal of UniOrg.",
+      "image": "images/figure-137.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 135,
+        "pdf_page": 376,
+        "xref": 1163
+      },
+      "source_image_sha256": "341b67d1862d73d376b1021b94b3be3a454c824fc13d6d7c03fbb82ddcbac3a4",
+      "sha256": "d900b8c64c57faa83398bd33d8ec5690cd500f632937c26ebdef0ade359943cd",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          95,
+          495,
+          1312,
+          768
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": "Related screen: recorded ballot. The supplied image shows the result after voting, rather than the vote confirmation dialog described in the steps.",
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 138,
+      "caption": "This figure shows the student documents page of UniOrg.",
+      "image": "images/figure-138.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 138,
+        "pdf_page": 378,
+        "xref": 1170
+      },
+      "source_image_sha256": "53aac52f4d2a3beb73bfcc2553188b61c4959dfb7a24d06bcf48a7cdfe0c4379",
+      "sha256": "c98b55f5043793401223e3103b28555ffffe27cf243ce918a3f5ad57585e80bd",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          88,
+          453,
+          492,
+          768
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 139,
+      "caption": "This figure shows the student e-library list of UniOrg.",
+      "image": "images/figure-139.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 139,
+        "pdf_page": 378,
+        "xref": 1171
+      },
+      "source_image_sha256": "6d3224c0ca5d02139a33d9f1ca0cbe0dbfb94ebf800ee2788dde5b559c662e7b",
+      "sha256": "b2bcb1a45231098ff4bef1426b6bad5dc25b4b04fefbc9f5469a3c9801ea0b14",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 140,
+      "caption": "This figure shows the student EduShare list of UniOrg.",
+      "image": "images/figure-140.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 140,
+        "pdf_page": 379,
+        "xref": 1174
+      },
+      "source_image_sha256": "464e57526dbe1d8ef3606945fd09ff0af3ba89d3304665af06d4728286ad9e72",
+      "sha256": "f028ef479ac73f5bae31eed8db83f88e51e7dcd50038a577b1a181a304f2e9da",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          95,
+          464,
+          451,
+          515
+        ],
+        [
+          491,
+          464,
+          834,
+          515
+        ],
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 141,
+      "caption": "This figure shows the new complaint submission modal of UniOrg.",
+      "image": "images/figure-141.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 137,
+        "pdf_page": 377,
+        "xref": 1167
+      },
+      "source_image_sha256": "5f71c8f8909cf190ec3e5fa99003296eab02ba5698e2bf40a388b6cce26f4f71",
+      "sha256": "304b1722ba9674d3cb6d52863523dfc2410f975c6626523e10cd488ffa95d096",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 142,
+      "caption": "This figure shows the student chatbot of UniOrg.",
+      "image": "images/figure-142.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 142,
+        "pdf_page": 380,
+        "xref": 1178
+      },
+      "source_image_sha256": "1bf69d31a73c7d37348e9987f34c6ca3ede07e63e06d1b958f10f650a996c0a3",
+      "sha256": "c449eafc71baf9c04c40a1977ead0aaf86b70d15a2a662ee10ae351491bb846f",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          1120,
+          0,
+          1366,
+          81
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 143,
+      "caption": "This figure shows the organization admin dashboard of UniOrg.",
+      "image": "images/figure-143.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 143,
+        "pdf_page": 380,
+        "xref": 1179
+      },
+      "source_image_sha256": "900096930f3a1034cd34e45e0999942501ce638eb80bcb02da110cbac9f1dec9",
+      "sha256": "8356571ec0484b48a5f9a98a3906de8feb04927825a437773089ae3584994c1f",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 144,
+      "caption": "This figure shows the accreditation renewal requester information form of UniOrg.",
+      "image": "images/figure-144.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 141,
+        "pdf_page": 379,
+        "xref": 1175
+      },
+      "source_image_sha256": "5cd9282bdab55694d784d0f43d380554a79e9f1d4af1798a1239f4c455874308",
+      "sha256": "eac8f46b5e06b57406bd098d0d5cb7749a680c88b08e521a5c84fcf07c45aa95",
+      "dimensions": [
+        1916,
+        1088
+      ],
+      "redactions_source_xyxy": [
+        [
+          555,
+          647,
+          1830,
+          920
+        ]
+      ],
+      "source_dimensions": [
+        1916,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 145,
+      "caption": "This figure shows the accreditation document requirements part 1 of UniOrg.",
+      "image": "images/figure-145.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 145,
+        "pdf_page": 381,
+        "xref": 1183
+      },
+      "source_image_sha256": "43a2434e2ab569683e5860a1ccc4a94dec1175ab8bafb6a53ce909f17f5382d1",
+      "sha256": "0b8c4ffd7e6cf09e4434dc8c5cef136ba92d5b2c629f04534d809ee9284eb3a1",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 146,
+      "caption": "This figure shows the accreditation document requirements part 2 of UniOrg.",
+      "image": "images/figure-146.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 146,
+        "pdf_page": 382,
+        "xref": 1186
+      },
+      "source_image_sha256": "cb23fc26a279effe008f0d35fcf53c839dee8bac8a741bb4877de4250b6c32c9",
+      "sha256": "655d7ff6cd9124faa26f8842090580a9683f4440677251391e1fcb7eb4eeaa0d",
+      "dimensions": [
+        1917,
+        1091
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 147,
+      "caption": "This figure shows the members list upload step of accreditation renewal in UniOrg.",
+      "image": "images/figure-147.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 147,
+        "pdf_page": 382,
+        "xref": 1187
+      },
+      "source_image_sha256": "450b4aa08016c931957d2b9f2b9fd589348f3456eecc121d9f65adb49376cb61",
+      "sha256": "35eeba9f79acbbac09b137298311ddb9d984746bf6486eed12d34bc836b7d33a",
+      "dimensions": [
+        1917,
+        1088
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 148,
+      "caption": "This figure shows the college dean form step of accreditation renewal in UniOrg.",
+      "image": "images/figure-148.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 148,
+        "pdf_page": 383,
+        "xref": 1190
+      },
+      "source_image_sha256": "bac7d45724a16bd38dc4b3aa20046308613fde47d1871467144aafb49d472599",
+      "sha256": "a9324c7f9861ac6fab78516e34f6a5995165d440c03b677273856b91bced7fc2",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [
+        [
+          555,
+          572,
+          1822,
+          616
+        ],
+        [
+          555,
+          645,
+          1515,
+          690
+        ],
+        [
+          555,
+          719,
+          1170,
+          768
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 149,
+      "caption": "This figure shows the incoming officers step of accreditation renewal in UniOrg.",
+      "image": "images/figure-149.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 149,
+        "pdf_page": 383,
+        "xref": 1191
+      },
+      "source_image_sha256": "e666c6ef20e327444e9b1e1c811dd83e78c8b550a20a8b32d62f1472e4f4f0ab",
+      "sha256": "8fee9df27f36000f8d8d601699fc8df29ede13e2a3d161f6a088ffc0ed802dfb",
+      "dimensions": [
+        1917,
+        1091
+      ],
+      "redactions_source_xyxy": [
+        [
+          563,
+          543,
+          1802,
+          584
+        ],
+        [
+          563,
+          605,
+          1802,
+          646
+        ],
+        [
+          563,
+          698,
+          1170,
+          737
+        ],
+        [
+          563,
+          834,
+          1802,
+          875
+        ],
+        [
+          563,
+          904,
+          1802,
+          961
+        ],
+        [
+          563,
+          987,
+          1170,
+          1030
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 150,
+      "caption": "This figure shows the announcement creation modal of UniOrg.",
+      "image": "images/figure-150.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 144,
+        "pdf_page": 381,
+        "xref": 1182
+      },
+      "source_image_sha256": "e607889104393a6b00e8e875e4ad38f0f6c3d068aa033b3521f5432f8ce06ec2",
+      "sha256": "76abf506f0b40eaf08c069d126ae94f6836cc74d0ad888ed4171d00dad642dee",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 151,
+      "caption": "This figure shows the admin announcements list of UniOrg.",
+      "image": "images/figure-151.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 151,
+        "pdf_page": 384,
+        "xref": 1195
+      },
+      "source_image_sha256": "f25c248d4bfbb10466ec12a44ddceefafb8cb0285286f8757db5a18bf8fec92c",
+      "sha256": "415993f603a2b64dfffd5b0689df28dd399e0367a2a78363ae44c99662a28b89",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 152,
+      "caption": "This figure shows the payment creation modal of UniOrg.",
+      "image": "images/figure-152.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 150,
+        "pdf_page": 384,
+        "xref": 1194
+      },
+      "source_image_sha256": "6ca96b9026223b7a3a6c6e64de87a86a66c953a9ed6fd9305d7078112b76ba9d",
+      "sha256": "1daeb2b48189b0f6c62e16c5f44239471a0ed19f9159eaea15c6079833abf04b",
+      "dimensions": [
+        1917,
+        1087
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1087
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 153,
+      "caption": "This figure shows the admin payments list of UniOrg.",
+      "image": "images/figure-153.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 153,
+        "pdf_page": 385,
+        "xref": 1199
+      },
+      "source_image_sha256": "d5353a633a570161c08dcc1935f4a3337567f426b41db897796b79829d6e961e",
+      "sha256": "a00c2b8bb901f29f8d1d1da79e3dcb31241ed4338370a0655305a8b4d0e5dd34",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          102,
+          334,
+          315,
+          473
+        ],
+        [
+          334,
+          334,
+          520,
+          473
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 154,
+      "caption": "This figure shows the admin elections list of UniOrg.",
+      "image": "images/figure-154.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 154,
+        "pdf_page": 386,
+        "xref": 1202
+      },
+      "source_image_sha256": "b6b48bf00914032c4f7c7bf2c71046ee3951feebe6c36f6a1f6a27efd739b86b",
+      "sha256": "4a24d49d905f9e6a7176159245fe351defe29cb7afba5318d8582aaa98ca1d0c",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          106,
+          407,
+          1312,
+          768
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 155,
+      "caption": "This figure shows the election results view of UniOrg.",
+      "image": "images/figure-155.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 155,
+        "pdf_page": 386,
+        "xref": 1203
+      },
+      "source_image_sha256": "1cb11eb242ab84bad550ecfb89259dc12c9a9946153a0acfd5f1b0b68eb04b55",
+      "sha256": "e2c517b7935a6f7d42d90ad88066a0c4c4a7a28d631f820ed8537a3ecd2b459d",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          88,
+          414,
+          1312,
+          768
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 156,
+      "caption": "This figure shows the student documents management page of UniOrg.",
+      "image": "images/figure-156.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 156,
+        "pdf_page": 387,
+        "xref": 1206
+      },
+      "source_image_sha256": "a7e8a540b24432e6607f006e7b9da51e7f18f7f5a3136091520a3ad103995b7c",
+      "sha256": "d4f2636f7ffa1cb7d98ad0c0d6c2f47fdb3868ed9b872ea22a374ccf4c42e429",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          143,
+          410,
+          492,
+          461
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 157,
+      "caption": "This figure shows the e-library resource upload modal of UniOrg.",
+      "image": "images/figure-157.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 152,
+        "pdf_page": 385,
+        "xref": 1198
+      },
+      "source_image_sha256": "335126d71c130181e0cc8b6e75bbb2c247343f5216892356e573a5cf86c98406",
+      "sha256": "76c990cbd715bd110ee7f1130904fe6f7717f8c1b28058a5c6af2d45c40a3749",
+      "dimensions": [
+        1917,
+        1092
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1092
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 158,
+      "caption": "This figure shows the e-library management page of UniOrg.",
+      "image": "images/figure-158.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 158,
+        "pdf_page": 388,
+        "xref": 1210
+      },
+      "source_image_sha256": "cbc33e78248f818be11d780ea389674afec392f26120e10b9b9078fc539e682e",
+      "sha256": "02584d196bd555f16876474e6c07127acd4dd353b869d4ff23141a731b27176e",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 159,
+      "caption": "This figure shows the EduShare folder creation modal of UniOrg.",
+      "image": "images/figure-159.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 157,
+        "pdf_page": 387,
+        "xref": 1207
+      },
+      "source_image_sha256": "c363b27d4ceea7abeb79e9f7fae5998d5d400489756a47e230a611cd3e303d4b",
+      "sha256": "aa6c74027837a9da852e993d503b3392bbaf499eae9a1f2adfbc168a4177673d",
+      "dimensions": [
+        1917,
+        1091
+      ],
+      "redactions_source_xyxy": [
+        [
+          172,
+          289,
+          652,
+          710
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 160,
+      "caption": "This figure shows the chatbot FAQ creation modal of UniOrg.",
+      "image": "images/figure-160.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 159,
+        "pdf_page": 388,
+        "xref": 1211
+      },
+      "source_image_sha256": "9c71a325c2a385f0f4149e1bcb16cc6a8a40856559de93c74521a12c3abae558",
+      "sha256": "29bbd127f84475640c04a48731bc5e40c8c40f89694c11de05899f7b9c50af3c",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 161,
+      "caption": "This figure shows the chatbot FAQs page of UniOrg.",
+      "image": "images/figure-161.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 161,
+        "pdf_page": 389,
+        "xref": 1215
+      },
+      "source_image_sha256": "aeb5424542f264468fcc93e3af9e845cc0a9219800af559ddcadf987f7519434",
+      "sha256": "c5635171e0e13e59a7b2c4b49bbdf07ee695aaedfbb68646a98578f76897cd87",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          355,
+          376,
+          998,
+          638
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 162,
+      "caption": "This figure shows the complaint response modal of UniOrg.",
+      "image": "images/figure-162.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 160,
+        "pdf_page": 389,
+        "xref": 1214
+      },
+      "source_image_sha256": "168e2cb3a39e257e8b5faf5952a9276d99cf1aa9eb031113414805e5dab19ea4",
+      "sha256": "7ca5fcbfc3dedb4527a2578ba132083dbf480fbf23ad41622a6831cd16b0aa36",
+      "dimensions": [
+        1917,
+        1083
+      ],
+      "redactions_source_xyxy": [
+        [
+          559,
+          331,
+          1362,
+          576
+        ],
+        [
+          220,
+          379,
+          537,
+          650
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1083
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 163,
+      "caption": "This figure shows the admin complaints list of UniOrg.",
+      "image": "images/figure-163.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 163,
+        "pdf_page": 390,
+        "xref": 1219
+      },
+      "source_image_sha256": "5b9a94976a475ab44c96151688ac9d966c6a01499f2eac41dd641033180704bf",
+      "sha256": "10c6b76c83ecb0f5b651aaa5d4cb205731c47c2a289746f35e6b53a2b2fda903",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "redactions_source_xyxy": [
+        [
+          109,
+          499,
+          711,
+          615
+        ],
+        [
+          771,
+          499,
+          1052,
+          615
+        ]
+      ],
+      "source_dimensions": [
+        1366,
+        768
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 164,
+      "caption": "This figure shows the dean dashboard of UniOrg.",
+      "image": "images/figure-164.webp",
+      "source": {
+        "kind": "researcher_original_screenshot",
+        "relative_file": "user_manual/16_Dean_Dashboard_Home.png"
+      },
+      "source_image_sha256": "d68194614f3fe60a1fdc4ab6f428c4632b67deb89c2a21e683e03273dd443fca",
+      "sha256": "8205c25fec2d28c3e9e27db7193ab1da98e8bd37bcaf9079db5ff6e6b7c2800f",
+      "dimensions": [
+        1917,
+        1082
+      ],
+      "redactions_source_xyxy": [
+        [
+          235,
+          191,
+          355,
+          218
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1082
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 165,
+      "caption": "This figure shows the department user management list of UniOrg.",
+      "image": "images/figure-165.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 165,
+        "pdf_page": 391,
+        "xref": 1223
+      },
+      "source_image_sha256": "21f46d0db64b1edc0520a2d8287a3599582b8c5bcb4ee8c063ed7a60dc1f79fe",
+      "sha256": "ee27c4929f2b1e4c863270825f4552759ad83c33791e2ac70ff1aecbf7b5d283",
+      "dimensions": [
+        1917,
+        1087
+      ],
+      "redactions_source_xyxy": [
+        [
+          155,
+          472,
+          691,
+          1087
+        ],
+        [
+          749,
+          472,
+          1419,
+          1087
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1087
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 166,
+      "caption": "This figure shows the pending event proposals list of UniOrg.",
+      "image": "images/figure-166.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 164,
+        "pdf_page": 391,
+        "xref": 1222
+      },
+      "source_image_sha256": "5fac8cf2b81e6819987c44a0315baffa246a7b4be9d614e16fa42a488f2bcf7b",
+      "sha256": "64b598934c743be15d88ca87e511bca9807d060ced1b4ae190918c5023e819aa",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 167,
+      "caption": "This figure shows the event proposal details modal of UniOrg.",
+      "image": "images/figure-167.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 166,
+        "pdf_page": 392,
+        "xref": 1226
+      },
+      "source_image_sha256": "ed979c93d472415bc79f2b0ce6de031921e4394a8495a42a9e4d4b2187394b58",
+      "sha256": "262ad15fd3ae70cd1dfb17c2ec48b05a303c136a999f4ce90cc84c6a79172589",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 168,
+      "caption": "This figure shows the registration reports web list of UniOrg.",
+      "image": "images/figure-168.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 168,
+        "pdf_page": 393,
+        "xref": 1230
+      },
+      "source_image_sha256": "ef2363abffadab7cd311cd25f101803ad68fd359765ae88fe1eb10270e4d544e",
+      "sha256": "a9332cfd582102e47ddee4d805e0a9ba72f239d832b19d52d59949dc7d9142b0",
+      "dimensions": [
+        1917,
+        1088
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 169,
+      "caption": "This figure shows the financial reports payments tab of UniOrg.",
+      "image": "images/figure-169.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 169,
+        "pdf_page": 393,
+        "xref": 1231
+      },
+      "source_image_sha256": "8138eb13e06f2bf099f88dc79776a792abcc6ef6ce329874b0156bb9a82142ca",
+      "sha256": "67ed641f22a171a4cde0c3114cea7af1eee5ca4bf50fcbd12ca6e6e002e8fa3f",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [
+        [
+          153,
+          741,
+          441,
+          851
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 170,
+      "caption": "This figure shows the content overview announcements tab of UniOrg.",
+      "image": "images/figure-170.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 170,
+        "pdf_page": 394,
+        "xref": 1234
+      },
+      "source_image_sha256": "54268d10ce450e3c69e641dfa7df3119cd096697df5039d490b39f8523999caa",
+      "sha256": "bc8fc34563ed2f02e7e2d52027c971d8c6a292b6cd1fe2134d79690dba935644",
+      "dimensions": [
+        1917,
+        1090
+      ],
+      "redactions_source_xyxy": [
+        [
+          345,
+          684,
+          595,
+          710
+        ],
+        [
+          345,
+          783,
+          595,
+          811
+        ],
+        [
+          345,
+          883,
+          595,
+          914
+        ],
+        [
+          345,
+          984,
+          595,
+          1014
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1090
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 171,
+      "caption": "This figure shows the dean profile edit modal of UniOrg.",
+      "image": "images/figure-171.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 171,
+        "pdf_page": 394,
+        "xref": 1235
+      },
+      "source_image_sha256": "7b16d1fd9032baedafb6503863d195902c0ea3ebbee137648c65fa6849339b03",
+      "sha256": "cf4efbbc1bd800c31a5541c727bb5b60bb6d5668c35eea83412612a504cd4df3",
+      "dimensions": [
+        1917,
+        1087
+      ],
+      "redactions_source_xyxy": [
+        [
+          609,
+          548,
+          1314,
+          606
+        ],
+        [
+          402,
+          342,
+          539,
+          392
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1087
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 172,
+      "caption": "This figure shows the approved event proposals list of UniOrg.",
+      "image": "images/figure-172.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 172,
+        "pdf_page": 395,
+        "xref": 1238
+      },
+      "source_image_sha256": "19295d143270b58e720890b981804ad8c0a2dad28809c7b6867c58f3add57ae1",
+      "sha256": "b3d3d2a0c9d80083f7b69604ee8cea32d869762ec34fcce8673dffa2537285e8",
+      "dimensions": [
+        1917,
+        1088
+      ],
+      "redactions_source_xyxy": [],
+      "source_dimensions": [
+        1917,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 173,
+      "caption": "This figure shows the OSAS operations dashboard of UniOrg.",
+      "image": "images/figure-173.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 173,
+        "pdf_page": 396,
+        "xref": 1241
+      },
+      "source_image_sha256": "c38a7858e1da79f147cac3e7a5ad43029159a5bd4ea3274a692ca3b256557475",
+      "sha256": "0a54600398717e398409f76b63151b0fdebf7ea9ad3a5b78fdcd84521853af11",
+      "dimensions": [
+        1917,
+        1092
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1092
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 174,
+      "caption": "This figure shows the accreditation renewal list of UniOrg.",
+      "image": "images/figure-174.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 174,
+        "pdf_page": 396,
+        "xref": 1242
+      },
+      "source_image_sha256": "36ed1a7a9671de05e3157ca5b39a884a7439a0d816d6f61ce45a9713c1f0bc73",
+      "sha256": "7780acefdf930069a6e56ba0abe1803b6dd156365c89c109b5773056844007da",
+      "dimensions": [
+        1917,
+        1085
+      ],
+      "redactions_source_xyxy": [
+        [
+          872,
+          553,
+          1247,
+          722
+        ],
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1085
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 175,
+      "caption": "This figure shows the organization registry list of UniOrg.",
+      "image": "images/figure-175.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 175,
+        "pdf_page": 397,
+        "xref": 1245
+      },
+      "source_image_sha256": "d8a1a8518c3f5f97f3218a0a292bd27e72245aff42b2cc93ec1cc5f88fce639c",
+      "sha256": "12a4ca59cbc02ff8c4458a32c30e5a788107aa90ae2f6d213f7908d49a8d4fd1",
+      "dimensions": [
+        1916,
+        1091
+      ],
+      "redactions_source_xyxy": [
+        [
+          1513,
+          0,
+          1821,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1916,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 176,
+      "caption": "This figure shows the master calendar month view of UniOrg.",
+      "image": "images/figure-176.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 176,
+        "pdf_page": 397,
+        "xref": 1246
+      },
+      "source_image_sha256": "abd7ade651f6232710aa1764c1442a57ced6b1d32fd8c02f38f2054ee531f574",
+      "sha256": "9fff85bef29c26862f160495184a31b62ab43ae726ca6920dbf688a5a672be60",
+      "dimensions": [
+        1917,
+        1091
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 177,
+      "caption": "This figure shows the OSAS event proposals list of UniOrg.",
+      "image": "images/figure-177.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 177,
+        "pdf_page": 398,
+        "xref": 1249
+      },
+      "source_image_sha256": "3766803033ea88c53fa4993c6cd6977497214e5bf07d9ca2f4551c3bf693a423",
+      "sha256": "b5ab67f93b3dd1e4c1686a3e45254ac26e9e38b116fa4109e7b1c34b7355cd23",
+      "dimensions": [
+        1917,
+        1081
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1081
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 178,
+      "caption": "This figure shows the analytics and reports dashboard of UniOrg.",
+      "image": "images/figure-178.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 178,
+        "pdf_page": 398,
+        "xref": 1250
+      },
+      "source_image_sha256": "a525a0f90d9801637e9d30456192e37920636a3823ba4a2d56712f9dcb5e0795",
+      "sha256": "2456d12ec733775d8ec66227a337380efd86785e5d3b2714de180a36d46cb224",
+      "dimensions": [
+        1917,
+        1091
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1091
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 179,
+      "caption": "This figure shows the document library folders list of UniOrg.",
+      "image": "images/figure-179.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 179,
+        "pdf_page": 399,
+        "xref": 1253
+      },
+      "source_image_sha256": "31ac60dbfcb6bf9cbfe970ae9b7abc78dba8d4bdcfe52eb6cc33aee945b7de82",
+      "sha256": "f37bf470983b15d7ba9c49f688f8af3456d73282b1e2996398b37a9555a28ba9",
+      "dimensions": [
+        1916,
+        1082
+      ],
+      "redactions_source_xyxy": [
+        [
+          1513,
+          0,
+          1821,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1916,
+        1082
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 180,
+      "caption": "This figure shows the managed accounts list of UniOrg.",
+      "image": "images/figure-180.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 180,
+        "pdf_page": 399,
+        "xref": 1254
+      },
+      "source_image_sha256": "d17601883d4d56b8cb7c9157eda5b1745b22038fa1d73a894da558daebaad9e1",
+      "sha256": "7a8b24b3fe8b310a372d8248e9b65ddd46918080bf9f11c9c70bc12517fba3ad",
+      "dimensions": [
+        1917,
+        1087
+      ],
+      "redactions_source_xyxy": [
+        [
+          690,
+          391,
+          1477,
+          1087
+        ],
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1087
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 181,
+      "caption": "This figure shows the dean account creation modal of UniOrg.",
+      "image": "images/figure-181.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 167,
+        "pdf_page": 392,
+        "xref": 1227
+      },
+      "source_image_sha256": "7bd5b37337e0d6c0aed03057e26df8da899c449638579e475c6f9f48b86a175e",
+      "sha256": "d7ffb7f87fb65b917ce5f539feeff0af288ed17e767700fe063ca22f2abf7624",
+      "dimensions": [
+        1917,
+        1088
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 182,
+      "caption": "This figure shows the accreditation expiration period setting of UniOrg.",
+      "image": "images/figure-182.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 181,
+        "pdf_page": 400,
+        "xref": 1257
+      },
+      "source_image_sha256": "5b411cc4e8619008d1df6159eb4aa00576c5a16a53aea6da232823db2caa3889",
+      "sha256": "39e8ac2a170830efd1e737692243782d76e36701fa57426b27266a9084108ebc",
+      "dimensions": [
+        1916,
+        1082
+      ],
+      "redactions_source_xyxy": [
+        [
+          1513,
+          0,
+          1821,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1916,
+        1082
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 183,
+      "caption": "This figure shows the OSAS announcement creation modal of UniOrg.",
+      "image": "images/figure-183.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 182,
+        "pdf_page": 400,
+        "xref": 1258
+      },
+      "source_image_sha256": "b7214ae9363b0a408e2533c5936d7f26c8afab4aabda74b8fdb388e8ef7a870e",
+      "sha256": "e889fcdf4fae11fa079eb75cdf51316b62064f0bdd05873c5ed36e133f64f738",
+      "dimensions": [
+        1917,
+        1088
+      ],
+      "redactions_source_xyxy": [
+        [
+          1514,
+          0,
+          1822,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1917,
+        1088
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    },
+    {
+      "figure": 184,
+      "caption": "This figure shows the password change form of UniOrg.",
+      "image": "images/figure-184.webp",
+      "source": {
+        "kind": "latest_manuscript_embedded_image",
+        "original_figure_position": 184,
+        "pdf_page": 401,
+        "xref": 1262
+      },
+      "source_image_sha256": "771bb34cb89c155e72a0be9c191ecb88a1d79e6dd601be9ad32397bd22ef21cb",
+      "sha256": "3c2c10b360701ffe498d30f78e55071e7d72c5b9ac27d95f65d198e34fba82f4",
+      "dimensions": [
+        1916,
+        1092
+      ],
+      "redactions_source_xyxy": [
+        [
+          910,
+          291,
+          1303,
+          343
+        ],
+        [
+          779,
+          579,
+          1073,
+          612
+        ],
+        [
+          1513,
+          0,
+          1821,
+          82
+        ]
+      ],
+      "source_dimensions": [
+        1916,
+        1092
+      ],
+      "crop_source_xyxy": null,
+      "note": null,
+      "metadata": "No EXIF or ICC metadata retained"
+    }
+  ]
+}

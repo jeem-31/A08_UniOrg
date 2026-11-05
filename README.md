@@ -30,7 +30,7 @@ research/manuscript/        Approved public manuscript derivative/status
 research/documentation/     Provenance, findings, setup and publication notes
 research/diagrams/          Research diagrams and captions
 research/screenshots/       Actual UNIORG screenshots with baked redactions
-research/manuals/           Public-safe user manual and source notes
+research/manuals/           Illustrated 60-procedure manual, redacted images and text edition
 source-code/                Confirmed complete sanitized application source
 scripts/                    Safe preview and submission verification
 SUBMISSION_CHECKLIST.md     Verified, pending and missing requirements

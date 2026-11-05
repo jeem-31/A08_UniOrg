@@ -93,7 +93,7 @@ Original document: ''' + SOURCE_URL + '\n\n'
     write('research/diagrams/index.html',page('Research diagrams','DIAGRAM COLLECTION','Original diagrams extracted from the researcher-supplied manuscript. These are research artifacts; the current implementation must be verified against the latest source code.',''.join(diagram_html)))
     write('research/diagrams/README.md','# Research diagrams\n\nExtracted from the latest Google Doc PDF export on 2026-11-05. Original wording and graphical content preserved. Coordinates and source pages are recorded in scripts/prepare_research.py.\n\n- Figure 1.1: export page 27\n- Figure 4.1 and 4.2: export page 156\n- Figure 67: export page 336\n- Figure 68: export page 337\n\nImages are cropped to the original diagram regions only; no private respondent data is included. Diagrams document the manuscript design and do not prove the pending latest source matches every component.\n')
 
-    # Complete manual procedures from the current manuscript; unsafe embedded screenshots are omitted.
+    # Prepare verified procedure text first; prepare_manual adds reviewed screen images below.
     manual_start = text.rindex("User's Manual")
     manual_end = text.index('Proof of Survey', manual_start)
     manual_text = text[manual_start:manual_end].strip()
@@ -120,7 +120,7 @@ Original document: ''' + SOURCE_URL + '\n\n'
 
     docs = '''<h2>Research and evidence</h2><ul><li><a href="CONTENT_SOURCES.md">Content verification and source register</a></li><li><a href="RESULTS.md">Reported results and limitations</a></li><li><a href="../manuscript/UNIORG-Manuscript-Public-Text.txt" download>Download public manuscript text</a> — Chapters I–V and literature cited; personal profiles, embedded images and private appendices omitted.</li><li><a href="MATERIALS_INVENTORY.json">Original materials inventory</a></li></ul>
 <h2>Platform scope</h2><p>UNIORG is a configurable Laravel web platform for OSAS and student organizations. Its manuscript describes organization workspaces, accreditation, events and approvals, payment tracking, elections, academic resources, communication, role-based access and OCR/NLP document processing. The research covers LSPU Santa Cruz Campus.</p>
-<h2>Installation and current source</h2><p>The previously recorded main branch was superseded by the researcher-confirmed branch. The researcher-confirmed Modification_based_Mia branch is included at revision 1cbf524. Follow <a href="../../source-code/README.md">the actual installation and deployment guide</a>, and review <a href="SOURCE_PROVENANCE.md">source provenance and sanitization</a>. Backend runtime validation remains pending the required local extensions and database.</p><p><a href="LEGACY_SOURCE_REVIEW.md">Read the provisional old-code review</a>. It records actual dependency manifests and conditional commands from the old source. It is retained only as historical comparison; use the confirmed snapshot guide for current setup.</p>
+<h2>Installation and current source</h2><p>The researcher-confirmed application source is included at revision 1cbf524. Follow <a href="../../source-code/README.md">the actual installation and deployment guide</a>, and review <a href="SOURCE_PROVENANCE.md">source provenance and sanitization</a>. Backend runtime validation remains pending the required local extensions and database.</p><p><a href="LEGACY_SOURCE_REVIEW.md">Read the provisional old-code review</a>. It records actual dependency manifests and conditional commands from the old source. It is retained only as historical comparison; use the confirmed snapshot guide for current setup.</p>
 <h2>Website deployment</h2><p>The research website is static HTML, CSS and JavaScript, and needs no build. GitHub Pages can serve main from the root folder. The Laravel application requires separate backend hosting.</p><p><a href="PUBLISHING.md">GitHub Pages and submission procedure</a> · <a href="../../SUBMISSION_CHECKLIST.md">Submission checklist</a></p>
 <h2>Verification</h2><p>Run <code>python scripts/verify_submission.py</code> from the repository root. See <a href="VERIFICATION.md">the verification record</a> for browser checks, downloads, privacy handling, external links and remaining limitations.</p>'''
     write('research/documentation/index.html',page('Research & system documentation','DOCUMENTATION HUB','Research evidence, platform scope, source-code status, and publication guidance for the submission package.',docs))
@@ -130,7 +130,9 @@ Original document: ''' + SOURCE_URL + '\n\n'
         'pdf_export_sha256':sha256((ROOT/'.local/manuscript-complete.pdf').read_bytes()).hexdigest(),
         'pdf_pages':len(doc),'manual_figure_captions':len(re.findall(r'^\s*Figure\s+\d+',manual_text,re.M)),
         'private_original_exports_included':False},indent=2))
-    print('Prepared manuscript text, manual, six redacted screenshots, five diagram extracts, and documentation pages.')
+    from prepare_manual import main as prepare_manual
+    prepare_manual()
+    print('Prepared manuscript text, illustrated manual, redacted screenshots, diagrams, and documentation pages.')
 
 
 if __name__ == '__main__': main()
