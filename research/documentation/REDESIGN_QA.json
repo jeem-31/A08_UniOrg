@@ -1,0 +1,3655 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Manila",
+  "browser": "Playwright Chromium; responsive viewport emulation, including CDP touch input",
+  "layout": {
+    "viewport_checks": [
+      {
+        "page": "home",
+        "width": 320,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG.",
+        "main_body_min_px": 16,
+        "active_sections": {
+          "research": "research",
+          "methodology": "methodology",
+          "system": "system",
+          "results": "results",
+          "resources": "resources"
+        },
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "home",
+        "width": 390,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG.",
+        "main_body_min_px": 16,
+        "active_sections": {
+          "research": "research",
+          "methodology": "methodology",
+          "system": "system",
+          "results": "results",
+          "resources": "resources"
+        },
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "home",
+        "width": 768,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG.",
+        "main_body_min_px": 16,
+        "active_sections": {
+          "research": "research",
+          "methodology": "methodology",
+          "system": "system",
+          "results": "results",
+          "resources": "resources"
+        },
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "home",
+        "width": 1024,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG.",
+        "main_body_min_px": 16,
+        "active_sections": {
+          "research": "research",
+          "methodology": "methodology",
+          "system": "system",
+          "results": "results",
+          "resources": "resources"
+        },
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "home",
+        "width": 1440,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG.",
+        "main_body_min_px": 16,
+        "active_sections": {
+          "research": "research",
+          "methodology": "methodology",
+          "system": "system",
+          "results": "results",
+          "resources": "resources"
+        },
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "documentation",
+        "width": 320,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research & system documentation",
+        "main_body_min_px": 16,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "documentation",
+        "width": 390,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research & system documentation",
+        "main_body_min_px": 16,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "documentation",
+        "width": 768,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research & system documentation",
+        "main_body_min_px": 16,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "documentation",
+        "width": 1024,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research & system documentation",
+        "main_body_min_px": 16,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "documentation",
+        "width": 1440,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research & system documentation",
+        "main_body_min_px": 16,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "diagrams",
+        "width": 320,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research diagrams",
+        "main_body_min_px": 18,
+        "figures": 5,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "diagrams",
+        "width": 390,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research diagrams",
+        "main_body_min_px": 18,
+        "figures": 5,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "diagrams",
+        "width": 768,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research diagrams",
+        "main_body_min_px": 18,
+        "figures": 5,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "diagrams",
+        "width": 1024,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research diagrams",
+        "main_body_min_px": 18,
+        "figures": 5,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "diagrams",
+        "width": 1440,
+        "overflow": false,
+        "bad_images": [],
+        "title": "Research diagrams",
+        "main_body_min_px": 21.6,
+        "figures": 5,
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "manual",
+        "width": 320,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG user manual",
+        "main_body_min_px": 16,
+        "procedures": 60,
+        "procedure_order": [
+          "figure-125",
+          "figure-126",
+          "figure-127",
+          "figure-128",
+          "figure-129",
+          "figure-130",
+          "figure-131",
+          "figure-132",
+          "figure-133",
+          "figure-134",
+          "figure-135",
+          "figure-136",
+          "figure-137",
+          "figure-138",
+          "figure-139",
+          "figure-140",
+          "figure-141",
+          "figure-142",
+          "figure-143",
+          "figure-144",
+          "figure-145",
+          "figure-146",
+          "figure-147",
+          "figure-148",
+          "figure-149",
+          "figure-150",
+          "figure-151",
+          "figure-152",
+          "figure-153",
+          "figure-154",
+          "figure-155",
+          "figure-156",
+          "figure-157",
+          "figure-158",
+          "figure-159",
+          "figure-160",
+          "figure-161",
+          "figure-162",
+          "figure-163",
+          "figure-164",
+          "figure-165",
+          "figure-166",
+          "figure-167",
+          "figure-168",
+          "figure-169",
+          "figure-170",
+          "figure-171",
+          "figure-172",
+          "figure-173",
+          "figure-174",
+          "figure-175",
+          "figure-176",
+          "figure-177",
+          "figure-178",
+          "figure-179",
+          "figure-180",
+          "figure-181",
+          "figure-182",
+          "figure-183",
+          "figure-184"
+        ],
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "manual",
+        "width": 390,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG user manual",
+        "main_body_min_px": 16,
+        "procedures": 60,
+        "procedure_order": [
+          "figure-125",
+          "figure-126",
+          "figure-127",
+          "figure-128",
+          "figure-129",
+          "figure-130",
+          "figure-131",
+          "figure-132",
+          "figure-133",
+          "figure-134",
+          "figure-135",
+          "figure-136",
+          "figure-137",
+          "figure-138",
+          "figure-139",
+          "figure-140",
+          "figure-141",
+          "figure-142",
+          "figure-143",
+          "figure-144",
+          "figure-145",
+          "figure-146",
+          "figure-147",
+          "figure-148",
+          "figure-149",
+          "figure-150",
+          "figure-151",
+          "figure-152",
+          "figure-153",
+          "figure-154",
+          "figure-155",
+          "figure-156",
+          "figure-157",
+          "figure-158",
+          "figure-159",
+          "figure-160",
+          "figure-161",
+          "figure-162",
+          "figure-163",
+          "figure-164",
+          "figure-165",
+          "figure-166",
+          "figure-167",
+          "figure-168",
+          "figure-169",
+          "figure-170",
+          "figure-171",
+          "figure-172",
+          "figure-173",
+          "figure-174",
+          "figure-175",
+          "figure-176",
+          "figure-177",
+          "figure-178",
+          "figure-179",
+          "figure-180",
+          "figure-181",
+          "figure-182",
+          "figure-183",
+          "figure-184"
+        ],
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "manual",
+        "width": 768,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG user manual",
+        "main_body_min_px": 16,
+        "procedures": 60,
+        "procedure_order": [
+          "figure-125",
+          "figure-126",
+          "figure-127",
+          "figure-128",
+          "figure-129",
+          "figure-130",
+          "figure-131",
+          "figure-132",
+          "figure-133",
+          "figure-134",
+          "figure-135",
+          "figure-136",
+          "figure-137",
+          "figure-138",
+          "figure-139",
+          "figure-140",
+          "figure-141",
+          "figure-142",
+          "figure-143",
+          "figure-144",
+          "figure-145",
+          "figure-146",
+          "figure-147",
+          "figure-148",
+          "figure-149",
+          "figure-150",
+          "figure-151",
+          "figure-152",
+          "figure-153",
+          "figure-154",
+          "figure-155",
+          "figure-156",
+          "figure-157",
+          "figure-158",
+          "figure-159",
+          "figure-160",
+          "figure-161",
+          "figure-162",
+          "figure-163",
+          "figure-164",
+          "figure-165",
+          "figure-166",
+          "figure-167",
+          "figure-168",
+          "figure-169",
+          "figure-170",
+          "figure-171",
+          "figure-172",
+          "figure-173",
+          "figure-174",
+          "figure-175",
+          "figure-176",
+          "figure-177",
+          "figure-178",
+          "figure-179",
+          "figure-180",
+          "figure-181",
+          "figure-182",
+          "figure-183",
+          "figure-184"
+        ],
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "manual",
+        "width": 1024,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG user manual",
+        "main_body_min_px": 16,
+        "procedures": 60,
+        "procedure_order": [
+          "figure-125",
+          "figure-126",
+          "figure-127",
+          "figure-128",
+          "figure-129",
+          "figure-130",
+          "figure-131",
+          "figure-132",
+          "figure-133",
+          "figure-134",
+          "figure-135",
+          "figure-136",
+          "figure-137",
+          "figure-138",
+          "figure-139",
+          "figure-140",
+          "figure-141",
+          "figure-142",
+          "figure-143",
+          "figure-144",
+          "figure-145",
+          "figure-146",
+          "figure-147",
+          "figure-148",
+          "figure-149",
+          "figure-150",
+          "figure-151",
+          "figure-152",
+          "figure-153",
+          "figure-154",
+          "figure-155",
+          "figure-156",
+          "figure-157",
+          "figure-158",
+          "figure-159",
+          "figure-160",
+          "figure-161",
+          "figure-162",
+          "figure-163",
+          "figure-164",
+          "figure-165",
+          "figure-166",
+          "figure-167",
+          "figure-168",
+          "figure-169",
+          "figure-170",
+          "figure-171",
+          "figure-172",
+          "figure-173",
+          "figure-174",
+          "figure-175",
+          "figure-176",
+          "figure-177",
+          "figure-178",
+          "figure-179",
+          "figure-180",
+          "figure-181",
+          "figure-182",
+          "figure-183",
+          "figure-184"
+        ],
+        "overflow_after_scroll": false
+      },
+      {
+        "page": "manual",
+        "width": 1440,
+        "overflow": false,
+        "bad_images": [],
+        "title": "UNIORG user manual",
+        "main_body_min_px": 16,
+        "procedures": 60,
+        "procedure_order": [
+          "figure-125",
+          "figure-126",
+          "figure-127",
+          "figure-128",
+          "figure-129",
+          "figure-130",
+          "figure-131",
+          "figure-132",
+          "figure-133",
+          "figure-134",
+          "figure-135",
+          "figure-136",
+          "figure-137",
+          "figure-138",
+          "figure-139",
+          "figure-140",
+          "figure-141",
+          "figure-142",
+          "figure-143",
+          "figure-144",
+          "figure-145",
+          "figure-146",
+          "figure-147",
+          "figure-148",
+          "figure-149",
+          "figure-150",
+          "figure-151",
+          "figure-152",
+          "figure-153",
+          "figure-154",
+          "figure-155",
+          "figure-156",
+          "figure-157",
+          "figure-158",
+          "figure-159",
+          "figure-160",
+          "figure-161",
+          "figure-162",
+          "figure-163",
+          "figure-164",
+          "figure-165",
+          "figure-166",
+          "figure-167",
+          "figure-168",
+          "figure-169",
+          "figure-170",
+          "figure-171",
+          "figure-172",
+          "figure-173",
+          "figure-174",
+          "figure-175",
+          "figure-176",
+          "figure-177",
+          "figure-178",
+          "figure-179",
+          "figure-180",
+          "figure-181",
+          "figure-182",
+          "figure-183",
+          "figure-184"
+        ],
+        "overflow_after_scroll": false
+      }
+    ],
+    "console_errors": []
+  },
+  "interactions": [
+    {
+      "check": "Autoplay advances after approximately five seconds",
+      "pass": true,
+      "detail": {
+        "before": "01 / 06",
+        "after": "02 / 06"
+      }
+    },
+    {
+      "check": "Pause button stops autoplay",
+      "pass": true
+    },
+    {
+      "check": "Play button resumes autoplay",
+      "pass": true
+    },
+    {
+      "check": "Hover pauses autoplay",
+      "pass": true
+    },
+    {
+      "check": "Autoplay resumes after hover ends",
+      "pass": true
+    },
+    {
+      "check": "Keyboard focus keeps screenshot stable",
+      "pass": true
+    },
+    {
+      "check": "Carousel ArrowRight advances and retains focus",
+      "pass": true
+    },
+    {
+      "check": "Carousel Home goes to first screenshot",
+      "pass": true
+    },
+    {
+      "check": "Carousel End goes to last screenshot",
+      "pass": true
+    },
+    {
+      "check": "Previous button works",
+      "pass": true
+    },
+    {
+      "check": "Position indicators select screenshot",
+      "pass": true
+    },
+    {
+      "check": "Screenshot viewer opens",
+      "pass": true
+    },
+    {
+      "check": "Viewer ArrowRight advances",
+      "pass": true
+    },
+    {
+      "check": "Viewer ArrowLeft returns",
+      "pass": true
+    },
+    {
+      "check": "Full-size link matches original image",
+      "pass": true
+    },
+    {
+      "check": "Viewer pauses carousel",
+      "pass": true
+    },
+    {
+      "check": "Escape closes viewer and restores opener focus",
+      "pass": true
+    },
+    {
+      "check": "ScrollTrigger moves angled frame toward front view",
+      "pass": true,
+      "detail": {
+        "before": "matrix3d(0.96023, -0.0138943, 0.111656, 0, 0.00317069, 0.962361, 0.0924874, 0, -0.116335, -0.0946346, 0.988691, 0, 0, 16.5798, 0, 1)",
+        "after": "matrix3d(0.993993, -0.00251553, 0.0201201, 0, 0.00217638, 0.994056, 0.0167631, 0, -0.0202772, -0.0168131, 0.999653, 0, 0, 2.899, 0, 1)"
+      }
+    },
+    {
+      "check": "Desktop pointer tilt is active",
+      "pass": true
+    },
+    {
+      "check": "No pinned scroll sequences",
+      "pass": true
+    },
+    {
+      "check": "Drawer opens with modal semantics and inert background",
+      "pass": true
+    },
+    {
+      "check": "Drawer forward focus wraps",
+      "pass": true
+    },
+    {
+      "check": "Drawer reverse focus wraps",
+      "pass": true
+    },
+    {
+      "check": "Drawer Escape restores trigger focus",
+      "pass": true
+    },
+    {
+      "check": "Drawer deep link closes and updates active section",
+      "pass": true
+    },
+    {
+      "check": "Backdrop click closes drawer",
+      "pass": true
+    },
+    {
+      "check": "Swipe changes carousel screenshot",
+      "pass": true
+    },
+    {
+      "check": "Vertical touch movement does not change screenshot",
+      "pass": true
+    },
+    {
+      "check": "Reduced motion disables camera and autoplay",
+      "pass": true
+    },
+    {
+      "check": "Reduced motion screenshot stays stable",
+      "pass": true
+    },
+    {
+      "check": "Reduced-motion content remains visible",
+      "pass": true
+    },
+    {
+      "check": "diagrams viewer arrows",
+      "pass": true
+    },
+    {
+      "check": "diagrams viewer Escape and focus restoration",
+      "pass": true
+    },
+    {
+      "check": "manual viewer arrows",
+      "pass": true
+    },
+    {
+      "check": "manual viewer Escape and focus restoration",
+      "pass": true
+    },
+    {
+      "check": "All 60 manual procedures retain original order",
+      "pass": true
+    },
+    {
+      "check": "home no-JS content and navigation",
+      "pass": true
+    },
+    {
+      "check": "No-JS displays all six screenshots",
+      "pass": true
+    },
+    {
+      "check": "documentation no-JS content and navigation",
+      "pass": true
+    },
+    {
+      "check": "diagrams no-JS content and navigation",
+      "pass": true
+    },
+    {
+      "check": "manual no-JS content and navigation",
+      "pass": true
+    },
+    {
+      "check": "No interaction console errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "additional_checks": [
+    {
+      "check": "home under /A08_UniOrg/",
+      "pass": true
+    },
+    {
+      "check": "documentation under /A08_UniOrg/",
+      "pass": true
+    },
+    {
+      "check": "diagrams under /A08_UniOrg/",
+      "pass": true
+    },
+    {
+      "check": "manual under /A08_UniOrg/",
+      "pass": true
+    },
+    {
+      "check": "Chromium touch swipe on mobile viewport",
+      "pass": true
+    },
+    {
+      "check": "Native viewer focus remains contained",
+      "pass": true
+    },
+    {
+      "check": "Supporting deep link manual-dean-users",
+      "pass": true,
+      "top": 194
+    },
+    {
+      "check": "Supporting deep link verification",
+      "pass": true,
+      "top": 386.25
+    },
+    {
+      "check": "Keyboard focus visibly styled",
+      "pass": true
+    },
+    {
+      "check": "Animation-library failure leaves research readable",
+      "pass": true
+    }
+  ],
+  "accessibility": [
+    {
+      "page": "home",
+      "width": 390,
+      "violations": [],
+      "passes": 27,
+      "incomplete": 3
+    },
+    {
+      "page": "drawer",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "page": "viewer",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "violations": [],
+      "passes": 27,
+      "incomplete": 2
+    },
+    {
+      "page": "documentation",
+      "width": 390,
+      "violations": [],
+      "passes": 23,
+      "incomplete": 1
+    },
+    {
+      "page": "documentation",
+      "width": 1440,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0
+    },
+    {
+      "page": "diagrams",
+      "width": 390,
+      "violations": [],
+      "passes": 21,
+      "incomplete": 1
+    },
+    {
+      "page": "diagrams",
+      "width": 1440,
+      "violations": [],
+      "passes": 23,
+      "incomplete": 0
+    },
+    {
+      "page": "manual",
+      "width": 390,
+      "violations": [],
+      "passes": 23,
+      "incomplete": 1
+    },
+    {
+      "page": "manual",
+      "width": 1440,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "url": "http://127.0.0.1:4173/README.md",
+        "status": 200,
+        "bytes": 7376,
+        "final_url": "http://127.0.0.1:4173/README.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/SUBMISSION_CHECKLIST.md",
+        "status": 200,
+        "bytes": 7455,
+        "final_url": "http://127.0.0.1:4173/SUBMISSION_CHECKLIST.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/css/manual.css",
+        "status": 200,
+        "bytes": 2469,
+        "final_url": "http://127.0.0.1:4173/assets/css/manual.css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/css/style.css",
+        "status": 200,
+        "bytes": 44642,
+        "final_url": "http://127.0.0.1:4173/assets/css/style.css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/inter-latin-variable.woff2",
+        "status": 200,
+        "bytes": 48256,
+        "final_url": "http://127.0.0.1:4173/assets/fonts/inter-latin-variable.woff2"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/LSPU_LOGO.png",
+        "status": 200,
+        "bytes": 1991089,
+        "final_url": "http://127.0.0.1:4173/assets/images/LSPU_LOGO.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/favicon.svg",
+        "status": 200,
+        "bytes": 28704,
+        "final_url": "http://127.0.0.1:4173/assets/images/favicon.svg"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/js/main.js",
+        "status": 200,
+        "bytes": 19924,
+        "final_url": "http://127.0.0.1:4173/assets/js/main.js"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/js/third-party/ScrollTrigger.min.js",
+        "status": 200,
+        "bytes": 44235,
+        "final_url": "http://127.0.0.1:4173/assets/js/third-party/ScrollTrigger.min.js"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/js/third-party/gsap.min.js",
+        "status": 200,
+        "bytes": 72779,
+        "final_url": "http://127.0.0.1:4173/assets/js/third-party/gsap.min.js"
+      },
+      {
+        "url": "http://127.0.0.1:4173/index.html",
+        "status": 200,
+        "bytes": 26236,
+        "final_url": "http://127.0.0.1:4173/index.html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/conceptual-framework.png",
+        "status": 200,
+        "bytes": 242640,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/conceptual-framework.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/index.html",
+        "status": 200,
+        "bytes": 7855,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/index.html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/proposed-accreditation.png",
+        "status": 200,
+        "bytes": 65493,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/proposed-accreditation.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/system-architecture.png",
+        "status": 200,
+        "bytes": 303583,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/system-architecture.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/system-context.png",
+        "status": 200,
+        "bytes": 64132,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/system-context.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/diagrams/use-case.png",
+        "status": 200,
+        "bytes": 178440,
+        "final_url": "http://127.0.0.1:4173/research/diagrams/use-case.png"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/CONTENT_SOURCES.md",
+        "status": 200,
+        "bytes": 5977,
+        "final_url": "http://127.0.0.1:4173/research/documentation/CONTENT_SOURCES.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/LEGACY_SOURCE_REVIEW.md",
+        "status": 200,
+        "bytes": 4130,
+        "final_url": "http://127.0.0.1:4173/research/documentation/LEGACY_SOURCE_REVIEW.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/MATERIALS_INVENTORY.json",
+        "status": 200,
+        "bytes": 43132,
+        "final_url": "http://127.0.0.1:4173/research/documentation/MATERIALS_INVENTORY.json"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/PUBLISHING.md",
+        "status": 200,
+        "bytes": 3465,
+        "final_url": "http://127.0.0.1:4173/research/documentation/PUBLISHING.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/RESULTS.md",
+        "status": 200,
+        "bytes": 1719,
+        "final_url": "http://127.0.0.1:4173/research/documentation/RESULTS.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/SOURCE_PROVENANCE.md",
+        "status": 200,
+        "bytes": 3681,
+        "final_url": "http://127.0.0.1:4173/research/documentation/SOURCE_PROVENANCE.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/VERIFICATION.md",
+        "status": 200,
+        "bytes": 6884,
+        "final_url": "http://127.0.0.1:4173/research/documentation/VERIFICATION.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/documentation/index.html",
+        "status": 200,
+        "bytes": 6720,
+        "final_url": "http://127.0.0.1:4173/research/documentation/index.html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/UNIORG-User-Manual-Public-Text.txt",
+        "status": 200,
+        "bytes": 26097,
+        "final_url": "http://127.0.0.1:4173/research/manuals/UNIORG-User-Manual-Public-Text.txt"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-125.webp",
+        "status": 200,
+        "bytes": 533080,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-125.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-126.webp",
+        "status": 200,
+        "bytes": 653454,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-126.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-127.webp",
+        "status": 200,
+        "bytes": 651838,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-127.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-128.webp",
+        "status": 200,
+        "bytes": 70982,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-128.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-129.webp",
+        "status": 200,
+        "bytes": 136378,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-129.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-130.webp",
+        "status": 200,
+        "bytes": 238136,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-130.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-131.webp",
+        "status": 200,
+        "bytes": 24402,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-131.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-132.webp",
+        "status": 200,
+        "bytes": 26180,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-132.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-133.webp",
+        "status": 200,
+        "bytes": 54558,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-133.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-134.webp",
+        "status": 200,
+        "bytes": 80642,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-134.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-135.webp",
+        "status": 200,
+        "bytes": 103564,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-135.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-136.webp",
+        "status": 200,
+        "bytes": 47420,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-136.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-137.webp",
+        "status": 200,
+        "bytes": 42760,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-137.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-138.webp",
+        "status": 200,
+        "bytes": 43728,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-138.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-139.webp",
+        "status": 200,
+        "bytes": 85298,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-139.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-140.webp",
+        "status": 200,
+        "bytes": 47382,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-140.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-141.webp",
+        "status": 200,
+        "bytes": 75214,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-141.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-142.webp",
+        "status": 200,
+        "bytes": 57654,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-142.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-143.webp",
+        "status": 200,
+        "bytes": 78840,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-143.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-144.webp",
+        "status": 200,
+        "bytes": 47662,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-144.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-145.webp",
+        "status": 200,
+        "bytes": 48804,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-145.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-146.webp",
+        "status": 200,
+        "bytes": 49486,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-146.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-147.webp",
+        "status": 200,
+        "bytes": 55644,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-147.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-148.webp",
+        "status": 200,
+        "bytes": 49762,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-148.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-149.webp",
+        "status": 200,
+        "bytes": 50558,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-149.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-150.webp",
+        "status": 200,
+        "bytes": 142014,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-150.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-151.webp",
+        "status": 200,
+        "bytes": 52036,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-151.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-152.webp",
+        "status": 200,
+        "bytes": 86180,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-152.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-153.webp",
+        "status": 200,
+        "bytes": 32022,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-153.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-154.webp",
+        "status": 200,
+        "bytes": 28092,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-154.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-155.webp",
+        "status": 200,
+        "bytes": 25526,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-155.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-156.webp",
+        "status": 200,
+        "bytes": 27954,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-156.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-157.webp",
+        "status": 200,
+        "bytes": 79608,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-157.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-158.webp",
+        "status": 200,
+        "bytes": 29756,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-158.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-159.webp",
+        "status": 200,
+        "bytes": 62770,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-159.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-160.webp",
+        "status": 200,
+        "bytes": 80412,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-160.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-161.webp",
+        "status": 200,
+        "bytes": 40648,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-161.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-162.webp",
+        "status": 200,
+        "bytes": 67988,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-162.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-163.webp",
+        "status": 200,
+        "bytes": 30270,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-163.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-164.webp",
+        "status": 200,
+        "bytes": 51874,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-164.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-165.webp",
+        "status": 200,
+        "bytes": 31854,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-165.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-166.webp",
+        "status": 200,
+        "bytes": 48984,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-166.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-167.webp",
+        "status": 200,
+        "bytes": 614790,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-167.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-168.webp",
+        "status": 200,
+        "bytes": 56294,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-168.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-169.webp",
+        "status": 200,
+        "bytes": 46430,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-169.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-170.webp",
+        "status": 200,
+        "bytes": 96520,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-170.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-171.webp",
+        "status": 200,
+        "bytes": 65564,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-171.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-172.webp",
+        "status": 200,
+        "bytes": 63534,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-172.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-173.webp",
+        "status": 200,
+        "bytes": 175650,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-173.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-174.webp",
+        "status": 200,
+        "bytes": 148720,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-174.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-175.webp",
+        "status": 200,
+        "bytes": 125852,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-175.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-176.webp",
+        "status": 200,
+        "bytes": 98594,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-176.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-177.webp",
+        "status": 200,
+        "bytes": 112392,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-177.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-178.webp",
+        "status": 200,
+        "bytes": 102668,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-178.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-179.webp",
+        "status": 200,
+        "bytes": 156934,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-179.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-180.webp",
+        "status": 200,
+        "bytes": 102262,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-180.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-181.webp",
+        "status": 200,
+        "bytes": 138838,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-181.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-182.webp",
+        "status": 200,
+        "bytes": 131596,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-182.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-183.webp",
+        "status": 200,
+        "bytes": 100082,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-183.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/images/figure-184.webp",
+        "status": 200,
+        "bytes": 120978,
+        "final_url": "http://127.0.0.1:4173/research/manuals/images/figure-184.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuals/index.html",
+        "status": 200,
+        "bytes": 70566,
+        "final_url": "http://127.0.0.1:4173/research/manuals/index.html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/UNIORG-Manuscript-Public-Text.txt",
+        "status": 200,
+        "bytes": 356004,
+        "final_url": "http://127.0.0.1:4173/research/manuscript/UNIORG-Manuscript-Public-Text.txt"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/README.md",
+        "status": 200,
+        "bytes": 1807,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/README.md"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/accreditation.webp",
+        "status": 200,
+        "bytes": 158740,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/accreditation.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/document-library.webp",
+        "status": 200,
+        "bytes": 170828,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/document-library.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/e-library.webp",
+        "status": 200,
+        "bytes": 86798,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/e-library.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/edushare.webp",
+        "status": 200,
+        "bytes": 53834,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/edushare.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/master-calendar.webp",
+        "status": 200,
+        "bytes": 98810,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/master-calendar.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/screenshots/osas-dashboard.webp",
+        "status": 200,
+        "bytes": 175660,
+        "final_url": "http://127.0.0.1:4173/research/screenshots/osas-dashboard.webp"
+      },
+      {
+        "url": "http://127.0.0.1:4173/source-code/README.md",
+        "status": 200,
+        "bytes": 7768,
+        "final_url": "http://127.0.0.1:4173/source-code/README.md"
+      }
+    ],
+    "external": [
+      {
+        "url": "https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing",
+        "status": 200,
+        "bytes": 8229709,
+        "final_url": "https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing"
+      },
+      {
+        "url": "https://github.com/jeem-31/A08_UniOrg",
+        "status": 200,
+        "bytes": 245614,
+        "final_url": "https://github.com/jeem-31/A08_UniOrg"
+      },
+      {
+        "url": "https://github.com/zorojuro0101/-UniOrg/tree/1cbf524b77947010041bf3fdbdbbfd7412e06176",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "downloads": [
+      "http://127.0.0.1:4173/research/manuscript/UNIORG-Manuscript-Public-Text.txt",
+      "http://127.0.0.1:4173/research/manuscript/UNIORG-Manuscript-Public-Text.txt",
+      "http://127.0.0.1:4173/research/manuals/UNIORG-User-Manual-Public-Text.txt"
+    ]
+  },
+  "content_preservation": [
+    {
+      "page": "index.html",
+      "original_main_text_nodes": 245,
+      "missing": []
+    },
+    {
+      "page": "research/documentation/index.html",
+      "original_main_text_nodes": 31,
+      "missing": []
+    },
+    {
+      "page": "research/diagrams/index.html",
+      "original_main_text_nodes": 9,
+      "missing": []
+    },
+    {
+      "page": "research/manuals/index.html",
+      "original_main_text_nodes": 476,
+      "missing": []
+    }
+  ],
+  "source_code": {
+    "files_checked": 986,
+    "changed": []
+  },
+  "screenshots_directory": ".local/redesign-qa/",
+  "publication": "Local only. No push or publication performed.",
+  "final_table_refinement": [
+    {
+      "width": 320,
+      "overflow": false,
+      "numeric_column_gap": 10.015625,
+      "reduced_label": "Autoplay off"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "numeric_column_gap": 13.875,
+      "reduced_label": "Autoplay off"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "numeric_column_gap": 18.28125,
+      "reduced_label": "Autoplay off"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "numeric_column_gap": 22.21875,
+      "reduced_label": "Autoplay off"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "numeric_column_gap": 50.28125,
+      "reduced_label": "Autoplay off"
+    }
+  ],
+  "submission_verifier": {
+    "passed": true,
+    "html_pages": 5,
+    "checked_local_links": 262,
+    "errors": [],
+    "note": "The 18,705,090-byte compressed web PDF preserves 445 pages and extracted text; the 232,146,775-byte original is retained locally."
+  },
+  "floating_sidebar_followup": [
+    {
+      "page": "home",
+      "width": 320,
+      "overflow": false,
+      "errors": [],
+      "drawer_fits": true,
+      "focus_restored": true
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "overflow": false,
+      "errors": [],
+      "drawer_fits": true,
+      "focus_restored": true
+    },
+    {
+      "page": "home",
+      "width": 768,
+      "overflow": false,
+      "errors": [],
+      "drawer_fits": true,
+      "focus_restored": true
+    },
+    {
+      "page": "home",
+      "width": 1024,
+      "overflow": false,
+      "errors": [],
+      "clearance": 48,
+      "floating": true
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "overflow": false,
+      "errors": [],
+      "clearance": 73.59,
+      "floating": true,
+      "a11y": []
+    },
+    {
+      "page": "documentation",
+      "width": 320,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "documentation",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "documentation",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "documentation",
+      "width": 1024,
+      "overflow": false,
+      "errors": [],
+      "clearance": 48,
+      "floating": true
+    },
+    {
+      "page": "documentation",
+      "width": 1440,
+      "overflow": false,
+      "errors": [],
+      "clearance": 73.59,
+      "floating": true
+    },
+    {
+      "page": "diagrams",
+      "width": 320,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "diagrams",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "diagrams",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "diagrams",
+      "width": 1024,
+      "overflow": false,
+      "errors": [],
+      "clearance": 48,
+      "floating": true
+    },
+    {
+      "page": "diagrams",
+      "width": 1440,
+      "overflow": false,
+      "errors": [],
+      "clearance": 73.59,
+      "floating": true
+    },
+    {
+      "page": "manual",
+      "width": 320,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "manual",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "manual",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "manual",
+      "width": 1024,
+      "overflow": false,
+      "errors": [],
+      "clearance": 48,
+      "floating": true
+    },
+    {
+      "page": "manual",
+      "width": 1440,
+      "overflow": false,
+      "errors": [],
+      "clearance": 73.59,
+      "floating": true
+    }
+  ],
+  "liquid_glass_followup": {
+    "layouts": [
+      {
+        "page": "home",
+        "width": 320,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 390,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 768,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 1024,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "home",
+        "width": 1440,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "documentation",
+        "width": 320,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 390,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "scrolls_to_focused_link": true,
+        "focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 768,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 1024,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "documentation",
+        "width": 1440,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "diagrams",
+        "width": 320,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 390,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 768,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 1024,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "diagrams",
+        "width": 1440,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "manual",
+        "width": 320,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 390,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 768,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": [],
+        "drawer_open": true,
+        "focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 1024,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      },
+      {
+        "page": "manual",
+        "width": 1440,
+        "overflow": false,
+        "removed_progress": true,
+        "scrollbar_hidden": true,
+        "errors": []
+      }
+    ],
+    "accessibility": [
+      {
+        "state": "dark",
+        "violations": []
+      },
+      {
+        "state": "light",
+        "violations": []
+      },
+      {
+        "state": "dark-results",
+        "violations": []
+      },
+      {
+        "state": "light-page-dark-drawer",
+        "violations": []
+      }
+    ]
+  },
+  "manuscript_modal_followup": {
+    "checks": [
+      {
+        "check": "Homepage 320: two results and no test-total claim",
+        "pass": true
+      },
+      {
+        "check": "PDF rendered at 320",
+        "pass": true
+      },
+      {
+        "check": "Modal fits 320",
+        "pass": true
+      },
+      {
+        "check": "Escape inside PDF restores focus at 320",
+        "pass": true
+      },
+      {
+        "check": "Homepage 390: two results and no test-total claim",
+        "pass": true
+      },
+      {
+        "check": "PDF rendered at 390",
+        "pass": true
+      },
+      {
+        "check": "Modal fits 390",
+        "pass": true
+      },
+      {
+        "check": "Escape inside PDF restores focus at 390",
+        "pass": true
+      },
+      {
+        "check": "Homepage 768: two results and no test-total claim",
+        "pass": true
+      },
+      {
+        "check": "PDF rendered at 768",
+        "pass": true
+      },
+      {
+        "check": "Modal fits 768",
+        "pass": true
+      },
+      {
+        "check": "Escape inside PDF restores focus at 768",
+        "pass": true
+      },
+      {
+        "check": "Homepage 1024: two results and no test-total claim",
+        "pass": true
+      },
+      {
+        "check": "PDF rendered at 1024",
+        "pass": true
+      },
+      {
+        "check": "Modal fits 1024",
+        "pass": true
+      },
+      {
+        "check": "Escape inside PDF restores focus at 1024",
+        "pass": true
+      },
+      {
+        "check": "Homepage 1440: two results and no test-total claim",
+        "pass": true
+      },
+      {
+        "check": "PDF rendered at 1440",
+        "pass": true
+      },
+      {
+        "check": "Modal fits 1440",
+        "pass": true
+      },
+      {
+        "check": "Escape inside PDF restores focus at 1440",
+        "pass": true
+      },
+      {
+        "check": "documentation PDF modal works",
+        "pass": true
+      },
+      {
+        "check": "documentation close restores focus",
+        "pass": true
+      },
+      {
+        "check": "manual PDF modal works",
+        "pass": true
+      },
+      {
+        "check": "manual close restores focus",
+        "pass": true
+      },
+      {
+        "check": "Reader frame has no source before opening",
+        "pass": true
+      },
+      {
+        "check": "Next page control",
+        "pass": true
+      },
+      {
+        "check": "Previous page control",
+        "pass": true
+      },
+      {
+        "check": "Zoom/page-width control",
+        "pass": true
+      },
+      {
+        "check": "Jump to acceptance table",
+        "pass": true
+      },
+      {
+        "check": "Search finds manuscript text",
+        "pass": true,
+        "detail": "⁨226⁩ of ⁨236⁩ matches"
+      },
+      {
+        "check": "Reopen keeps reader page",
+        "pass": true
+      },
+      {
+        "check": "Original/download link uses supplied file",
+        "pass": true
+      },
+      {
+        "check": "PDF modal under /A08_UniOrg/",
+        "pass": true
+      },
+      {
+        "check": "No-JS manuscript has direct PDF fallback",
+        "pass": true
+      },
+      {
+        "check": "No page horizontal overflow in 20 layouts",
+        "pass": true
+      },
+      {
+        "check": "No browser console errors",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "PDF uses byte ranges",
+        "pass": true
+      }
+    ],
+    "layouts": [
+      {
+        "page": "home",
+        "width": 320,
+        "overflow": false
+      },
+      {
+        "page": "home",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "page": "home",
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "page": "home",
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "page": "home",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "page": "documentation",
+        "width": 320,
+        "overflow": false
+      },
+      {
+        "page": "documentation",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "page": "documentation",
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "page": "documentation",
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "page": "documentation",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "page": "diagrams",
+        "width": 320,
+        "overflow": false
+      },
+      {
+        "page": "diagrams",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "page": "diagrams",
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "page": "diagrams",
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "page": "diagrams",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "page": "manual",
+        "width": 320,
+        "overflow": false
+      },
+      {
+        "page": "manual",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "page": "manual",
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "page": "manual",
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "page": "manual",
+        "width": 1440,
+        "overflow": false
+      }
+    ],
+    "console_errors": [],
+    "pdf_requests": [
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      },
+      {
+        "url": "http://127.0.0.1:4173/research/manuscript/(NEW%20format)%20UNIORG_MANUSCRIPT_CHAPTER%201-5.pdf",
+        "status": 206
+      }
+    ],
+    "accessibility": [
+      {
+        "width": 320,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "violations": []
+      }
+    ],
+    "source_pdf": {
+      "path": "research/manuscript/(NEW format) UNIORG_MANUSCRIPT_CHAPTER 1-5.pdf",
+      "pages": 445,
+      "bytes": 232146775,
+      "sha256": "90da25044dca4e1c9e9fa92e1b8351bb8195bb0904418d4ec1af043378af9b89",
+      "modified": false
+    }
+  },
+  "current_content_exception": "Researchers explicitly requested removal of the test-total stat and related pass-rate wording, and replacement of Google Docs viewing destinations with the supplied local PDF. Original manuscript and manual procedures remain unchanged.",
+  "document_reader_followup": {
+    "checks": [
+      {
+        "check": "Setup 320: table, headings and code rendered",
+        "pass": true
+      },
+      {
+        "check": "Setup 390: table, headings and code rendered",
+        "pass": true
+      },
+      {
+        "check": "Setup 768: table, headings and code rendered",
+        "pass": true
+      },
+      {
+        "check": "Setup 1024: table, headings and code rendered",
+        "pass": true
+      },
+      {
+        "check": "Setup 1440: table, headings and code rendered",
+        "pass": true
+      },
+      {
+        "check": "Contents navigation scrolls to Install",
+        "pass": true
+      },
+      {
+        "check": "Copy uses original code text",
+        "pass": true
+      },
+      {
+        "check": "Nested relative Markdown link stays in modal",
+        "pass": true
+      },
+      {
+        "check": "Back restores setup document",
+        "pass": true
+      },
+      {
+        "check": "Modal focus wraps backward",
+        "pass": true
+      },
+      {
+        "check": "Desktop document modal accessibility scan",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "Live card uses supplied login URL",
+        "pass": true
+      },
+      {
+        "check": "No unavailable/demo/obsolete upstream promotion",
+        "pass": true
+      },
+      {
+        "check": "JSON is pretty-printed in same reader",
+        "pass": true
+      },
+      {
+        "check": "Missing file has retry and close",
+        "pass": true
+      },
+      {
+        "check": "Document reader works at /A08_UniOrg/",
+        "pass": true
+      },
+      {
+        "check": "No-JS source file fallback preserved",
+        "pass": true
+      },
+      {
+        "check": "Markdown HTML is sanitized",
+        "pass": true
+      },
+      {
+        "check": "20 responsive layouts pass",
+        "pass": true
+      },
+      {
+        "check": "No unexpected console errors",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "layouts": [
+      {
+        "page": "home",
+        "width": 320,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "home",
+        "width": 390,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "home",
+        "width": 768,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "home",
+        "width": 1024,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "home",
+        "width": 1440,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "documentation",
+        "width": 320,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "documentation",
+        "width": 390,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "documentation",
+        "width": 768,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "documentation",
+        "width": 1024,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "documentation",
+        "width": 1440,
+        "page_overflow": false,
+        "markdown_links": 5,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true
+      },
+      {
+        "page": "diagrams",
+        "width": 320,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "diagrams",
+        "width": 390,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "diagrams",
+        "width": 768,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "diagrams",
+        "width": 1024,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "diagrams",
+        "width": 1440,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "manual",
+        "width": 320,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "manual",
+        "width": 390,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "manual",
+        "width": 768,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "manual",
+        "width": 1024,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      },
+      {
+        "page": "manual",
+        "width": 1440,
+        "page_overflow": false,
+        "markdown_links": 0,
+        "enhanced_links": true,
+        "dialog_open": true,
+        "content_rendered": true,
+        "dialog_fits": true,
+        "reader_horizontal_overflow": false,
+        "focus_restored": true,
+        "scroll_unlocked": true,
+        "modal_not_applicable": true
+      }
+    ],
+    "console_errors": [],
+    "smoke": {
+      "mobile_axe": [],
+      "pdf_after_markdown": true,
+      "screenshot_viewer": true,
+      "errors": []
+    },
+    "link_coverage": [
+      {
+        "document": "research/documentation/CONTENT_SOURCES.md",
+        "rendered": true,
+        "headings": 4
+      },
+      {
+        "document": "research/screenshots/README.md",
+        "rendered": true,
+        "headings": 0
+      },
+      {
+        "document": "research/documentation/RESULTS.md",
+        "rendered": true,
+        "headings": 2
+      },
+      {
+        "document": "source-code/README.md",
+        "rendered": true,
+        "headings": 7
+      },
+      {
+        "document": "README.md",
+        "rendered": true,
+        "headings": 8
+      },
+      {
+        "document": "research/documentation/SOURCE_PROVENANCE.md",
+        "rendered": true,
+        "headings": 2
+      },
+      {
+        "document": "research/documentation/VERIFICATION.md",
+        "rendered": true,
+        "headings": 6
+      }
+    ],
+    "live_url": {
+      "url": "https://uniorg-x4g7.onrender.com/login",
+      "http_status": 200,
+      "login_form_present": true,
+      "authenticated_actions_tested": false,
+      "checked_date": "2026-11-06"
+    },
+    "source_code": {
+      "files_checked": 986,
+      "changed": []
+    }
+  },
+  "local_glass_followup": {
+    "checks": [
+      {
+        "check": "1024px: boundary follows at viewport y=882",
+        "pass": true,
+        "detail": {
+          "start": 865.34375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 865.34375px,#000 865.34375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1024px: boundary follows at viewport y=650",
+        "pass": true,
+        "detail": {
+          "start": 633.34375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 633.34375px,#000 633.34375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1024px: boundary follows at viewport y=390",
+        "pass": true,
+        "detail": {
+          "start": 373.34375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 373.34375px,#000 373.34375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1024px: boundary follows at viewport y=180",
+        "pass": true,
+        "detail": {
+          "start": 163.34375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 163.34375px,#000 163.34375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1024px: boundary follows at viewport y=18",
+        "pass": true,
+        "detail": {
+          "start": 1.34375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 1.34375px,#000 1.34375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1024px: updates after one pixel of scroll",
+        "pass": true
+      },
+      {
+        "check": "1024px: real navigation remains one accessible set",
+        "pass": true
+      },
+      {
+        "check": "1024px: dark-area link is clickable",
+        "pass": true
+      },
+      {
+        "check": "1440px: boundary follows at viewport y=882",
+        "pass": true,
+        "detail": {
+          "start": 865.4375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 865.4375px,#000 865.4375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1440px: boundary follows at viewport y=650",
+        "pass": true,
+        "detail": {
+          "start": 633.4375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 633.4375px,#000 633.4375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1440px: boundary follows at viewport y=390",
+        "pass": true,
+        "detail": {
+          "start": 373.4375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 373.4375px,#000 373.4375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1440px: boundary follows at viewport y=180",
+        "pass": true,
+        "detail": {
+          "start": 163.4375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 163.4375px,#000 163.4375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1440px: boundary follows at viewport y=18",
+        "pass": true,
+        "detail": {
+          "start": 1.4375,
+          "height": 866,
+          "mask": "linear-gradient(to bottom, transparent 0px,transparent 1.4375px,#000 1.4375px,#000 866px,transparent 866px,transparent 866px)"
+        }
+      },
+      {
+        "check": "1440px: updates after one pixel of scroll",
+        "pass": true
+      },
+      {
+        "check": "1440px: real navigation remains one accessible set",
+        "pass": true
+      },
+      {
+        "check": "1440px: dark-area link is clickable",
+        "pass": true
+      },
+      {
+        "check": "Partially intersected navigation row has both paint masks",
+        "pass": true
+      },
+      {
+        "check": "Hover state mirrors on dark paint",
+        "pass": true
+      },
+      {
+        "check": "Keyboard focus mirrors on dark paint",
+        "pass": true
+      },
+      {
+        "check": "Mixed-background accessibility scan",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "Short-viewport paint tracks internal scrolling",
+        "pass": true,
+        "detail": {
+          "real": 293,
+          "paint": 293
+        }
+      },
+      {
+        "check": "20 responsive layouts have no overflow or duplicate IDs",
+        "pass": true
+      },
+      {
+        "check": "No console or JavaScript errors",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "layouts": [
+      {
+        "page": "home",
+        "width": 320,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 390,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 768,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "home",
+        "width": 1024,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "home",
+        "width": 1440,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "documentation",
+        "width": 320,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 390,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 768,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "documentation",
+        "width": 1024,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "documentation",
+        "width": 1440,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "diagrams",
+        "width": 320,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 390,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 768,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "diagrams",
+        "width": 1024,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "diagrams",
+        "width": 1440,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "manual",
+        "width": 320,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 390,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 768,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true,
+        "drawer_wrap": true,
+        "drawer_focus_restored": true
+      },
+      {
+        "page": "manual",
+        "width": 1024,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      },
+      {
+        "page": "manual",
+        "width": 1440,
+        "overflow": false,
+        "duplicate_ids": false,
+        "copy_has_no_controls": true
+      }
+    ],
+    "errors": [],
+    "exit_edges": [
+      {
+        "section": "#top",
+        "edge_y": 200,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 183.171875px,transparent 183.171875px,transparent 866px)",
+        "globalDark": false
+      },
+      {
+        "section": "#top",
+        "edge_y": 550,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 533.171875px,transparent 533.171875px,transparent 866px)",
+        "globalDark": false
+      },
+      {
+        "section": "#top",
+        "edge_y": 750,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 733.171875px,transparent 733.171875px,transparent 866px)",
+        "globalDark": false
+      },
+      {
+        "section": "#results",
+        "edge_y": 200,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 183.203125px,transparent 183.203125px,transparent 866px)",
+        "globalDark": false
+      },
+      {
+        "section": "#results",
+        "edge_y": 550,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 533.203125px,transparent 533.203125px,transparent 866px)",
+        "globalDark": false
+      },
+      {
+        "section": "#results",
+        "edge_y": 750,
+        "mask": "linear-gradient(to bottom, transparent 0px,transparent 0px,#000 0px,#000 733.203125px,transparent 733.203125px,transparent 866px)",
+        "globalDark": false
+      }
+    ]
+  },
+  "brochure_hero_followup": {
+    "viewports": [
+      {
+        "width": 320,
+        "overflow": false,
+        "artVisible": false,
+        "artLeft": 0,
+        "sealSize": [
+          0,
+          0
+        ],
+        "shadow": "none",
+        "titleRight": 269.3125,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "artVisible": false,
+        "artLeft": 0,
+        "sealSize": [
+          0,
+          0
+        ],
+        "shadow": "none",
+        "titleRight": 311.078125,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "artVisible": false,
+        "artLeft": 0,
+        "sealSize": [
+          0,
+          0
+        ],
+        "shadow": "none",
+        "titleRight": 496.15625,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "artVisible": false,
+        "artLeft": 0,
+        "sealSize": [
+          0,
+          0
+        ],
+        "shadow": "none",
+        "titleRight": 751.609375,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 1100,
+        "overflow": false,
+        "artVisible": true,
+        "artLeft": 786.5,
+        "sealSize": [
+          330,
+          330
+        ],
+        "shadow": "rgb(7, 30, 70) -22px 26px 0px 0px",
+        "titleRight": 704.140625,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "artVisible": true,
+        "artLeft": 915.203125,
+        "sealSize": [
+          384,
+          384
+        ],
+        "shadow": "rgb(7, 30, 70) -22px 26px 0px 0px",
+        "titleRight": 818.046875,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "artVisible": true,
+        "artLeft": 1029.609375,
+        "sealSize": [
+          432,
+          432
+        ],
+        "shadow": "rgb(7, 30, 70) -22px 26px 0px 0px",
+        "titleRight": 887.234375,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "overflow": false,
+        "artVisible": true,
+        "artLeft": 1441.5,
+        "sealSize": [
+          510,
+          510
+        ],
+        "shadow": "rgb(7, 30, 70) -22px 26px 0px 0px",
+        "titleRight": 1121.703125,
+        "titleOverlapsArt": false,
+        "bodyOverlapsArt": false,
+        "errors": []
+      }
+    ],
+    "hero_screenshot_viewer": true,
+    "viewer_focus_restored": true,
+    "explore_system_link": true,
+    "console_errors": [],
+    "accessibility_violations": [],
+    "accessibility_media": "reduced motion; settled content",
+    "asset": "assets/images/LSPU_LOGO.png",
+    "asset_modified": false
+  },
+  "logo_only_hero_followup": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1100,
+      1280,
+      1440,
+      1600,
+      1799,
+      1800,
+      1920
+    ],
+    "layouts_passed": 11,
+    "vertical_label_removed": true,
+    "seal_max_px": 650,
+    "horizontal_overflow": false,
+    "text_seal_overlap": false,
+    "page_errors": [],
+    "visually_reviewed_widths": [
+      1440,
+      1920
+    ],
+    "main_heading_and_research_title_preserved": true
+  }
+}

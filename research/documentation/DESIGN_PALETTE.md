@@ -1,22 +1,24 @@
 # Website palette
 
-Updated 2026-11-05 at the researchers' request to match UniOrg.
+Updated 6 November 2026 for the brochure-led research website redesign.
 
-The research website uses the shared login/OSAS palette from the confirmed application revision. Source references:
+The authoritative brand colors were supplied by the researchers and checked against the two-page UNIORG A4 brochure. They override the former blue/gold application-derived website theme.
 
-- `source-code/public/css/auth.css`: login gradient and primary buttons use blue `#26488C` and navy `#1A3461`.
-- `source-code/resources/views/layouts/osas.blade.php`: primary `#26488C`, secondary `#1A3461`, accent `#C4973B`, page background `#F9FBFF`.
+| Role | Color | CSS token |
+| --- | --- | --- |
+| University navy | #0F2A5C | --navy |
+| Maroon accent | #7A1414 | --maroon |
+| White | #FFFFFF | --white |
+| Primary text | #17233b | --ink |
+| Supporting text | #526078 | --muted |
+| Subtle surface | #f6f7f9 | --paper |
+| Neutral tint | #edf0f5 | --tint |
+| Divider | #d5dbe5 | --line |
 
-| Role | Color |
-| --- | --- |
-| Primary blue | #26488C |
-| Secondary navy | #1A3461 |
-| Gold accent | #C4973B |
-| Main page background | #F9FBFF |
-| Cards / white | #FFFFFF |
+The homepage, documentation hub, diagram collection and illustrated manual use these shared presentation tokens. Inter provides the responsive typography throughout. The supplied LSPU seal replaces the generic U in navigation and the favicon; the original PNG remains unchanged. CSS removes only the square corner background. The favicon is a small browser rendering of that exact seal.
 
-Blue-gray surface/text tints support the shared palette. Lighter gold is used for small text on dark backgrounds, and dark navy text on gold buttons, to retain readable contrast. Hero, method and result sections, links, controls, footer, metadata and the code-drawn U icon use the same palette.
+Organization workspaces are configurable and may have their own colors. Source screenshots, masks and diagrams preserve their original colors and details as research evidence. The Laravel application under source-code was not changed.
 
-Organization workspaces are configurable and can use their own colors; the source's default organization theme includes purple. Research screenshots preserve their actual role/organization colors and are not recolored as website decoration. Original research images and application source were not changed by this website palette update.
+The previous palette was #26488C / #1A3461 / #C4973B / #F9FBFF, based on the auth/OSAS source theme. That historical application palette remains in the separate Laravel snapshot and is no longer the research website theme.
 
-Post-change browser visual review remains separate from the static color/contrast and link checks; see WEBSITE_QA.json and VERIFICATION.md.
+See [design decisions and audit](REDESIGN.md), [browser QA](REDESIGN_QA.md), and `design-system/uniorg/MASTER.md` for the generated design-system workflow and explicit brand overrides.

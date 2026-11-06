@@ -1,7 +1,9 @@
 # Manuscript
 
-The latest manuscript is the [researcher-supplied Google Doc](https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing). Its October 2026 title page, identity details, objectives, methodology and results were verified on 2026-11-05.
+The latest source selected by the researchers is `(NEW format) UNIORG_MANUSCRIPT_CHAPTER 1-5.pdf`, containing 445 pages and an October 2026 title page. It is displayed directly in a self-hosted PDF reader inside the website's manuscript modal. The website file is a compressed copy of the source; its pages, extracted text and appendices are preserved.
 
-UNIORG-Manuscript-Public-Text.txt contains the main research text and literature cited. This is a public text derivative, not the signed or paginated original. Personal tester profiles, all embedded images, interviews, communication letters, signed forms, CVs and private appendices are excluded. Table cell text remains in export order. The original full PDF export is retained only in ignored .local/ and must not be uploaded.
+The acceptance summary in Table 4.62 is on PDF page 260 (printed page 239). It confirms the 4.64 overall mean and 0.59 SD displayed on the homepage. The homepage no longer displays the aggregate functional-testing total or its pass-rate claim, as requested by the researchers.
 
-The local FINAL_RC.pdf is superseded and excluded. For original formatting and full authorized access use Google Docs; no sharing permission was changed.
+`UNIORG-Manuscript-Public-Text.txt` is the previously prepared public text derivative. It excludes embedded images and private appendices and does not reproduce the original pagination. It remains available as an alternative text download.
+
+The website copy is 18,705,090 bytes. Its original 232,146,775-byte source is retained locally in .local/manuscript-original-232mb.pdf. Compression downsamples embedded images; extracted text was compared across all 445 pages.

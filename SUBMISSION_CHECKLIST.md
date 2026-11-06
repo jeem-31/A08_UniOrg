@@ -57,7 +57,7 @@ Browser review resumed after the user requested continuation. Computer Use then 
 | Submission repository owner/name | jeem-31/A08_UniOrg |
 | Repository URL | https://github.com/jeem-31/A08_UniOrg |
 | GitHub Pages URL | https://jeem-31.github.io/A08_UniOrg/ — HTTP 200 verified |
-| Live system URL | Official link not supplied/confirmed |
+| Live system URL | https://uniorg-x4g7.onrender.com/login - supplied by researcher; login page HTTP 200 checked 6 November 2026 |
 | Demo video URL | Not supplied |
 | Designated submission Google Form | Link not yet supplied |
 

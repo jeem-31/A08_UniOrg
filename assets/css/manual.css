@@ -1,17 +1,130 @@
-.manual-page .document-content{max-width:1040px}
-.manual-nav{margin:30px 0 45px;padding:24px;background:#e7eefb;border:1px solid var(--line);border-radius:6px}
-.manual-nav strong{display:block;margin-bottom:12px}
-.manual-nav ul{display:flex;flex-wrap:wrap;gap:10px 24px;list-style:none;margin:0;padding:0}
-.manual-nav li{margin:0}
-.manual-nav a{font-size:14px;font-weight:600}
-.manual-page .document-content h2{padding-top:12px;border-top:1px solid var(--line);margin-top:60px}
-.manual-page .document-content h3{margin-top:46px;font-size:21px;line-height:1.5}
-.manual-page .manual-screen{margin:20px 0 26px}
-.manual-screen>a{position:relative;display:block;background:white;border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.manual-screen img{width:100%;height:auto;border:0!important}
-.manual-enlarge{display:block;padding:9px 14px;background:var(--secondary);color:var(--paper);font-size:12px;text-align:right}
-.manual-page .manual-screen figcaption{padding-top:10px;line-height:1.65}
-.manual-page .document-content ol{padding-left:26px;margin-bottom:42px}
-.manual-page .document-content ol li{padding-left:4px;max-width:900px}
-@media(max-width:520px){.manual-nav{padding:18px}.manual-nav ul{display:grid;grid-template-columns:1fr;gap:10px}.manual-page .document-content h3{font-size:18px}.manual-enlarge{font-size:11px}}
-@media print{.manual-nav,.manual-enlarge{display:none}.manual-screen{break-inside:avoid}.manual-screen img{max-height:440px;width:auto;max-width:100%;margin:auto}.manual-page .document-content h3{break-after:avoid}}
+.manual-page .document-content {
+  max-width: 960px;
+}
+.manual-nav {
+  margin: 30px 0 40px;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--maroon);
+  border-radius: 8px;
+}
+.manual-nav strong {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--navy);
+}
+.manual-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.manual-nav li {
+  margin: 0;
+}
+.manual-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 550;
+}
+.manual-page .document-content h2 {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  margin-top: 52px;
+}
+.manual-page .document-content h3 {
+  margin-top: 36px;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  scroll-margin-top: 100px;
+}
+.manual-page .manual-screen {
+  margin: 20px 0 24px;
+}
+.manual-screen > a {
+  position: relative;
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.manual-screen img {
+  width: 100%;
+  height: auto;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+.manual-enlarge {
+  display: block;
+  padding: 11px 16px;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: right;
+}
+.manual-page .manual-screen figcaption {
+  padding-top: 12px;
+  line-height: 1.75;
+}
+.manual-page .document-content ol {
+  padding-left: 26px;
+  margin-bottom: 36px;
+}
+.manual-page .document-content ol li {
+  padding-left: 4px;
+  max-width: 900px;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.manual-edition-note {
+  padding: 20px 24px;
+  border-left: 3px solid var(--maroon);
+  background: var(--paper);
+}
+@media (max-width: 700px) {
+  .manual-nav {
+    padding: 18px;
+  }
+  .manual-nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .manual-page .document-content h3 {
+    font-size: 21px;
+  }
+  .manual-edition-note {
+    padding: 18px 20px;
+  }
+  .manual-page .document-content h2 {
+    margin-top: 40px;
+  }
+}
+@media print {
+  .manual-nav,
+  .manual-enlarge {
+    display: none;
+  }
+  .manual-screen {
+    break-inside: avoid;
+  }
+  .manual-screen img {
+    max-height: 440px;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+  .manual-page .document-content h3 {
+    break-after: avoid;
+  }
+}

@@ -2,12 +2,12 @@
 
 **UNIORG: A Configurable University-Wide Student Organization Management Platform with OCR and NLP for Document Processing and Auto-Tagging**
 
-Researchers: **Symon Kiel G. Beato** and **Justine Mark R. Gahi**  
-Adviser: **Rachiel R. Rivano, PhD**  
-Laguna State Polytechnic University – Santa Cruz Campus · College of Computer Studies  
+Researchers: **Symon Kiel G. Beato** and **Justine Mark R. Gahi**<br>
+Adviser: **Rachiel R. Rivano, PhD**<br>
+Laguna State Polytechnic University – Santa Cruz Campus · College of Computer Studies<br>
 BS Information Technology, Web and Mobile Application Development · Client: Office of Student Affairs and Services (OSAS)
 
-This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript was supplied by the researchers through [Google Docs](https://docs.google.com/document/d/1sbe3vWyPPwBdHfYA2C-CvQsmWJFs848xwl2uu5pv7zo/edit?usp=sharing). The current source is confirmed as branch Modification_based_Mia, pinned to 1cbf524; its complete sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
+This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript is the researcher-supplied 445-page PDF in `research/manuscript/`, available through the website's manuscript modal. The current source is confirmed as branch Modification_based_Mia, pinned to 1cbf524; its complete sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
 
 ## Preview the website
 
@@ -17,15 +17,22 @@ No framework, npm install or build step is needed for the research website. Use 
 python scripts/preview.py
 ```
 
-Open **http://127.0.0.1:4173/**. Stop the server with Ctrl+C. Navigation, captioned screenshots, an accessible image viewer and resource links use plain HTML, CSS and JavaScript. With JavaScript disabled, screenshots still open as direct image links and navigation remains available.
+Open **http://127.0.0.1:4173/**. Stop the server with Ctrl+C. The brochure-led redesign uses a fixed research sidebar, an accessible mobile drawer, a six-screen carousel, captioned image viewers and GSAP scroll animation, on plain HTML, CSS and JavaScript. Inter and animation scripts are self-hosted. Reduced motion disables the camera and autoplay. With JavaScript disabled, screenshots still open as direct image links and navigation remains available.
+
+The hosted UNIORG login is https://uniorg-x4g7.onrender.com/login. Research resources and local Markdown guides open in formatted document modals.
+
+The Research manuscript resource opens the supplied PDF in a modal with search, zoom, page controls and original/download links. PDF.js is self-hosted, and the local preview supports HTTP byte ranges so the document can begin rendering without downloading the entire file. The website uses a compressed 18.7 MB copy of the 445-page manuscript; the original is retained locally.
 
 ## Repository contents
 
 ```text
 index.html                  Research presentation
 assets/css/                 Responsive styles
-assets/js/                  Navigation and screenshot viewer
-assets/images/              Original code-drawn website mark
+assets/js/                  Navigation, carousel, viewers and self-hosted animation
+assets/pdfjs/               Self-hosted PDF.js reader and license
+assets/images/              Official LSPU seal and derived favicon
+assets/fonts/               Self-hosted Inter and font license
+design-system/              Generated system and authoritative brand overrides
 research/manuscript/        Approved public manuscript derivative/status
 research/documentation/     Provenance, findings, setup and publication notes
 research/diagrams/          Research diagrams and captions
@@ -46,7 +53,7 @@ SUBMISSION_CHECKLIST.md     Verified, pending and missing requirements
 - [Superseded source review](research/documentation/LEGACY_SOURCE_REVIEW.md), explicitly provisional
 - [GitHub Pages publication instructions](research/documentation/PUBLISHING.md)
 
-The website reports the manuscript's 428 respondents, overall acceptance mean of 4.64/5, and 670/670 controlled black-box step checks. These have been checked against the supplied manuscript, not independently reproduced. No raw respondent records, invented findings, production database or credentials are included.
+The website highlights the manuscript's 428 respondents and overall acceptance mean of 4.64/5. These have been checked against the latest supplied PDF, not independently reproduced. The full manuscript is displayed as supplied; no invented findings, production database or credentials were added.
 
 ## Install and deploy the actual system
 
@@ -54,7 +61,7 @@ The Laravel application is separate from the static website. The confirmed sourc
 
 Frontend production build and all 34 existing JavaScript tests passed. PHP syntax checks passed for 743 files. A process-local Imagick runtime now passes all PHP platform requirements, and the locked Composer install completed in the isolated copy without changing system PHP settings. The selected pure-unit PHP run completed 158 tests: 155 passed and 3 catalog contract tests failed. The supplied no-db suite also includes a RefreshDatabase test and cannot complete without a separate database. See [backend verification](research/documentation/BACKEND_VERIFICATION.md).
 
-An initial desktop render was reviewed; hero subtitle contrast and link glyphs were corrected in the files. Post-fix, mobile and interactive browser QA remain pending because Computer Use stopped when it could not determine the browser URL confidently. Database migrations, external services and end-to-end runtime are still unverified.
+The local research-site redesign was browser-tested on 6 November 2026 across all four pages at 320, 390, 768, 1024 and 1440px. See [redesign QA](research/documentation/REDESIGN_QA.md) for interaction, accessibility, fallback, link and screenshot checks. Database migrations, external services and end-to-end application runtime remain unverified.
 
 ## Verify the submission
 
@@ -71,7 +78,7 @@ Run `python scripts/package_submission.py` to create a ZIP in ignored `.local/re
 
 ## Publish with GitHub Pages
 
-The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) after explicit researcher approval on 2026-11-05. The researchers configured Pages from **main → / (root)**, and the first build was requested during deployment troubleshooting. The [research website is live](https://jeem-31.github.io/A08_UniOrg/): 32 deployed pages/assets/downloads returned HTTP 200 and matched the local bytes. See [deployment verification](research/documentation/PAGES_VERIFICATION.json) and [publication instructions](research/documentation/PUBLISHING.md). Browser visual/interactivity checks, collaborator access and form submission remain pending.
+The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://github.com/jeem-31/A08_UniOrg) after explicit researcher approval on 2026-11-05. The researchers configured Pages from **main → / (root)**, and the first build was requested during deployment troubleshooting. The [research website is live](https://jeem-31.github.io/A08_UniOrg/): 32 deployed pages/assets/downloads returned HTTP 200 and matched the local bytes. See [deployment verification](research/documentation/PAGES_VERIFICATION.json) and [publication instructions](research/documentation/PUBLISHING.md). The 6 November redesign is local only and has not been pushed or published. The live deployment record above refers to the earlier version. Local browser checks are recorded in [redesign QA](research/documentation/REDESIGN_QA.md); collaborator access and form submission remain pending.
 
 | Submission field | Status |
 | --- | --- |
@@ -80,7 +87,7 @@ The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://
 | Required GitHub account access | teamccs-git — invitation not sent |
 | Designated Google Form | Link not yet provided |
 | Latest official source code | Modification_based_Mia at 1cbf524; sanitized copy included |
-| Live system and demo video | Official URLs not provided |
+| Live system | https://uniorg-x4g7.onrender.com/login |
 
 ## Privacy and ownership
 

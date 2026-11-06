@@ -1,10 +1,10 @@
 # Reported research results
 
-Source: latest researcher-supplied manuscript, Tables 4.54 and 4.62; retrieved 2026-11-05. These are manuscript-reported findings, not a new independent evaluation.
+Source: the latest researcher-supplied 445-page PDF, checked 6 November 2026. The acceptance summary appears in Table 4.62 (PDF page 260 / printed page 239). These are manuscript-reported findings, not a new independent evaluation.
 
 ## Functional testing
 
-Table 4.54 reports ten evaluators, ten black-box test cases and 670 step-level verifications: 670 passed, zero failed, 100% pass rate under the documented controlled conditions. This does not establish universal defect absence, OCR extraction accuracy or live deployment readiness.
+The manuscript describes controlled black-box testing of the system features. The website highlights the user-acceptance evaluation and does not display an aggregate step-verification count or pass-rate claim. Controlled testing does not establish universal defect absence, OCR extraction accuracy or live deployment readiness.
 
 ## User acceptance
 
