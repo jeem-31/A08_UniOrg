@@ -112,3 +112,11 @@ Verified the homepage at 320, 390, 768, 1024, 1100, 1280, 1440, 1600, 1799, 1800
 ## Manuscript deployment copy
 
 The previous size blocker was resolved by creating an 18,705,090-byte web copy of the 232,146,775-byte researcher-supplied manuscript. The unmodified original is retained locally at .local/manuscript-original-232mb.pdf. All 445 pages and their extracted text match; representative pages were rendered for visual review. Embedded images are downsampled in the web copy. Earlier size-blocker notes record the state at those earlier checks.
+
+## Full HD audiovisual presentation
+
+Added the supplied AVP immediately after the hero, with a source-frame poster, Full HD label, sound toggle, native controls/fullscreen and download. Added presentation links to all four research-library navigation menus and the homepage resources. The 82,585,617-byte web encoding retains 1920x1080, 60 FPS, 21,510 frames and 358.5 seconds; AAC audio is copied. The original 128,546,606-byte file is retained locally. See assets/videos/README.md for hashes and encoding provenance.
+
+Viewport autoplay begins muted. Offscreen, hidden-tab and modal/drawer states pause playback; manual Pause is preserved and reduced motion disables autoplay. No loop is used. The preview server now supports MP4 byte ranges as well as PDF ranges for seeking.
+
+Validation: all four pages at 320, 390, 768, 1024 and 1440px pass layout/navigation checks without overflow or JavaScript page errors. Autoplay, audio toggle, viewport pause/resume, manual Pause persistence, runtime reduced motion, modal pause/resume, Full HD decoding and seeking to 4:00 pass. The presentation accessibility scan detected no violations; desktop/mobile screenshots and an encoded frame were visually reviewed. The native video also plays with site JavaScript disabled. Valid and suffix byte ranges, invalid-range rejection, video MIME type and fast-start atom order pass. Submission verification passes with five HTML pages and 270 local references.

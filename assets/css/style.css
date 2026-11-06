@@ -3151,6 +3151,124 @@ footer {
   }
 }
 /* Brochure composition: a cropped official seal with its offset circular shadow. */
+.presentation {
+  background: var(--paper);
+  padding-block: clamp(48px, 6vw, 80px);
+}
+.presentation-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.presentation-intro h2 {
+  font-size: clamp(36px, 4.6vw, 68px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
+.presentation-intro p {
+  max-width: 380px;
+  color: var(--muted);
+  margin: 0;
+}
+.avp-player {
+  overflow: hidden;
+  border: 1px solid var(--navy);
+  border-radius: 18px;
+  background: var(--navy);
+  box-shadow: 0 18px 42px #0f2a5c1a;
+}
+.avp-toolbar,
+.avp-toolbar > div,
+.avp-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avp-toolbar {
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 12px 20px;
+  color: var(--white);
+}
+.avp-quality {
+  border: 1px solid #ffffff70;
+  border-radius: 4px;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.avp-spec {
+  font-size: 13px;
+  color: #e2e8f3;
+}
+.avp-sound {
+  min-height: 44px;
+  padding: 8px 13px;
+  border: 1px solid #ffffff65;
+  border-radius: 6px;
+  color: var(--white);
+  background: #ffffff12;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+.avp-sound:hover {
+  background: #ffffff28;
+}
+.avp-sound:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 3px;
+}
+.avp-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #071425;
+}
+.avp-footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+.avp-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+@media (max-width: 700px) {
+  .presentation-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .avp-toolbar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .avp-toolbar > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .avp-spec {
+    font-size: 11px;
+  }
+  .avp-sound {
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+  .avp-player {
+    border-radius: 12px;
+  }
+}
 .hero-brand-art {
   display: none;
 }

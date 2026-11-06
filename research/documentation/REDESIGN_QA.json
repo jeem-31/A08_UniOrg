@@ -1499,7 +1499,7 @@
   "submission_verifier": {
     "passed": true,
     "html_pages": 5,
-    "checked_local_links": 262,
+    "checked_local_links": 270,
     "errors": [],
     "note": "The 18,705,090-byte compressed web PDF preserves 445 pages and extracted text; the 232,146,775-byte original is retained locally."
   },
@@ -3651,5 +3651,37 @@
       1920
     ],
     "main_heading_and_research_title_preserved": true
+  },
+  "avp_followup": {
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "frames": 21510,
+    "duration_seconds": 358.5,
+    "web_bytes": 82585617,
+    "original_bytes": 128546606,
+    "original_retained": ".local/avp-original/UniOrg_Video_Presentation.mp4",
+    "layouts_passed": 20,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "muted_viewport_autoplay": true,
+    "manual_pause_preserved": true,
+    "offscreen_pause_resume": true,
+    "runtime_reduced_motion": true,
+    "modal_pause_resume": true,
+    "sound_toggle": true,
+    "seek_to_240_seconds": true,
+    "no_javascript_playback": true,
+    "accessibility_violations": [],
+    "mp4_byte_ranges": true,
+    "faststart": true,
+    "page_errors": []
   }
 }

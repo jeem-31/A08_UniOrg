@@ -22,7 +22,7 @@ class SubmissionHandler(SimpleHTTPRequestHandler):
         if not resolved.is_relative_to(ROOT) or resolved.name.startswith('.'):
             self.send_error(404)
             return None
-        if resolved.is_file() and resolved.suffix.lower() == '.pdf' and self.headers.get('Range'):
+        if resolved.is_file() and resolved.suffix.lower() in {'.pdf', '.mp4'} and self.headers.get('Range'):
             size = resolved.stat().st_size
             match = re.fullmatch(r'bytes=(\d*)-(\d*)', self.headers['Range'].strip())
             start, end = 0, size - 1
@@ -45,7 +45,7 @@ class SubmissionHandler(SimpleHTTPRequestHandler):
             stream.seek(start)
             self._byte_range = (start, end)
             self.send_response(206)
-            self.send_header('Content-Type', 'application/pdf')
+            self.send_header('Content-Type', self.guess_type(str(resolved)))
             self.send_header('Content-Range', f'bytes {start}-{end}/{size}')
             self.send_header('Content-Length', str(end - start + 1))
             self.send_header('Last-Modified', self.date_time_string(resolved.stat().st_mtime))
@@ -54,7 +54,7 @@ class SubmissionHandler(SimpleHTTPRequestHandler):
         return super().send_head()
 
     def end_headers(self):
-        if urlsplit(self.path).path.lower().endswith('.pdf'):
+        if urlsplit(self.path).path.lower().endswith(('.pdf', '.mp4')):
             self.send_header('Accept-Ranges', 'bytes')
         super().end_headers()
 
@@ -71,7 +71,7 @@ class SubmissionHandler(SimpleHTTPRequestHandler):
                 outputfile.write(chunk)
                 remaining -= len(chunk)
         except (BrokenPipeError, ConnectionResetError):
-            # PDF readers cancel the initial stream after negotiating byte ranges.
+            # Media viewers cancel streams after seeking or negotiating byte ranges.
             pass
 
     def list_directory(self, path):

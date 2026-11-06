@@ -11,6 +11,8 @@ This repository packages the research presentation, privacy-reviewed research as
 
 ## Preview the website
 
+The homepage includes the supplied [Full HD video presentation](https://jeem-31.github.io/A08_UniOrg/#presentation), with muted viewport autoplay, native playback/fullscreen controls, a sound toggle and download. Reduced-motion visitors use manual Play. The web copy retains 1920x1080 resolution and 60 FPS; see [video provenance](assets/videos/README.md).
+
 No framework, npm install or build step is needed for the research website. Use a recent browser and Python 3:
 
 ```powershell

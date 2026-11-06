@@ -7,11 +7,11 @@
   <meta name="description" content="UNIORG research by Symon Kiel G. Beato and Justine Mark R. Gahi: a configurable university-wide student organization platform with OCR and NLP for LSPU Santa Cruz Campus OSAS.">
   <title>UNIORG — Research &amp; System Repository</title>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261106-avp1">
   <link rel="preload" href="assets/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
   <script src="assets/js/third-party/gsap.min.js" defer></script>
   <script src="assets/js/third-party/ScrollTrigger.min.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=20261106-avp1" defer></script>
 <script src="assets/js/document-reader.js?v=20261106-2" defer></script></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,7 +20,7 @@
  <div class="site-header" id="site-sidebar" role="complementary" aria-label="Research navigation"><div class="sidebar-inner">
  <div class="sidebar-brand"><a class="brand" href="#top" aria-label="UNIORG research, LSPU Santa Cruz Campus"><img src="assets/images/LSPU_LOGO.png" width="52" height="52" alt="Laguna State Polytechnic University seal"><span>UNIORG<span class="brand-note">Research showcase</span></span></a><button class="drawer-close" type="button" aria-label="Close navigation" hidden>×</button></div>
  <p class="nav-label">EXPLORE THE RESEARCH</p><nav id="main-nav" aria-label="Research sections"><a href="#top" data-section="top"><span class="nav-index" aria-hidden="true">00</span>Overview<span class="nav-active" aria-hidden="true"></span></a><a href="#research" data-section="research"><span class="nav-index" aria-hidden="true">01</span>Research & team<span class="nav-active" aria-hidden="true"></span></a><a href="#methodology" data-section="methodology"><span class="nav-index" aria-hidden="true">02</span>Methodology<span class="nav-active" aria-hidden="true"></span></a><a href="#system" data-section="system"><span class="nav-index" aria-hidden="true">03</span>The platform<span class="nav-active" aria-hidden="true"></span></a><a href="#results" data-section="results"><span class="nav-index" aria-hidden="true">04</span>Research results<span class="nav-active" aria-hidden="true"></span></a><a href="#resources" data-section="resources"><span class="nav-index" aria-hidden="true">05</span>Resources<span class="nav-active" aria-hidden="true"></span></a></nav>
- <div class="sidebar-resources"><p class="nav-label">RESEARCH LIBRARY</p><nav aria-label="Research library"><a href="research/documentation/index.html">Documentation<span aria-hidden="true">↗</span></a><a href="research/diagrams/index.html">Research diagrams<span aria-hidden="true">↗</span></a><a href="research/manuals/index.html">User manual<span aria-hidden="true">↗</span></a></nav></div>
+ <div class="sidebar-resources"><p class="nav-label">RESEARCH LIBRARY</p><nav aria-label="Research library"><a href="#presentation">Video presentation<span aria-hidden="true">&#8599;</span></a><a href="research/documentation/index.html">Documentation<span aria-hidden="true">↗</span></a><a href="research/diagrams/index.html">Research diagrams<span aria-hidden="true">↗</span></a><a href="research/manuals/index.html">User manual<span aria-hidden="true">↗</span></a></nav></div>
  <div class="sidebar-foot"><a class="repository-link" href="https://github.com/jeem-31/A08_UniOrg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5H5v14h14v-3M12 5h7v7M10 14l9-9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Submission repository</a><p>College of Computer Studies<br>LSPU Santa Cruz Campus</p></div>
  </div></div>
   <main id="main">
@@ -47,6 +47,16 @@
         <div class="hero-bottom"><span>College of Computer Studies</span><span>Organization governance, connected.</span><a href="#research" aria-label="Scroll to the research">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
       </div>
     </section>
+
+    <section class="section presentation" id="presentation" aria-labelledby="presentation-heading"><div class="container">
+      <div class="section-top"><span class="section-number">UNIORG / THE FILM</span><span class="small-label">AUDIOVISUAL PRESENTATION</span></div>
+      <div class="presentation-intro"><h2 id="presentation-heading">See UNIORG<br>in motion.</h2><p>Watch our audiovisual presentation.<br>A closer look at the platform, from sign-in to campus oversight.</p></div>
+      <div class="avp-player">
+        <div class="avp-toolbar"><div><span class="avp-quality">FULL HD</span><span class="avp-spec">1080p &middot; 60 FPS &middot; 5:59</span></div><button class="avp-sound" type="button" aria-pressed="false" aria-controls="uniorg-avp" hidden>Turn sound on</button></div>
+        <video id="uniorg-avp" class="avp-video" controls playsinline muted preload="none" poster="assets/videos/UniOrg_AVP_Poster.webp" width="1920" height="1080" aria-label="UNIORG audiovisual presentation, Full HD" aria-describedby="avp-note"><source src="assets/videos/UniOrg_Video_Presentation.mp4" type="video/mp4"><p>Your browser cannot play this video. <a href="assets/videos/UniOrg_Video_Presentation.mp4">Open the Full HD presentation</a>.</p></video>
+      </div>
+      <div class="avp-footer"><p id="avp-note">Use the player controls to watch the presentation.</p><a class="text-link" href="assets/videos/UniOrg_Video_Presentation.mp4" download>Download Full HD video <span aria-hidden="true">&#8595;</span></a></div>
+    </div></section>
 
     <section class="section overview" id="research" aria-labelledby="overview-heading">
       <div class="container">
@@ -105,7 +115,7 @@
         <a class="resource-card" href="source-code/README.md"><span class="resource-kind">05 / APPLICATION SOURCE</span><h3>Source code &amp; setup <span aria-hidden="true">&#8599;</span></h3><p>Application requirements, installation, configuration, and deployment guidance.</p></a>
         <a class="resource-card live-system-card" href="https://uniorg-x4g7.onrender.com/login" target="_blank" rel="noopener noreferrer"><span class="resource-kind">06 / LIVE SYSTEM</span><h3>Open UNIORG <span aria-hidden="true">&#8599;</span></h3><p>Access the UNIORG login page for students and authorized university personnel.</p></a>
       </div>
-      <div class="resource-footer"><a href="https://github.com/jeem-31/A08_UniOrg" target="_blank" rel="noopener noreferrer">View submission repository <span aria-hidden="true">&#8599;</span></a><a href="research/manuscript/UNIORG-Manuscript-Public-Text.txt" download>Download manuscript text <span aria-hidden="true">&#8595;</span></a></div>
+      <div class="resource-footer"><a href="#presentation">Watch the video presentation <span aria-hidden="true">&#8599;</span></a><a href="https://github.com/jeem-31/A08_UniOrg" target="_blank" rel="noopener noreferrer">View submission repository <span aria-hidden="true">&#8599;</span></a><a href="research/manuscript/UNIORG-Manuscript-Public-Text.txt" download>Download manuscript text <span aria-hidden="true">&#8595;</span></a></div>
     </div></section>
   </main>
   <footer><div class="container footer-inner"><div><a class="footer-brand" href="#top">UNIORG.</a><p>A capstone project by Beato &amp; Gahi<br>College of Computer Studies · LSPU Santa Cruz Campus</p></div><div><p>Research submission repository<br>Content checked against the supplied manuscript</p><a href="README.md">Repository guide ↗</a><span class="footer-separator"> / </span><a href="#top">Back to top ↑</a></div></div></footer>

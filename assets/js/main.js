@@ -4,6 +4,100 @@
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
   const compact = window.matchMedia("(max-width: 1000px)");
 
+  // Load and play the HD presentation only while it is in view.
+  const presentation = document.querySelector("#uniorg-avp");
+  if (presentation) {
+    const sound = document.querySelector(".avp-sound");
+    const note = document.querySelector("#avp-note");
+    let inView = false;
+    let userPaused = false;
+    let environmentalPause = false;
+    let playPending = false;
+    const canPlay = () =>
+      (inView || document.fullscreenElement === presentation) &&
+      !document.hidden &&
+      !document.querySelector("dialog[open]") &&
+      !document.body.classList.contains("drawer-open");
+    const pauseForEnvironment = () => {
+      if (!presentation.paused) {
+        environmentalPause = true;
+        presentation.pause();
+      }
+    };
+    const syncPresentation = () => {
+      if (!canPlay()) {
+        pauseForEnvironment();
+        return;
+      }
+      if (
+        reduced.matches ||
+        userPaused ||
+        presentation.ended ||
+        playPending ||
+        !presentation.paused
+      )
+        return;
+      playPending = true;
+      presentation
+        .play()
+        .then(() => {
+          if (!canPlay()) pauseForEnvironment();
+        })
+        .catch(() => {
+          if (canPlay())
+            note.textContent = "Select Play to watch the Full HD presentation.";
+        })
+        .finally(() => {
+          playPending = false;
+        });
+    };
+    const updateSound = () => {
+      sound.textContent = presentation.muted ? "Turn sound on" : "Mute sound";
+      sound.setAttribute("aria-pressed", String(!presentation.muted));
+    };
+    sound.hidden = false;
+    sound.addEventListener("click", () => {
+      presentation.muted = !presentation.muted;
+    });
+    presentation.addEventListener("volumechange", updateSound);
+    presentation.addEventListener("play", () => {
+      userPaused = false;
+    });
+    presentation.addEventListener("pause", () => {
+      if (environmentalPause) environmentalPause = false;
+      else userPaused = true;
+    });
+    presentation.addEventListener("error", () => {
+      note.textContent =
+        "The video could not load. Use the Full HD download link to open it.";
+    });
+    const motionPreference = () => {
+      note.textContent = reduced.matches
+        ? "Select Play to watch. Automatic playback is off for reduced motion."
+        : "Autoplays muted. Turn sound on to hear the presentation.";
+      if (reduced.matches) pauseForEnvironment();
+      else syncPresentation();
+    };
+    reduced.addEventListener("change", motionPreference);
+    motionPreference();
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(
+        ([entry]) => {
+          inView = entry.isIntersecting && entry.intersectionRatio >= 0.35;
+          syncPresentation();
+        },
+        { threshold: [0, 0.35] },
+      ).observe(presentation);
+    }
+    document.addEventListener("visibilitychange", syncPresentation);
+    document.addEventListener("fullscreenchange", syncPresentation);
+    new MutationObserver(syncPresentation).observe(document.body, {
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["open", "class"],
+    });
+  }
+
   // One shared navigation surface: a fixed rail or an inert, modal side drawer.
   const panel = document.querySelector("#site-sidebar");
   const trigger = document.querySelector(".menu-toggle");
