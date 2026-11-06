@@ -14,7 +14,7 @@ Date: 2026-11-05, Asia/Manila. Local work only; no push, publication, collaborat
 - composer validate --no-check-publish passes with existing warnings for an exact Flysystem constraint and unbounded Livewire/Resend constraints. Lockfiles preserved.
 - Process-local Imagick 3.8.1 loads, exposes the PDF coder and passes Composer lockfile platform checks. Locked Composer dependency install completed with scripts disabled. No system PHP configuration or lockfile was changed.
 - Selected pure-unit PHP run completed 158 tests/660 assertions, with 155 passes and 3 failures. This is a completed test attempt, not a passing suite; see the limitations below.
-- Upstream current branch accessible: Modification_based_Mia, commit 1cbf524b77947010041bf3fdbdbbfd7412e06176. Source hashes and exclusions recorded in SOURCE_MANIFEST.json.
+- Official repository reference: [https://github.com/zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg) (`main`), corrected by the researchers on 2026-11-06. The packaged snapshot revision, hashes and exclusions remain recorded in SOURCE_MANIFEST.json.
 
 The offline verifier output is recorded in LOCAL_CHECK_RESULTS.json after the final file pass. Static path and syntax checks do not constitute visual or interactive browser testing.
 

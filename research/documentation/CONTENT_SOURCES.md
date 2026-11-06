@@ -30,7 +30,7 @@ The current authority is the researcher-supplied local PDF, `(NEW format) UNIORG
 - Chapter III describes total enumeration of deans and OSAS administrators; the Figure 4.47 discussion describes dean sampling differently. The website gives the verified role counts without asserting a conflicting sampling detail.
 - The homepage omits the aggregate step-verification statistic and its pass-rate statement at the researchers' request. Original manuscript text and tables are unchanged.
 - The reported overall SD of 0.59 is transcribed. It has not been recomputed from individual responses; no private respondent data is included.
-- The manuscript's Chapter I/III stack includes Groq, while parts of Chapter IV mention Gemini. Avoid claiming an exact current model/provider without checking enabled runtime configuration. The confirmed branch includes both service implementations.
+- The manuscript's Chapter I/III stack includes Groq, while parts of Chapter IV mention Gemini. Avoid claiming an exact current model/provider without checking enabled runtime configuration. The packaged snapshot includes both service implementations.
 - Text export contains residual wording from revisions and some broken sentences. The manuscript is not silently edited in this package. Summaries use supported facts and retain qualifications.
 - No independent OCR accuracy, processing-time reduction, load benchmark or security guarantee is claimed. TAM ratings are acceptance measures.
 - §3.13.2 states that no Cronbach alpha or other reliability testing was performed. The website does not imply psychometric reliability was established.
@@ -41,7 +41,7 @@ The current authority is the researcher-supplied local PDF, `(NEW format) UNIORG
 - `user_manual/User_Manual_UniOrg_v2.docx` is UNIORG, but older than the current manuscript appendix. The filename `USERMANUAL FINAL.pdf` is misleading: its content is TUGON and is excluded.
 - `BLACK_BOX_TESTING_SHEET_UNIORG (1).pdf` contains blank test forms. It is not evidence of executed test results. Findings come from the latest manuscript instead.
 - [AgeSense website](https://somarjez.github.io/agesense-pages/) and [its repository](https://github.com/somarjez/agesense-pages): inspected as presentation references only. Research progression, readable sections, captioned images, and resource grouping informed the site structure. No AgeSense findings, assets, code, or branding were reused.
-- [Confirmed source branch](https://github.com/zorojuro0101/-UniOrg/tree/Modification_based_Mia): user confirmed Modification_based_Mia; accessible at commit `1cbf524b77947010041bf3fdbdbbfd7412e06176`. Complete sanitized application copied with provenance/hashes. The superseded main revision `93062eb` stays ignored for comparison only.
+- [Official source repository](https://github.com/zorojuro0101/-UniOrg): the researchers specified `main` on 2026-11-06. The included sanitized snapshot retains its imported revision and hashes in SOURCE_PROVENANCE.md and SOURCE_MANIFEST.json.
 
 ## Public file policy
 

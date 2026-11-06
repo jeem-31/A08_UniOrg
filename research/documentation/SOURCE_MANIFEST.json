@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/zorojuro0101/-UniOrg",
-  "branch": "Modification_based_Mia",
+  "branch": "main",
   "commit": "1cbf524b77947010041bf3fdbdbbfd7412e06176",
-  "confirmed_by": "researcher in chat, 2026-11-05",
+  "confirmed_by": "researcher in chat, reference corrected 2026-11-06",
   "copied_files": 984,
   "excluded": [
     ".codex/",
@@ -62,6 +62,10 @@
     {
       "file": "docs/AI-SYSTEM-SUMMARY.txt",
       "reason": "Remove Google Gemini/GCP API key and deployment-specific project/credential-path assignments identified by GitHub push protection; supply values privately."
+    },
+    {
+      "file": "docs/systemless-org-login-spec.md",
+      "reason": "Documentation-only correction of the official repository reference to main, requested 2026-11-06; application behavior unchanged."
     }
   ],
   "files": [
@@ -3203,7 +3207,7 @@
     {
       "file": "docs/systemless-org-login-spec.md",
       "upstream_sha256": "0f756c5ed1c2907eea7d4338c84e3d782083ca39cff614477e5d117530fa83b7",
-      "packaged_sha256": "0f756c5ed1c2907eea7d4338c84e3d782083ca39cff614477e5d117530fa83b7"
+      "packaged_sha256": "b4035e21205bdb5fa0eb763600641a93c211e94f78b0365c1a8319dfba5fe45a"
     },
     {
       "file": "docs/UniOrg_Tech_Stack_Defense_Guide.md",
@@ -4995,5 +4999,6 @@
       "file": "README.md",
       "sha256": "b4c31f6aec4b7a3c659df7b170c6387ba6d83be39389c450c2c55e3d57ad1255"
     }
-  ]
+  ],
+  "branch_scope": "Official repository reference; commit records the imported snapshot, not the current main tip."
 }

@@ -1,6 +1,8 @@
 # Source provenance and sanitization
 
-Confirmed by the researchers on 2026-11-05: [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), branch **Modification_based_Mia** (capital M), commit **1cbf524b77947010041bf3fdbdbbfd7412e06176**, dated 2026-10-21. The initially recorded main branch is superseded for this submission.
+Official source reference, corrected by the researchers on 2026-11-06: [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using **main**.
+
+The existing packaged snapshot was imported at commit **1cbf524b77947010041bf3fdbdbbfd7412e06176**, dated 2026-10-21. That revision records the imported files; it is not a claim that the snapshot matches the current main tip. This reference correction changes documentation only.
 
 The complete application is copied into ../../source-code/: backend, frontend, views, assets, routes, migrations, factories, tests, configuration, build/deployment definitions and both manifests/lockfiles. SOURCE_MANIFEST.json records upstream and packaged SHA-256 hashes for each copied upstream file.
 

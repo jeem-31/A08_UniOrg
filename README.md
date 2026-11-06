@@ -7,7 +7,7 @@ Adviser: **Rachiel R. Rivano, PhD**<br>
 Laguna State Polytechnic University – Santa Cruz Campus · College of Computer Studies<br>
 BS Information Technology, Web and Mobile Application Development · Client: Office of Student Affairs and Services (OSAS)
 
-This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript is the researcher-supplied 445-page PDF in `research/manuscript/`, available through the website's manuscript modal. The current source is confirmed as branch Modification_based_Mia, pinned to 1cbf524; its complete sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
+This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript is the researcher-supplied 445-page PDF in `research/manuscript/`, available through the website's manuscript modal. The official source is [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using `main`; a sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
 
 ## Preview the website
 
@@ -57,7 +57,7 @@ The website highlights the manuscript's 428 respondents and overall acceptance m
 
 ## Install and deploy the actual system
 
-The Laravel application is separate from the static website. The confirmed source is [Modification_based_Mia](https://github.com/zorojuro0101/-UniOrg/tree/Modification_based_Mia), commit `1cbf524b77947010041bf3fdbdbbfd7412e06176`. Follow [actual installation, configuration, database, run, build and deployment instructions](source-code/README.md), and review [the sanitization log](research/documentation/SOURCE_PROVENANCE.md).
+The Laravel application is separate from the static website. The official source is [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using `main`. Follow [actual installation, configuration, database, run, build and deployment instructions](source-code/README.md), and review [the sanitization log](research/documentation/SOURCE_PROVENANCE.md).
 
 Frontend production build and all 34 existing JavaScript tests passed. PHP syntax checks passed for 743 files. A process-local Imagick runtime now passes all PHP platform requirements, and the locked Composer install completed in the isolated copy without changing system PHP settings. The selected pure-unit PHP run completed 158 tests: 155 passed and 3 catalog contract tests failed. The supplied no-db suite also includes a RefreshDatabase test and cannot complete without a separate database. See [backend verification](research/documentation/BACKEND_VERIFICATION.md).
 
@@ -86,7 +86,7 @@ The submission package was uploaded to **main** in [jeem-31/A08_UniOrg](https://
 | GitHub Pages URL | https://jeem-31.github.io/A08_UniOrg/ — HTTP 200 verified |
 | Required GitHub account access | teamccs-git — invitation not sent |
 | Designated Google Form | Link not yet provided |
-| Latest official source code | Modification_based_Mia at 1cbf524; sanitized copy included |
+| Latest official source code | [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg) (`main`); sanitized snapshot included |
 | Live system | https://uniorg-x4g7.onrender.com/login |
 
 ## Privacy and ownership

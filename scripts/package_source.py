@@ -139,7 +139,7 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 '''
     (DST/'.env.example').write_text(env,encoding='utf-8')
-    report={'repository':'https://github.com/zorojuro0101/-UniOrg','branch':'Modification_based_Mia','commit':revision,'confirmed_by':'researcher in chat, 2026-11-05','copied_files':len(hashes),'excluded':excluded,'sanitized_changes':changes,'files':hashes}
+    report={'repository':'https://github.com/zorojuro0101/-UniOrg','branch':'main','branch_scope':'Official repository reference; commit records the imported snapshot, not the current main tip.','commit':revision,'confirmed_by':'researcher in chat, 2026-11-05','copied_files':len(hashes),'excluded':excluded,'sanitized_changes':changes,'files':hashes}
     (ROOT/'research/documentation/SOURCE_MANIFEST.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps({'revision':revision,'copied_files':len(hashes),'excluded_items':len(excluded),'sanitized_files':changes},indent=2))
 

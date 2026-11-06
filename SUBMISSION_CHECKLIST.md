@@ -21,7 +21,7 @@ Local preparation started 2026-11-05 (Asia/Manila). The researchers supplied jee
 - [x] Misidentified TUGON manual excluded; superseded FINAL_RC manuscript excluded.
 - [x] Original research files left unchanged; downloaded originals/private working files ignored under .local/.
 - [x] Main website includes manuscript, documentation, manual and diagrams links; unavailable links are explicitly labeled.
-- [x] Latest source confirmed as Modification_based_Mia, commit 1cbf524b77947010041bf3fdbdbbfd7412e06176; complete sanitized application source included.
+- [x] Official source reference updated to https://github.com/zorojuro0101/-UniOrg (`main`); sanitized application snapshot included.
 - [x] Both dependency manifests and lockfiles preserved; fresh credential-free .env.example included.
 - [x] Source privacy scan/exclusions and eight sanitization changes documented with per-file hashes; Google key removed from upstream text documentation after push protection flagged it.
 - [x] Frontend locked install/build passed; 34 existing JavaScript tests passed.
@@ -53,7 +53,7 @@ Browser review resumed after the user requested continuation. Computer Use then 
 
 | Requirement | Current value / status |
 | --- | --- |
-| Confirmed system source | https://github.com/zorojuro0101/-UniOrg/tree/Modification_based_Mia — commit 1cbf524b77947010041bf3fdbdbbfd7412e06176 |
+| Confirmed system source | https://github.com/zorojuro0101/-UniOrg (`main`) |
 | Submission repository owner/name | jeem-31/A08_UniOrg |
 | Repository URL | https://github.com/jeem-31/A08_UniOrg |
 | GitHub Pages URL | https://jeem-31.github.io/A08_UniOrg/ — HTTP 200 verified |

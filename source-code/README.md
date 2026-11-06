@@ -1,6 +1,6 @@
 # UNIORG application source
 
-Researcher-confirmed source: [zorojuro0101/-UniOrg, Modification_based_Mia](https://github.com/zorojuro0101/-UniOrg/tree/Modification_based_Mia), pinned to **1cbf524b77947010041bf3fdbdbbfd7412e06176** (2026-10-21). Complete application source, migrations, tests, dependency manifests and lockfiles are included, with documented privacy/runtime exclusions. See [provenance](../research/documentation/SOURCE_PROVENANCE.md).
+Official source: [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using **main**. Complete application source, migrations, tests, dependency manifests and lockfiles are included, with documented privacy/runtime exclusions. See [provenance](../research/documentation/SOURCE_PROVENANCE.md).
 
 ## Requirements
 

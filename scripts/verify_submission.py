@@ -110,6 +110,6 @@ for p in files:
 
 report = {'html_pages':len(pages),'checked_local_links':checked_links,'public_files':len(files),
           'errors':errors,'external_links':'not checked by this offline script',
-          'source_code':'Modification_based_Mia at 1cbf524b77947010041bf3fdbdbbfd7412e06176'}
+          'source_code':'https://github.com/zorojuro0101/-UniOrg (main)'}
 print(json.dumps(report, indent=2))
 sys.exit(bool(errors))
