@@ -3,6 +3,7 @@
   if (typeof HTMLDialogElement === "undefined") return;
   const ownScript = document.currentScript;
   const siteRoot = new URL("../../", ownScript.src);
+  const documentVersion = new URL(ownScript.src).searchParams.get("v");
   const dialog = document.createElement("dialog");
   dialog.className = "document-reader";
   dialog.id = "document-reader";
@@ -26,7 +27,6 @@
   const back = dialog.querySelector(".reader-back");
   const close = dialog.querySelector(".reader-close");
   const download = dialog.querySelector(".reader-download");
-  const cache = new Map();
   let opener,
     currentUrl,
     history = [],
@@ -233,16 +233,17 @@
     content.setAttribute("aria-busy", "true");
     scroller.scrollTop = 0;
     try {
-      const textPromise = cache.has(url.pathname)
-        ? Promise.resolve(cache.get(url.pathname))
-        : fetch(url, { signal: request.signal }).then((response) => {
-            if (!response.ok)
-              throw new Error("This document could not be loaded.");
-            return response.text();
-          });
+      const requestUrl = new URL(url);
+      if (documentVersion) requestUrl.searchParams.set("v", documentVersion);
+      const textPromise = fetch(requestUrl, {
+        signal: request.signal,
+        cache: "no-store",
+      }).then((response) => {
+        if (!response.ok) throw new Error("This document could not be loaded.");
+        return response.text();
+      });
       const [text] = await Promise.all([textPromise, loadLibraries()]);
       if (token !== serial || !dialog.open) return;
-      cache.set(url.pathname, text);
       if (documentType(url) === "md") {
         const html = window.marked.parse(text.replace(/^\uFEFF/, ""), {
           gfm: true,
