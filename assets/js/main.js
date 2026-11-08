@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  const mainScriptUrl = document.currentScript.src;
   document.documentElement.classList.add("js");
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
   const compact = window.matchMedia("(max-width: 1000px)");
@@ -685,10 +686,7 @@
     document.body.append(manuscript);
     const frame = manuscript.querySelector("iframe");
     const close = manuscript.querySelector(".manuscript-close");
-    const mainScript = document.querySelector(
-      'script[src$="assets/js/main.js"]',
-    );
-    const readerUrl = new URL("../pdfjs/web/viewer.html", mainScript.src);
+    const readerUrl = new URL("../pdfjs/web/viewer.html", mainScriptUrl);
     let manuscriptOpener;
     const closeManuscript = () => manuscript.close();
     const readerFocusItems = () =>
