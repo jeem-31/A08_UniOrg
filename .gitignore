@@ -38,3 +38,6 @@ public/hot
 .codex/
 .agents/
 .aws/
+
+# Local browser automation artifacts
+.playwright-mcp/

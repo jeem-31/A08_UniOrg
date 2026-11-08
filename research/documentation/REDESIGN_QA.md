@@ -120,3 +120,7 @@ Added the supplied AVP immediately after the hero, with a source-frame poster, F
 Viewport autoplay begins muted. Offscreen, hidden-tab and modal/drawer states pause playback; manual Pause is preserved and reduced motion disables autoplay. No loop is used. The preview server now supports MP4 byte ranges as well as PDF ranges for seeking.
 
 Validation: all four pages at 320, 390, 768, 1024 and 1440px pass layout/navigation checks without overflow or JavaScript page errors. Autoplay, audio toggle, viewport pause/resume, manual Pause persistence, runtime reduced motion, modal pause/resume, Full HD decoding and seeking to 4:00 pass. The presentation accessibility scan detected no violations; desktop/mobile screenshots and an encoded frame were visually reviewed. The native video also plays with site JavaScript disabled. Valid and suffix byte ranges, invalid-range rejection, video MIME type and fast-start atom order pass. Submission verification passes with five HTML pages and 270 local references.
+
+## Manuscript update, 8 November 2026
+
+The researcher-supplied revision has 441 pages. The web copy is 18,692,123 bytes; the unchanged 232,130,385-byte original is retained at .local/manuscript-original-20261108-6763d203.pdf. All page dimensions and extracted text match. The manuscript still reports 428 respondents and an overall mean of 4.64 with SD 0.59; Table 4.62 now spans PDF pages 256–257 (printed pages 237–238). Earlier QA entries describe the previous 445-page version.

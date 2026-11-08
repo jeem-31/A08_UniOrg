@@ -7,7 +7,7 @@ Adviser: **Rachiel R. Rivano, PhD**<br>
 Laguna State Polytechnic University – Santa Cruz Campus · College of Computer Studies<br>
 BS Information Technology, Web and Mobile Application Development · Client: Office of Student Affairs and Services (OSAS)
 
-This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript is the researcher-supplied 445-page PDF in `research/manuscript/`, available through the website's manuscript modal. The official source is [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using `main`; a sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
+This repository packages the research presentation, privacy-reviewed research assets and submission documentation. The latest manuscript is the researcher-supplied 441-page PDF in `research/manuscript/`, available through the website's manuscript modal. The official source is [zorojuro0101/-UniOrg](https://github.com/zorojuro0101/-UniOrg), using `main`; a sanitized application snapshot is included. See [the submission checklist](SUBMISSION_CHECKLIST.md).
 
 ## Preview the website
 
@@ -23,7 +23,7 @@ Open **http://127.0.0.1:4173/**. Stop the server with Ctrl+C. The brochure-led r
 
 The hosted UNIORG login is https://uniorg-x4g7.onrender.com/login. Research resources and local Markdown guides open in formatted document modals.
 
-The Research manuscript resource opens the supplied PDF in a modal with search, zoom, page controls and original/download links. PDF.js is self-hosted, and the local preview supports HTTP byte ranges so the document can begin rendering without downloading the entire file. The website uses a compressed 18.7 MB copy of the 445-page manuscript; the original is retained locally.
+The Research manuscript resource opens the supplied PDF in a modal with search, zoom, page controls and original/download links. PDF.js is self-hosted, and the local preview supports HTTP byte ranges so the document can begin rendering without downloading the entire file. The website uses a compressed 18.7 MB copy of the 441-page manuscript; the original is retained locally.
 
 ## Repository contents
 

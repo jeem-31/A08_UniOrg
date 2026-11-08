@@ -1,10 +1,10 @@
 # Content verification and source register
 
-Reviewed 2026-11-05; latest local PDF rechecked 2026-11-06 (Asia/Manila). The original research folder was read only; source documents were not modified.
+Reviewed 2026-11-05; latest local PDF rechecked 2026-11-08 (Asia/Manila). The original research folder was read only; source documents were not modified.
 
 ## Authoritative manuscript
 
-The current authority is the researcher-supplied local PDF, `(NEW format) UNIORG_MANUSCRIPT_CHAPTER 1-5.pdf`, 445 pages, title page dated OCTOBER 2026. The homepage, documentation hub and manual open a compressed copy in a PDF-reader modal. The full-size original is retained locally; extracted text was verified against the copy on all pages. Its Table 4.62 (PDF page 260 / printed page 239) confirms the acceptance means and SDs retained on the homepage. The prior Google Docs export remains the origin of the existing public text derivative; it is no longer the website's manuscript viewing destination.
+The current authority is the researcher-supplied local PDF, `(NEW format) UNIORG_MANUSCRIPT_CHAPTER 1-5.pdf`, 441 pages, title page dated OCTOBER 2026. The homepage, documentation hub and manual open a compressed copy in a PDF-reader modal. The full-size original is retained locally; extracted text was verified against the copy on all pages. Its Table 4.62 (PDF pages 256–257 / printed pages 237–238) confirms the acceptance means and SDs retained on the homepage. The prior Google Docs export remains the origin of the existing public text derivative; it is no longer the website's manuscript viewing destination.
 
 | Website content | Manuscript evidence | Verification |
 | --- | --- | --- |

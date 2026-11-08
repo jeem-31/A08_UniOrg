@@ -1,6 +1,6 @@
 # Reported research results
 
-Source: the latest researcher-supplied 445-page PDF, checked 6 November 2026. The acceptance summary appears in Table 4.62 (PDF page 260 / printed page 239). These are manuscript-reported findings, not a new independent evaluation.
+Source: the latest researcher-supplied 441-page PDF, checked 8 November 2026. The acceptance summary appears in Table 4.62 (PDF pages 256–257 / printed pages 237–238). These are manuscript-reported findings, not a new independent evaluation.
 
 ## Functional testing
 

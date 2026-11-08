@@ -261,7 +261,7 @@ Before delivering any UI code, verify:
 
 Sidebar refinement: adaptive light/dark glass keeps labels readable. Native sidebar scrollbars are hidden while overflow scrolling and focus navigation remain enabled. The decorative scroll-progress strip and label were removed at the user's request.
 
-Manuscript follow-up: the Research manuscript resource uses an accessible native modal with the supplied 445-page PDF in a self-hosted reader. On-demand loading, direct PDF fallback, iframe Escape handling and focus restoration are required. The homepage retains two result highlights; the aggregate test-total statistic and pass-rate wording were removed at the researchers' request. Original PDF and procedural screenshots remain unchanged.
+Manuscript follow-up: the Research manuscript resource uses an accessible native modal with the supplied 441-page PDF in a self-hosted reader. On-demand loading, direct PDF fallback, iframe Escape handling and focus restoration are required. The homepage retains two result highlights; the aggregate test-total statistic and pass-rate wording were removed at the researchers' request. Original PDF and procedural screenshots remain unchanged.
 
 Resource follow-up: live system points to the researcher-supplied Render login. No unavailable demo placeholder or broken upstream promotion appears in the resource grid. Local Markdown opens in a shared formatted document modal with contents, nested navigation, Back, Download, sanitized GFM rendering and keyboard-scrollable code/tables. Source application files remain immutable; the reader formats their existing content without rewriting it.
 
